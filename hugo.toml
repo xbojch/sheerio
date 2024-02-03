@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sheerio Online'
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+[paige.analytics]
+disable = true # Disable all analytics

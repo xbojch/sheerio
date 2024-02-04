@@ -5,4 +5,8 @@ title = 'Sheerio Online'
 path = "github.com/willfaught/paige"
 
 [paige.analytics]
-disable = true # Disable all analytics
+disable = false # Disable all analytics
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-V1FXB9M58B'

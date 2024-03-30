@@ -1,8 +1,9 @@
 +++
 title = 'Camila Cabello and Ed Sheeran play Bam Bam live together for the first time'
-date = 2022-03-29
+date = 2022-03-29T08:00:00-07:00
 draft = false
 toc = false
+tags = ['camilacabello']
 +++
 # Concert for Ukraine (March 29th 2022)
 

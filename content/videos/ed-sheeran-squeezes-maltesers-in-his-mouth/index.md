@@ -1,6 +1,6 @@
 +++
 title = 'Ed Sheeran competes with James Corden who can squeeze more Maltesers in their mouths'
-date = 2017-07-17T08:00:00-07:00
+date = 2017-07-17T08:00:00Z
 draft = false
 toc = false
 tags = ['jamescorden','maltesers','carpool']

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://sheerio.online/'
 languageCode = 'en-us'
 title = 'Sheerio Online'
 [[module.imports]]

@@ -1,6 +1,6 @@
 +++
 title = 'Ed Sheeran crashes a wedding with his song "Magical"'
-date = 2023-09-11T08:00:00-07:00
+date = 2023-09-11T08:00:00Z
 draft = false
 toc = false
 tags = ['wedding']

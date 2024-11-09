@@ -23,11 +23,11 @@ const generateOgImage = async (title, tags, dest) => {
 
     registerFont(
         path.join(__dirname, 'static/fonts/PoetsenOne-Regular.ttf'),
-        { family: 'PoetsenOne' },
+        { family: 'PoetsenOne Regular' },
     );
 
     context.fillStyle = '#374151';
-    context.font = '64px PoetsenOne';
+    context.font = '64px "PoetsenOne Regular"';
 
     const words = title.split(' ');
     let line = '';

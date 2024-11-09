@@ -1,5 +1,5 @@
-module github.com/xbojch/sheerio
+module sheerio
 
-go 1.19
+go 1.23.0
 
-require github.com/willfaught/paige v0.72.0 // indirect
+require github.com/willfaught/paige v0.92.0 // indirect

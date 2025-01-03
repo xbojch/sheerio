@@ -4,9 +4,63 @@ title = 'Sheerio Online'
 [[module.imports]]
 path = "github.com/willfaught/paige"
 
+[paige]
+color = "#0d6efd" # Bootstrap primary color and theme color for Safari and Windows
+color_scheme = "auto" # Must be "auto", "dark", or "light"
+credit = '<a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige">Paige Theme</a>'
+date_format = ":date_long" # Hugo date format
+description = "" # Site description. Appears above the menu, below the site title, if set.
+edit = "" # File edit URL. Example: "https://github.com/account/project/edit/master/content/%s".
+external_link_new_tab = false # Open external links in new tabs
+history = "" # File history URL. Example: "https://github.com/account/project/commits/master/content/%s".
+keyword_style = "text" # Must be "text" or "pills"
+license = "" # Example: "CC BY 4.0 License", "CC BY-NC 4.0 License", "MIT License"
+math = false # Enable math typesetting
+menu_style = "links" # Must be "links", "pills", "tabs", or "underline"
+title = "" # Site title. Appears above the menu, above the site description, if set.
+style = "" # CSS included at the end of the stylesheet, before style-last.css
+
+[params.paige.list_page]
+disable_authors = false
+disable_collections = false
+disable_date = false
+disable_description = false
+disable_keywords = false
+disable_pages = false
+disable_reading_time = false
+disable_sections = false
+disable_series = false
+disable_summary = false
+
+[params.paige.page]
+disable_alert = false
+disable_authors = false
+disable_date = false
+disable_description = false
+disable_edit = false
+disable_history = false
+disable_keywords = false
+disable_next = false
+disable_prev = false
+disable_reading_time = false
+disable_series = false
+disable_title = false
+disable_toc = false
+
 [paige.analytics]
 disable = false # Disable all analytics
 
 [services]
   [services.googleAnalytics]
     ID = 'G-V1FXB9M58B'
+
+[menus]
+    [[menus.main]]
+        name = 'Start'
+        pageRef = '/'
+    [[menus.main]]
+        name = 'Videos'
+        pageRef = '/videos'
+    [[menus.main]]
+        name = 'Tags'
+        pageRef = '/tags'

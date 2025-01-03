@@ -6,7 +6,6 @@ toc = false
 tags = ['andreabocelli']
 video = "https://youtu.be/9qTLOVC_khU"
 +++
-# Ed Sheeran performs "Perfect Symphony" with Andrea Bocelli at Wembley Stadium (June 14th 2018)
 
 Ed Sheeran invited Andrea Bocelli to play "Perfect Symphony" together for the first time when he played the Wembley Stadium in 2018.
 

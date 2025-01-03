@@ -6,7 +6,6 @@ toc = false
 tags = ['wedding']
 video = "https://youtu.be/UxvGtGaNTn4"
 +++
-# Ed Sheeran crashes a wedding with his song "Magical" (September 11th 2023)
 
 Wedding crashing at its finest, when Ed Sheeran appears all of a sudden and surprises a couple at their wedding. Ed sings the song "Magical" and signs their marriage certificate.
 

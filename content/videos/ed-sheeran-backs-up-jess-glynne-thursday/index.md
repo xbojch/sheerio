@@ -6,7 +6,6 @@ toc = false
 tags = ['jessglynne']
 video = "https://youtu.be/epm2Di1IRPc"
 +++
-# Ed Sheeran and Jess Glynne play her hit "Thursday" (November 2nd 2018)
 
 Ed Sheeran plays guitar and harmonizes her hit "Thursday" with Jess Glynne.
 

@@ -59,7 +59,12 @@
                     {{ partial "paige/youtube.html" (dict "context" $page "video" .) }}
                 {{ end }}
             {{ end}}
+
         </main>
+        {{ end }}
+
+        {{ if eq $page.Type "timeline" }}
+            {{ partial "timeline.html" $page }}
         {{ end }}
 
         {{ partial "paige/page-footer.html" $page }}

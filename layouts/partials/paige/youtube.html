@@ -1,0 +1,84 @@
+{{ $autoplay := .video.autoplay }}
+{{ $controls := .video.controls | default true }}
+{{ $description := .video.description | default "YouTube video" }}
+{{ $end := .video.end }}
+{{ $fullscreen := .video.fullscreen | default true }}
+{{ $height := .video.height }}
+{{ $list := .video.list }}
+{{ $loop := .video.loop }}
+{{ $maxheight := .video.maxheight }}
+{{ $maxwidth := .video.maxwidth }}
+{{ $mute := .video.mute }}
+{{ $referrerpolicy := .video.referrerpolicy | default "no-referrer-when-downgrade" }}
+{{ $start := .video.start }}
+{{ $video := .video.video | default "dQw4w9WgXcQ" }}
+{{ $width := .video.width }}
+
+{{ if not $video }}
+{{ errorf "layouts/shortcodes/paige/youtube.html: no video" }}
+{{ end }}
+
+{{ $host := cond site.Config.Privacy.YouTube.PrivacyEnhanced "www.youtube-nocookie.com" "www.youtube.com" }}
+
+{{ $path := "" }}
+
+{{ if $list }}
+{{ $path = printf "embed?list=%v&listtype=playlist" $list }}
+{{ else }}
+{{ $path = printf "embed/%v" $video }}
+{{ end }}
+
+{{ $params := slice (print "hl=" (site.LanguageCode | default site.Language.Lang)) "modestbranding=1" }}
+
+{{ if $autoplay }}
+{{ $params = $params | append "autoplay=1" | append "mute=1" }}
+{{ end }}
+
+{{ if not $controls }}
+{{ $params = $params | append "controls=0" }}
+{{ end }}
+
+{{ with $end }}
+{{ $params = $params | append (printf "end=%v" .) }}
+{{ end }}
+
+{{ if not $fullscreen }}
+{{ $params = $params | append "fs=0" }}
+{{ end }}
+
+{{ if $loop }}
+{{ $params = $params | append "loop=1" }}
+
+{{ if $video }}
+{{ $params = $params | append (printf "playlist=%v" $video) }}
+{{ end }}
+{{ end }}
+
+{{ if $mute }}
+{{ $params = $params | append "mute=1" }}
+{{ end }}
+
+{{ with $start }}
+{{ $params = $params | append (printf "start=%v" .) }}
+{{ end }}
+
+{{ $params = delimit ($params | sort) "&" }}
+
+{{ $src := print "https://" $host "/" $path }}
+
+{{ with $params }}
+{{ $src = print $src "?" . }}
+{{ end }}
+
+<div class="paige-youtube">
+    {{ partial "paige/video.html" (dict
+    "fullscreen" $fullscreen
+    "height" $height
+    "maxheight" $maxheight
+    "maxwidth" $maxwidth
+    "referrerpolicy" $referrerpolicy
+    "src" $src
+    "title" $description
+    "width" $width
+    ) }}
+</div>

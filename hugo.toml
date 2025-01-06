@@ -64,3 +64,6 @@ disable = false # Disable all analytics
     [[menus.main]]
         name = 'Tags'
         pageRef = '/tags'
+    [[menus.main]]
+        name = 'Timeline'
+        pageRef = '/timeline'

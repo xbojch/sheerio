@@ -1,5 +1,5 @@
 +++
-title = 'Ed Sheeran performs "The A Team" for the first time on "Later... with Jools Holland'
+title = 'Ed Sheeran performs "The A Team" for the first time on "Later... with Jools Holland"'
 date = 2011-04-26T08:00:00Z
 draft = false
 toc = false

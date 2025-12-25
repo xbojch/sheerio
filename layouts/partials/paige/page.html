@@ -3,6 +3,7 @@
 {{ $class := slice }}
 {{ $content := $page.Content }}
 {{ $draft := $page.Draft }}
+{{ $params := $page.Params }}
 {{ $expired := and $page.ExpiryDate (lt $page.ExpiryDate now) }}
 {{ $future := and $page.PublishDate (gt $page.PublishDate now) }}
 {{ $microdata := $page.Params.paige.pages.microdata }}
@@ -54,6 +55,16 @@
 
         {{ with $content }}
             {{ . | safeHTML }}
+
+            {{ if $params.youtube_videos }}
+                {{ range $params.youtube_videos }}
+                    {{ partial "paige/youtube.html" (dict "context" $page "video" .) }}
+                {{ end }}
+            {{ end}}
+        {{ end }}
+
+        {{ if eq $page.Type "timeline" }}
+            {{ partial "timeline.html" $page }}
         {{ end }}
 
         {{ partial "paige/func-include.html" (dict "name" "page-body-last%s.html" "page" $page) | safeHTML }}

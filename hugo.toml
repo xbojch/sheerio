@@ -25,6 +25,11 @@ menu_style = "links" # Must be "links", "pills", "tabs", or "underline"
 title = "" # Site title. Appears above the menu, above the site description, if set.
 style = "" # CSS included at the end of the stylesheet, before style-last.css
 
+[params]
+    [params.paige]
+        [params.paige.site]
+            disable_credit = true
+
 [params.paige.list_page]
 disable_authors = false
 disable_collections = false

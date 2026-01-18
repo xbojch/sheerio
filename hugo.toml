@@ -30,6 +30,11 @@ style = "" # CSS included at the end of the stylesheet, before style-last.css
         [params.paige.site]
             disable_credit = true
             disable_breadcrumbs = true
+        [params.paige.subpages]
+            disable_date = true
+            disable_keywords = true
+            disable_word_count = true
+            disable_reading_time = true
 
 [params.paige.list_page]
 disable_authors = false

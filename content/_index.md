@@ -1,5 +1,10 @@
 +++
 title = ""
+[paige.pages]
+disable_reading_time = true
+disable_word_count = true
+disable_collections = true
+disable_sections = true
 +++
 
 This page aims to be a comprehensive resource of information about Ed Sheeran's musical career.

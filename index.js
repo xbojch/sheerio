@@ -4,15 +4,28 @@ const toml = require('toml');
 const matter = require('gray-matter');
 const path = require('path');
 
-
 const width = 1200;
 const height = 630;
-const maxWidth = 700;
-const lineHeight = 90;
+const maxWidth = 550;
 const paddingLeft = 50;
 const dir = path.join(__dirname, 'content/videos');
 
 process.stdout.write(`generating images\n`);
+
+const fontPath = path.join(__dirname, 'static/fonts/PoetsenOne-Regular.ttf');
+
+if (!fs.existsSync(fontPath)) {
+  throw new Error('Font file not found!');
+}
+
+registerFont(fontPath,{ family: 'PoetsenOne' });
+
+const getFontSize = (title) => {
+    const len = title.length;
+    if (len <= 40) return 64;
+    if (len <= 60) return 52;
+    return 42;
+};
 
 const generateOgImage = async (title, tags, dest) => {
     const canvas = createCanvas(width, height);
@@ -21,13 +34,11 @@ const generateOgImage = async (title, tags, dest) => {
     const baseImage = await loadImage(path.join(__dirname, 'static/images/sheerio-guitar.png'));
     context.drawImage(baseImage, 0, 0, width, height);
 
-    registerFont(
-        path.join(__dirname, 'static/fonts/PoetsenOne-Regular.ttf'),
-        { family: 'PoetsenOne Regular' },
-    );
+    const fontSize = getFontSize(title);
+    const lineHeight = Math.round(fontSize * 1.4);
 
     context.fillStyle = '#374151';
-    context.font = '64px "PoetsenOne Regular"';
+    context.font = `${fontSize}px "PoetsenOne"`;
 
     const words = title.split(' ');
     let line = '';
@@ -58,13 +69,13 @@ const generateOgImage = async (title, tags, dest) => {
 };
 
 fs.readdir(dir, (err, files) => {
-    files.forEach((folder) => {
+    files.forEach(async (folder) => {
         const stat = fs.statSync(`${dir}/${folder}`);
         if (stat && stat.isDirectory()) {
             process.stdout.write(`${dir}/${folder}\n`);
             const content = fs.readFileSync(`${dir}/${folder}/index.md`, 'utf-8');
             const { data: post } = matter(content, { delimiters: '+++', engines: { toml: { parse: toml.parse.bind(toml) } }, language: 'toml' });
-            generateOgImage(post.title, post.tags, `${dir}/${folder}/feature-image.png`);
+            await generateOgImage(post.title, post.tags, `${dir}/${folder}/feature-image.png`);
         }
     });
 });

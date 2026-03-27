@@ -9,6 +9,11 @@ path = "github.com/willfaught/paige"
         source = 'layouts/.*'
         target = 'css'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [paige]
 color = "#0d6efd" # Bootstrap primary color and theme color for Safari and Windows
 color_scheme = "auto" # Must be "auto", "dark", or "light"

@@ -15,7 +15,7 @@ path = "github.com/willfaught/paige"
       unsafe = true
 
 [paige]
-color = "#0d6efd" # Bootstrap primary color and theme color for Safari and Windows
+color = "#e8621a" # Bootstrap primary color and theme color for Safari and Windows
 color_scheme = "auto" # Must be "auto", "dark", or "light"
 credit = '<a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige">Paige Theme</a>'
 date_format = ":date_long" # Hugo date format

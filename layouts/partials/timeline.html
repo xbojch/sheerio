@@ -1,17 +1,3 @@
-{{ with resources.Get "css/main.css" }}
-    {{ $opts := dict "minify" true }}
-
-    {{ with . | css.TailwindCSS $opts }}
-        {{ if hugo.IsDevelopment }}
-            <link rel="stylesheet" href="{{ .RelPermalink }}">
-        {{ else }}
-            {{ with . | fingerprint }}
-                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-            {{ end }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
 <main class="mw-100 container max-w-screen-xl mx-auto px-4" id="paige-content">
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
         {{ range (where site.RegularPages "Type" "videos").ByDate.Reverse }}

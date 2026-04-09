@@ -1,0 +1,56 @@
+<script>
+(function () {
+    var header = document.getElementById('paige-site-header');
+    if (!header) return;
+
+    var chip = document.getElementById('sh-year-chip');
+
+    // Measure once at load before any collapse occurs
+    var collapseAt = header.offsetHeight;
+    var expandAt   = 16;
+    var isStuck    = false;
+    var ticking    = false;
+
+    function setChipTop() {
+        if (chip) chip.style.top = (header.offsetHeight + 8) + 'px';
+    }
+
+    function update() {
+        var y = window.scrollY;
+        if (!isStuck && y > collapseAt) {
+            isStuck = true;
+            header.classList.add('sh-header-stuck');
+            setChipTop();
+        } else if (isStuck && y < expandAt) {
+            isStuck = false;
+            header.classList.remove('sh-header-stuck');
+            setChipTop();
+        }
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // ── Hamburger toggle (mobile) ──
+    var hamburger = document.getElementById('sh-hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('click', function () {
+            var open = header.classList.toggle('sh-nav-open');
+            hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+
+        // Close nav when a link is tapped
+        document.querySelectorAll('#paige-site-menu .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                header.classList.remove('sh-nav-open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+}());
+</script>

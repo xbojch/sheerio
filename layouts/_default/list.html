@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ $page := . }}
+<div class="paige-list paige-kind-{{ $page.Kind }}">
+    {{ partial "paige/page.html" $page }}
+    {{ partial "paige/list.html" $page }}
+</div>
+{{ end }}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $page := . }}
+<div class="paige-list paige-kind-{{ $page.Kind }}">
+    {{ partial "paige/page.html" $page }}
+
+    <div class="sh-video-grid">
+        {{ range $page.Pages.ByDate.Reverse }}
+        <article class="sh-tl-card sh-video-card">
+            <time>{{ .Date.Format "2 Jan 2006" }}</time>
+            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+            <p class="sh-tl-body">{{ .Summary }}</p>
+            <div class="sh-tl-footer">
+                {{ with .GetTerms "tags" }}
+                <div class="sh-tl-tags">
+                    {{ range . }}<a class="sh-tl-tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+                </div>
+                {{ end }}
+                <a class="sh-tl-btn" href="{{ .RelPermalink }}">
+                    Watch video
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

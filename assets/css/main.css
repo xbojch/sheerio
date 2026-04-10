@@ -449,6 +449,37 @@ body .link-secondary:hover {
 
 .sh-tl-body p { margin: 0; }
 
+.sh-tl-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.sh-tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.sh-tl-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--sh-orange) !important;
+  border: 1px solid rgba(232, 98, 26, 0.35);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  text-decoration: none !important;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sh-tl-tag:hover {
+  background: var(--sh-orange);
+  color: #fff !important;
+  border-color: var(--sh-orange);
+}
+
 .sh-tl-btn {
   display: inline-flex;
   align-items: center;
@@ -512,6 +543,7 @@ body .link-secondary:hover {
   .sh-tl-right .sh-tl-card::before { border-right-color: #1f1209; }
 
   .sh-tl-card h3 a { color: #f0e8e0 !important; text-decoration: none !important; }
+  .sh-tl-tag { border-color: rgba(232, 98, 26, 0.4); }
   .sh-tl-body      { color: #9a8070; }
 
   .sh-tl-dot { border-color: #110a04; }

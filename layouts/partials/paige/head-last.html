@@ -9,3 +9,50 @@
         {{ end }}
     {{ end }}
 {{ end }}
+
+{{/* ── Canonical URL ── */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* ── Meta description ── */}}
+{{ $desc := "" }}
+{{ if .Description }}
+    {{ $desc = .Description }}
+{{ else if .Summary }}
+    {{ $desc = .Summary | plainify | truncate 160 "…" }}
+{{ end }}
+{{ with $desc }}<meta name="description" content="{{ . }}">{{ end }}
+
+{{/* ── WebSite schema (home page only) ── */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.Title | jsonify }},
+  "url": {{ site.BaseURL | jsonify }},
+  "description": {{ $desc | jsonify }}
+}
+</script>
+{{ end }}
+
+{{/* ── VideoObject schema (individual video pages) ── */}}
+{{ if and .IsPage (eq .Type "videos") }}
+    {{ $page := . }}
+    {{ with .Params.youtube_videos }}
+        {{ $entry := index . 0 }}
+        {{ with index $entry "video" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ $page.Title | jsonify }},
+  "description": {{ $page.Summary | plainify | jsonify }},
+  "thumbnailUrl": "https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg",
+  "uploadDate": "{{ $page.Date.Format "2006-01-02" }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ . }}",
+  "url": {{ $page.Permalink | jsonify }}
+}
+</script>
+        {{ end }}
+    {{ end }}
+{{ end }}

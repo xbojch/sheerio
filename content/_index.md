@@ -1,5 +1,6 @@
 +++
 title = ""
+description = "The ultimate fan-curated collection of Ed Sheeran videos — live performances, surprise appearances, collaborations, and interviews. All in one place."
 [paige.pages]
 disable_reading_time = true
 disable_word_count = true

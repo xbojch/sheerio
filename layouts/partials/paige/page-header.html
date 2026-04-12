@@ -25,7 +25,17 @@
         {{ partial "paige/func-include.html" (dict "name" "page-header-first%s.html" "page" $page) | safeHTML }}
 
         {{ with $title }}
-            <h1 class="fw-bold" id="paige-page-title" {{ if $microdata }} itemprop="headline name" {{ end }}>{{ if $link }}<a href="{{ $link }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</h1>
+            <h1 class="fw-bold" id="paige-page-title" {{ if $microdata }} itemprop="headline name" {{ end }}>
+                {{ if eq $page.Kind "term" }}
+                    <a class="sh-back-arrow" href="{{ $page.Parent.RelPermalink }}">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4-4M1 5l4 4"/>
+                        </svg>
+                        Back
+                    </a>
+                {{ end }}
+                {{ if $link }}<a href="{{ $link }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+            </h1>
         {{ end }}
 
         {{ with $description }}

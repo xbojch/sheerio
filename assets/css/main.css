@@ -561,6 +561,34 @@ body .link-secondary:hover {
   flex-shrink: 0;
 }
 
+.sh-back-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sh-orange) !important;
+  text-decoration: none !important;
+  border: 1.5px solid var(--sh-orange);
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+  transition: background 0.2s, color 0.2s;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+  white-space: nowrap;
+}
+
+.sh-back-arrow:hover {
+  background: var(--sh-orange);
+  color: #fff !important;
+}
+
+.sh-back-arrow svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
 /* Mobile: single column */
 @media (max-width: 640px) {
   .sh-timeline ol::before {

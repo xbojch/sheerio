@@ -11,7 +11,8 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VIDEOS_DIR="$SCRIPT_DIR/../content/videos"
 
-response=$(curl -sf "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${PLAYLIST_ID}&maxResults=1&key=${YOUTUBE_TOKEN}")
+response=$(curl -sf -H "Authorization: Bearer ${YOUTUBE_TOKEN}" \
+  "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${PLAYLIST_ID}&maxResults=1")
 
 video_id=$(echo "$response" | jq -r '.items[0].snippet.resourceId.videoId // empty')
 

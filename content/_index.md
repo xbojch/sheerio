@@ -6,6 +6,7 @@ disable_reading_time = true
 disable_word_count = true
 disable_collections = true
 disable_sections = true
+disable_description = true
 +++
 
 This site is a fan-curated collection of the best videos from Ed Sheeran's incredible career — live performances, surprise appearances, funny interviews, and all the magical moments in between.

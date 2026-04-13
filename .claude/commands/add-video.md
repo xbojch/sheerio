@@ -16,6 +16,7 @@ Add a new video entry to `content/videos/` given a YouTube video ID.
    - A URL-friendly folder slug: lowercase, spaces and special characters replaced with hyphens, no trailing/leading hyphens, collapse consecutive hyphens. Strip apostrophes, quotes, and other punctuation before slugifying.
    - A clean display title (the raw oEmbed title is fine).
    - Relevant tags: infer 1–3 short lowercase tag strings from the people or topics mentioned in the title (e.g. `taylorswift`, `eminem`, `coldplay`, `beyonce`). Use no spaces in tags, just concatenated lowercase names.
+   - DO NOT just copy Youtube titles as SLUG, come up with a short cave man style SLUG preferrably starting with `ed-sheeran-`
 
 5. Format the publish date as `YYYY-MM-DDT08:00:00Z`.
 
@@ -38,3 +39,4 @@ DESCRIPTION
    The `DESCRIPTION` should be 1–2 sentences written in an enthusiastic, fan-site tone describing what happens in the video. Base it on the title and any context available from the page fetch.
 
 7. Report the created file path and the front matter to the user.
+8. Prepare a one or two sentence post for X (Twitter) in this shape: "That time Ed Sheeran ..."

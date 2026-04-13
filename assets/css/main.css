@@ -282,6 +282,28 @@ body .link-secondary:hover {
   border-color: var(--sh-orange);
 }
 
+/* ── Official links ── */
+.sh-official-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.sh-official-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.sh-official-links a:hover {
+  text-decoration: underline !important;
+}
+
 /* ── Footer ── */
 #paige-site-footer {
   background: linear-gradient(160deg, var(--sh-dark) 0%, var(--sh-dark-mid) 100%);

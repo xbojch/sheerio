@@ -40,7 +40,7 @@ Sheerios are known for their passion and loyalty, whether they're singing along 
 ## Official Ed Sheeran Products
 
 <p class="sh-official-links">
-  <a href="https://sheeranloopers.com/" title="Sheeran Loopers">Sheeran Loopers</a>
-  <a href="https://sheeranguitars.com/" title="Sheeran Guitars by Lowden">Sheeran Guitars by Lowden</a>
-  <a href="https://www.instagram.com/tinglyteds/" title="Tingly Ted's">Tingly Ted's</a>
+  <a href="https://sheeranloopers.com/" title="Sheeran Loopers" target="_blank">Sheeran Loopers</a>
+  <a href="https://sheeranguitars.com/" title="Sheeran Guitars by Lowden" target="_blank">Sheeran Guitars by Lowden</a>
+  <a href="https://www.instagram.com/tinglyteds/" title="Tingly Ted's" target="_blank">Tingly Ted's</a>
 </p>

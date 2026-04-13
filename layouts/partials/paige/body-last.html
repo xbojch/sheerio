@@ -1,3 +1,35 @@
+{{/* ── Cookie consent banner ── */}}
+<div id="sh-cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+  <p>We use cookies for analytics (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Analytics</a>) to help improve this site. No personal data is sold.</p>
+  <div class="sh-cookie-actions">
+    <button id="sh-cookie-accept" class="sh-cookie-btn sh-cookie-btn--accept">Accept</button>
+    <button id="sh-cookie-decline" class="sh-cookie-btn sh-cookie-btn--decline">Decline</button>
+  </div>
+</div>
+
+<script>
+(function () {
+    // ── Cookie consent ──
+    var banner = document.getElementById('sh-cookie-banner');
+    var consent = localStorage.getItem('sh-cookie-consent');
+
+    if (!consent && banner) {
+        banner.hidden = false;
+    }
+
+    document.getElementById('sh-cookie-accept').addEventListener('click', function () {
+        localStorage.setItem('sh-cookie-consent', 'accepted');
+        banner.hidden = true;
+        if (window.shLoadGA) window.shLoadGA();
+    });
+
+    document.getElementById('sh-cookie-decline').addEventListener('click', function () {
+        localStorage.setItem('sh-cookie-consent', 'declined');
+        banner.hidden = true;
+    });
+}());
+</script>
+
 <script>
 (function () {
     var header = document.getElementById('paige-site-header');

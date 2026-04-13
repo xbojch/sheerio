@@ -1,11 +1,22 @@
 {{ $googleAnalyticsId := .Site.Config.Services.GoogleAnalytics.ID }}
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ $googleAnalyticsId }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  window.__gaId = '{{ $googleAnalyticsId }}';
 
-  gtag('config', '{{ $googleAnalyticsId }}');
+  window.shLoadGA = function () {
+    if (window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.__gaId;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', window.__gaId);
+  };
+
+  if (localStorage.getItem('sh-cookie-consent') === 'accepted') {
+    window.shLoadGA();
+  }
 </script>

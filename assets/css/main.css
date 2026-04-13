@@ -282,6 +282,66 @@ body .link-secondary:hover {
   border-color: var(--sh-orange);
 }
 
+/* ── Cookie consent banner ── */
+#sh-cookie-banner {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: var(--sh-dark);
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  max-width: min(480px, calc(100vw - 2rem));
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+#sh-cookie-banner[hidden] { display: none; }
+
+#sh-cookie-banner p {
+  margin: 0;
+}
+
+#sh-cookie-banner a {
+  color: var(--sh-amber) !important;
+}
+
+.sh-cookie-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.sh-cookie-btn {
+  flex: 1;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.sh-cookie-btn:hover { opacity: 0.85; }
+
+.sh-cookie-btn--accept {
+  background: var(--sh-orange);
+  color: #fff;
+}
+
+.sh-cookie-btn--decline {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+}
+
 /* ── Official links ── */
 .sh-official-links {
   display: flex;

@@ -21,6 +21,7 @@ Add a new video entry to `content/videos/` given a YouTube video ID.
 5. Format the publish date as `YYYY-MM-DDT08:00:00Z`.
 
 6. Create the folder `content/videos/SLUG/` and write `content/videos/SLUG/index.md` with this exact format (TOML front matter with `+++` delimiters):
+   - For the `title` don't just copy the Youtube video title, create a shorter title, lose the parentheses and other characters or emojis.
 
 ```
 +++

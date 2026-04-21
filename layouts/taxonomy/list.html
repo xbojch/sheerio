@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ $page := . }}
+
+{{ $maxCount := 1 }}
+{{ range $page.Pages }}
+  {{ $count := len .Pages }}
+  {{ if gt $count $maxCount }}{{ $maxCount = $count }}{{ end }}
+{{ end }}
+
+<div class="paige-list paige-kind-{{ $page.Kind }}">
+  {{ partial "paige/page.html" $page }}
+  <div class="sh-tag-cloud">
+    {{ range $page.Pages.ByTitle }}
+      {{ $count := len .Pages }}
+      {{ $sizeClass := "sh-cloud-xs" }}
+      {{ if ge $count 2 }}{{ $sizeClass = "sh-cloud-sm" }}{{ end }}
+      {{ if ge $count 4 }}{{ $sizeClass = "sh-cloud-md" }}{{ end }}
+      {{ if ge $count 7 }}{{ $sizeClass = "sh-cloud-lg" }}{{ end }}
+      {{ if ge $count 12 }}{{ $sizeClass = "sh-cloud-xl" }}{{ end }}
+      <a class="sh-tag-cloud-item {{ $sizeClass }}" href="{{ .RelPermalink }}"
+         title="{{ $count }} {{ if eq $count 1 }}video{{ else }}videos{{ end }}">
+        {{ .LinkTitle }}
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

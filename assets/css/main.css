@@ -231,29 +231,44 @@ body .link-secondary:hover {
   margin-top: auto;
 }
 
-/* ── Tags page pill cloud ── */
-.paige-kind-taxonomy #paige-page-pages .paige-page-title {
-  margin: 0 0 0.4rem;
+/* ── Tag cloud ── */
+.sh-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.1rem;
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  line-height: 1.4;
 }
 
-.paige-kind-taxonomy #paige-page-pages .paige-page-title a {
+.sh-tag-cloud-item {
   display: inline-block;
-  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: var(--sh-orange) !important;
-  border: 1px solid rgba(232, 98, 26, 0.35);
+  border: 1.5px solid rgba(232, 98, 26, 0.35);
   border-radius: 999px;
-  padding: 0.3rem 0.85rem;
+  padding: 0.25em 0.75em;
   text-decoration: none !important;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  white-space: nowrap;
 }
 
-.paige-kind-taxonomy #paige-page-pages .paige-page-title a:hover {
+.sh-tag-cloud-item:hover {
   background: var(--sh-orange);
   color: #fff !important;
   border-color: var(--sh-orange);
+  transform: scale(1.06);
 }
+
+.sh-cloud-xs { font-size: 0.85rem; }
+.sh-cloud-sm { font-size: 1.1rem; }
+.sh-cloud-md { font-size: 1.45rem; }
+.sh-cloud-lg { font-size: 1.85rem; }
+.sh-cloud-xl { font-size: 2.25rem; }
 
 /* ── Tags pills (video pages) ── */
 #paige-page-keywords {

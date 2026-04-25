@@ -297,6 +297,18 @@ body .link-secondary:hover {
   border-color: var(--sh-orange);
 }
 
+/* ── Cookie consent overlay ── */
+#sh-cookie-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#sh-cookie-overlay[hidden] { display: none; }
+
 /* ── Cookie consent banner ── */
 #sh-cookie-banner {
   position: fixed;

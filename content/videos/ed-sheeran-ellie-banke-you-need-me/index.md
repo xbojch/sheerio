@@ -3,7 +3,7 @@ title = "Ed Sheeran performs You Need Me with Ellie Banke"
 date = 2025-06-02T08:00:00Z
 draft = false
 toc = false
-tags = ['elliebanke', 'youneedme']
+tags = ["Ellie Banke", "You need me, I don't need you", "Live Performance"]
 videos = ['https://youtu.be/r1e8ZJnoxHk']
 [[youtube_videos]]
 video = 'r1e8ZJnoxHk'

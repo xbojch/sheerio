@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs Teenage Dirtbag with Brendan Brown (Wheatus) in Ham
 date = 2025-07-05T08:00:00Z
 draft = false
 toc = false
-tags = ['wheatus']
+tags = ['Wheatus', 'Live Performance', 'Concert', 'Stage Guest']
 videos = ['https://youtu.be/p_HalzubIQk']
 [[youtube_videos]]
 video = 'p_HalzubIQk'

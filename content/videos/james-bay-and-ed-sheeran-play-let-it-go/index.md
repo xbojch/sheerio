@@ -3,7 +3,7 @@ title = 'James Bay plays his hit song "Let It Go" with Ed Sheeran'
 date = 2015-10-04T08:00:00Z
 draft = false
 toc = false
-tags = ['jamesbay']
+tags = ['James Bay', 'Live Performance']
 videos = ['https://youtu.be/WBrFkR2KnbQ']
 [[youtube_videos]]
 video = 'WBrFkR2KnbQ'

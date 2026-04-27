@@ -3,7 +3,7 @@ title = "Ed Sheeran on The Louis Theroux Podcast"
 date = 2025-06-10T08:00:00Z
 draft = false
 toc = false
-tags = ['louistheroux', 'interview']
+tags = ['Louis Theroux', 'Interview']
 videos = ['https://youtu.be/Q-OKIynosaI','https://youtu.be/ENs45huzZPQ','https://youtu.be/GaADKvITm6Y','https://youtu.be/b6r2KpHFUUc']
 [[youtube_videos]]
 video = 'Q-OKIynosaI'

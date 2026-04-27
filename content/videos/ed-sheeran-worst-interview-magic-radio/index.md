@@ -3,7 +3,7 @@ title = 'Ed Sheeran on his worst interview ever'
 date = 2021-10-13T08:00:00Z
 draft = false
 toc = false
-tags = ['interview', 'magicradio']
+tags = ['Interview', 'Magic Radio']
 videos = ['https://youtu.be/uDa7nIsJruI']
 [[youtube_videos]]
 video = 'uDa7nIsJruI'

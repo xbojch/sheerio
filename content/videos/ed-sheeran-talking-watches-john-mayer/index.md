@@ -3,7 +3,7 @@ title = "Ed Sheeran on \"Talking Watches\" with John Mayer"
 date = 2023-10-12T08:00:00Z
 draft = false
 toc = false
-tags = ['johnmayer', 'watches', 'hodinkee', 'interview']
+tags = ['John Mayer', 'Watches', 'Hodinkee', 'Interview']
 videos = ['https://youtu.be/-wnT3i1GckA']
 [[youtube_videos]]
 video = '-wnT3i1GckA'

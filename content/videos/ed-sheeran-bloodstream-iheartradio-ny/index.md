@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Bloodstream" live at iHeartRadio Theater NY'
 date = 2014-10-28T08:00:00Z
 draft = false
 toc = false
-tags = ['bloodstream', 'iheartradio', 'ny']
+tags = ['Bloodstream', 'iHeartRadio', 'NY', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/PmyqezGljuc']
 [[youtube_videos]]
 video = 'PmyqezGljuc'

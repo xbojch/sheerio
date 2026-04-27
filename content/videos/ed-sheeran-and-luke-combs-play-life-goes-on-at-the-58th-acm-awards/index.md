@@ -3,7 +3,7 @@ title = 'Ed Sheeran invites Luke Combs to join him on stage at the 58th ACM Awar
 date = 2023-05-11T08:00:00Z
 draft = false
 toc = false
-tags = ['lukecombs']
+tags = ['Luke Combs', 'Live Performance', 'TV Appearance']
 videos = ['https://youtu.be/2tZjT3L1wD4']
 [[youtube_videos]]
 video = '2tZjT3L1wD4'

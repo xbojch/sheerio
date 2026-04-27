@@ -3,7 +3,7 @@ title = 'Ed Sheeran takes a lie detector test for Vanity Fair'
 date = 2025-05-15T08:00:00Z
 draft = false
 toc = false
-tags = ['vanityfair', 'interview']
+tags = ['Vanity Fair', 'Interview']
 videos = ['https://youtu.be/WixaBEPMACo']
 [[youtube_videos]]
 video = 'WixaBEPMACo'

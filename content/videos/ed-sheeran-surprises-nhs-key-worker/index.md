@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises NHS key worker for Junemas on Capital FM'
 date = 2021-06-25T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/wvPXcvAeodk']
 [[youtube_videos]]
 video = 'wvPXcvAeodk'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran full live set at the Hurricane Festival 2024'
 date = 2024-06-21T08:00:00Z
 draft = false
 toc = false
-tags = ['hurricane', 'festival', 'liveset']
+tags = ['Hurricane Festival', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/5gzhZDWfbR8']
 [[youtube_videos]]
 video = '5gzhZDWfbR8'

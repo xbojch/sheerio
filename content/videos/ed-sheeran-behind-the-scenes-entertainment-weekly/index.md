@@ -3,7 +3,7 @@ title = 'Ed Sheeran behind the scenes interview'
 date = 2015-05-20T08:00:00Z
 draft = false
 toc = false
-tags = ['entertainmentweekly', 'interview']
+tags = ['Entertainment Weekly', 'Interview', 'Behind the Scenes']
 videos = ['https://youtu.be/8UbFmOwPa7Y']
 [[youtube_videos]]
 video = '8UbFmOwPa7Y'

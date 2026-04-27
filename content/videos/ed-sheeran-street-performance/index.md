@@ -3,7 +3,7 @@ title = 'Ed Sheeran performing on the street for friends'
 date = 2017-02-22T08:00:00Z
 draft = false
 toc = false
-tags = ['streetperforming']
+tags = ['Street Performing', 'Live Performance']
 videos = ['https://youtu.be/iFuCDd2Eh88']
 [[youtube_videos]]
 video = 'iFuCDd2Eh88'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Drunk in love" with Beyonce at the "Global Citizen
 date = 2015-09-26T08:00:00Z
 draft = false
 toc = false
-tags = ['beyonce']
+tags = ['Beyoncé', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/YjXF_n_0ebk']
 [[youtube_videos]]
 video = 'YjXF_n_0ebk'

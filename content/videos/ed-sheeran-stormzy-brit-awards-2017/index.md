@@ -3,7 +3,7 @@ title = "Ed Sheeran performs Castle On The Hill and Shape Of You with Stormzy at
 date = 2017-02-22T08:00:00Z
 draft = false
 toc = false
-tags = ['stormzy', 'britawards']
+tags = ['Stormzy', 'BRIT Awards', 'Live Performance', 'TV Appearance']
 videos = ['https://youtu.be/v4GIfNf7AYk']
 [[youtube_videos]]
 video = 'v4GIfNf7AYk'

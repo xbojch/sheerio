@@ -3,7 +3,7 @@ title = 'Camila Cabello and Ed Sheeran play Bam Bam live together for the first 
 date = 2022-03-29T08:00:00Z
 draft = false
 toc = false
-tags = ['camilacabello']
+tags = ['Camila Cabello', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/5PPrLXqIvQg']
 [[youtube_videos]]
 video = '5PPrLXqIvQg'

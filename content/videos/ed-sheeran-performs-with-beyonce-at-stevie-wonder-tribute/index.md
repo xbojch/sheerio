@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs with Beyonce and Gary Clark Jr. at the Stevie Wonde
 date = 2015-02-10T08:00:00Z
 draft = false
 toc = false
-tags = ['steviewonder','beyonce','garyclarkjr']
+tags = ['Stevie Wonder', 'Beyoncé', 'Gary Clark Jr.', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/V2wGLgnFg6Y']
 [[youtube_videos]]
 video = 'V2wGLgnFg6Y'

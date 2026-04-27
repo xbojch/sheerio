@@ -3,7 +3,7 @@ title = "Ed Sheeran - Making of Sapphire in the Studio"
 date = 2025-07-02T08:00:00Z
 draft = false
 toc = false
-tags = ['sapphire', 'behindthescenes', 'makingof']
+tags = ['Sapphire', 'Behind The Scenes', 'Making of']
 videos = ['https://youtu.be/ncNM_Sx4f24']
 [[youtube_videos]]
 video = 'ncNM_Sx4f24'

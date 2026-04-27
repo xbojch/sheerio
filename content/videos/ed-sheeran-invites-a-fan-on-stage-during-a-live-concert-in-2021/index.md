@@ -3,7 +3,7 @@ title = 'Ed Sheeran invites a fan on stage during a live concert in 2021'
 date = 2021-12-10T08:00:00Z
 draft = false
 toc = false
-tags = ['fanonstage','michael']
+tags = ['Fan On Stage', 'Michael', 'Live Performance']
 videos = ['https://youtu.be/mQoMRB6QIbU']
 [[youtube_videos]]
 video = 'mQoMRB6QIbU'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Bad Habits" with Bring Me The Horizon at the BRIT 
 date = 2022-02-08T08:00:00Z
 draft = false
 toc = false
-tags = ['britawards', 'bringmethehorizon']
+tags = ['BRIT Awards', 'Bring Me The Horizon', 'Live Performance', 'TV Appearance']
 videos = ['https://youtu.be/HuzlYAMwwJY']
 [[youtube_videos]]
 video = 'HuzlYAMwwJY'

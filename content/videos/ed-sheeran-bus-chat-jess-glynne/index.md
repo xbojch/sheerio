@@ -3,7 +3,7 @@ title = "Ed Sheeran's Bus Chat Crashed by Jess Glynne"
 date = 2025-04-04T08:00:00Z
 draft = false
 toc = false
-tags = ['jessglynne', 'magicradio', 'interview']
+tags = ['Jess Glynne', 'Magic Radio', 'Interview']
 videos = ['https://youtu.be/2yQMnd9jQHM']
 [[youtube_videos]]
 video = '2yQMnd9jQHM'

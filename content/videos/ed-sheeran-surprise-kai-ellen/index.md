@@ -3,7 +3,7 @@ title = 'Ed Sheeran Surprises Kai on The Ellen Show'
 date = 2017-02-14T08:00:00Z
 draft = false
 toc = false
-tags = ['ellen', 'fansurprise']
+tags = ['Ellen', 'Fan Surprise', 'TV Appearance']
 videos = ['https://youtu.be/3CjFgSDWi1I']
 [[youtube_videos]]
 video = '3CjFgSDWi1I'

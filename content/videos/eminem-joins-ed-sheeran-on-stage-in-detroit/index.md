@@ -3,7 +3,7 @@ title = 'Eminem joins Ed Sheeran on stage in Detroit'
 date = 2023-07-15T08:00:00Z
 draft = false
 toc = false
-tags = ['eminem']
+tags = ['Eminem', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/jNYR1ioecJY']
 [[youtube_videos]]
 video = 'jNYR1ioecJY'

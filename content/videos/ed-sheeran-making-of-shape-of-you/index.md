@@ -3,7 +3,7 @@ title = "Ed Sheeran on making Shape of You"
 date = 2017-12-20T08:00:00Z
 draft = false
 toc = false
-tags = ['shapeofyou', 'nytimes', 'interview', 'makingof']
+tags = ['Shape Of You', 'nytimes', 'Interview', 'Making Of', 'Behind The Scenes']
 videos = ['https://youtu.be/ZpMNJbt3QDE']
 [[youtube_videos]]
 video = 'ZpMNJbt3QDE'

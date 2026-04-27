@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Same love" with Macklemore at iHeartRadio Music Fe
 date = 2014-09-20T08:00:00Z
 draft = false
 toc = false
-tags = ['macklemore','iheartradio']
+tags = ['Macklemore', 'iHeartRadio', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/hj8ZOXtYRwo']
 [[youtube_videos]]
 video = 'hj8ZOXtYRwo'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran meets a little boy who lives on the streets in Liberia'
 date = 2013-03-01T08:00:00Z
 draft = false
 toc = false
-tags = ['charity', 'rednoseday']
+tags = ['Charity', 'Red Nose Day']
 videos = ['https://youtu.be/M5R3RBP82uw']
 [[youtube_videos]]
 video = 'M5R3RBP82uw'

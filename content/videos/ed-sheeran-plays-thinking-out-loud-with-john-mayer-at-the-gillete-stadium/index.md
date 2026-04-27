@@ -3,7 +3,7 @@ title = 'Ed Sheeran invites John Mayer to play "Thinking Out Loud" at the Gillet
 date = 2023-06-30T08:00:00Z
 draft = false
 toc = false
-tags = ['johnmayer']
+tags = ['John Mayer', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/fR6ynTCtKd0']
 [[youtube_videos]]
 video = 'fR6ynTCtKd0'

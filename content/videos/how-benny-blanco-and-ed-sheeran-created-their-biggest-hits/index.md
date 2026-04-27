@@ -3,7 +3,7 @@ title = 'Benny Blanco talks about how he & Ed Sheeran created their biggest hits
 date = 2025-03-16T08:00:00Z
 draft = false
 toc = false
-tags = ['bennyblanco', 'interview']
+tags = ['Benny Blanco', 'Interview', 'Behind The Scenes']
 videos = ['https://youtu.be/sivYMFYqvZM']
 [[youtube_videos]]
 video = 'sivYMFYqvZM'

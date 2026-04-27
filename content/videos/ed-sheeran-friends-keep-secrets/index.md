@@ -3,7 +3,7 @@ title = 'Ed Sheeran on Friends Keep Secrets'
 date = 2026-03-10T08:00:00Z
 draft = false
 toc = false
-tags = ['bennyblanco', 'friendskeepsecrets', 'interview']
+tags = ['Benny Blanco', 'Friends Keep Secrets', 'Interview']
 videos = ['https://youtu.be/YgtfHLUIggU']
 [[youtube_videos]]
 video = 'YgtfHLUIggU'

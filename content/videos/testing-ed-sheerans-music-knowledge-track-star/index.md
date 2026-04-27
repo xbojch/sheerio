@@ -3,7 +3,7 @@ title = "Ed Sheeran gets his music knowledge tested on Track Star*"
 date = 2024-12-19T08:00:00Z
 draft = false
 toc = false
-tags = ['interview', 'trackstar']
+tags = ['Interview', 'Track Star*']
 videos = ['https://youtu.be/TkIEIeOMens']
 [[youtube_videos]]
 video = 'TkIEIeOMens'

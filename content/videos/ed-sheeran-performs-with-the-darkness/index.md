@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs with his long admired band The Darkness their hit s
 date = 2023-12-09T08:00:00Z
 draft = false
 toc = false
-tags = ['thedarkness','justinhawkins']
+tags = ['The Darkness', 'Justin Hawkins', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/CzhJ4y1iFgg','https://youtu.be/ndSncq0qzi0']
 [[youtube_videos]]
 video = 'CzhJ4y1iFgg'

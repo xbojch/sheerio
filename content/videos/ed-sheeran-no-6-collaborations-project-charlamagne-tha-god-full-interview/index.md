@@ -3,7 +3,7 @@ title = 'Ed Sheeran gets interviewed by Charlamagne Tha God about his "No.6 Coll
 date = 2019-07-12T08:00:00Z
 draft = false
 toc = false
-tags = ['charlamagnethagod', 'interview']
+tags = ['Charlamagne Tha God', 'Interview']
 videos = ['https://youtu.be/vBULxi0LxT4']
 [[youtube_videos]]
 video = 'vBULxi0LxT4'

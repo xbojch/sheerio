@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises Irish fans in Dublin with free tickets for his con
 date = 2017-04-13T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/QI0bLh7nWZ8']
 [[youtube_videos]]
 video = 'QI0bLh7nWZ8'

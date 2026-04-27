@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs a Tiny Desk Concert'
 date = 2025-09-09T08:00:00Z
 draft = false
 toc = false
-tags = ['npr', 'tinydesk']
+tags = ['NPR', 'Tiny Desk', 'Live Performance', 'Acoustic']
 videos = ['https://youtu.be/Q2CW9TZ81wo']
 [[youtube_videos]]
 video = 'Q2CW9TZ81wo'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran gets asked The Same Questions 10 Years Later'
 date = 2022-12-11T08:00:00Z
 draft = false
 toc = false
-tags = ['interview', 'songdestages']
+tags = ['Interview', 'Song Des Tages']
 videos = ['https://youtu.be/Btnjo1Ie0Ig']
 [[youtube_videos]]
 video = 'Btnjo1Ie0Ig'

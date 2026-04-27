@@ -3,7 +3,7 @@ title = "Ed Sheeran joins Shakira and Beéle performing the Anniversary Edition 
 date = 2025-10-29T08:00:00Z
 draft = false
 toc = false
-tags = ['shakira', 'beele']
+tags = ['Shakira', 'Beéle']
 videos = ['https://youtu.be/41ZY18JqI2A']
 [[youtube_videos]]
 video = '41ZY18JqI2A'

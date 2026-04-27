@@ -3,7 +3,7 @@ title = 'Ed Sheeran live at Access Creative College'
 date = 2009-01-01T08:00:00Z
 draft = false
 toc = false
-tags = ['earlyyears', 'liveperformance', 'college']
+tags = ['Early years', 'Live Performance', 'College']
 videos = ['https://youtu.be/mYX96-M8eLg']
 [[youtube_videos]]
 video = 'mYX96-M8eLg'

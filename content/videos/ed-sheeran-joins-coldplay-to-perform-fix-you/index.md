@@ -3,7 +3,7 @@ title = "Ed Sheeran joins Coldplay on stage at the Shepherd's Bush Empire to per
 date = 2021-10-12T08:00:00Z
 draft = false
 toc = false
-tags = ['coldplay']
+tags = ['Coldplay', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/n9aL0otZalc']
 [[youtube_videos]]
 video = 'n9aL0otZalc'

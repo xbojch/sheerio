@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs his show from the Multiply tour live in Dublin'
 date = 2014-05-10T08:00:00Z
 draft = false
 toc = false
-tags = ['multiply']
+tags = ['Multiply', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/lR3vIjAZDnM']
 [[youtube_videos]]
 video = 'lR3vIjAZDnM'

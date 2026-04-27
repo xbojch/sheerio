@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs On Deck for Rolling Stone'
 date = 2023-05-05T08:00:00Z
 draft = false
 toc = false
-tags = ['rollingstone', 'concert']
+tags = ['Rolling Stone', 'Concert', 'Live Performance']
 videos = ['https://youtu.be/8pkJIo7RODo']
 [[youtube_videos]]
 video = '8pkJIo7RODo'

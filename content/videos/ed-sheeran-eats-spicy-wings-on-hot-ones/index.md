@@ -3,7 +3,7 @@ title = 'Ed Sheeran eats spicy wings on "Hot Ones"'
 date = 2021-07-08T08:00:00Z
 draft = false
 toc = false
-tags = ['hotones']
+tags = ['Hot Ones', 'Interview']
 videos = ['https://youtu.be/mKy5K-S4QpU']
 [[youtube_videos]]
 video = 'mKy5K-S4QpU'

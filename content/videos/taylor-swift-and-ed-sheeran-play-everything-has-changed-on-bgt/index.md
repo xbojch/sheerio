@@ -3,7 +3,7 @@ title = 'Taylor Swift and Ed Sheeran play their hit song Everything Has Changed 
 date = 2013-06-08T08:00:00Z
 draft = false
 toc = false
-tags = ['taylorswift']
+tags = ['Taylor Swift', 'Live Performance', 'TV Appearance']
 videos = ['https://youtu.be/7QyecF764SY']
 [[youtube_videos]]
 video = '7QyecF764SY'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran peep show'
 date = 2015-12-04T08:00:00Z
 draft = false
 toc = false
-tags = ['hamishandandy','peepshow']
+tags = ['Hhamish And Andy', 'Peep Show', 'TV Appearance']
 videos = ['https://youtu.be/TaUlBYqGuiE']
 [[youtube_videos]]
 video = 'TaUlBYqGuiE'

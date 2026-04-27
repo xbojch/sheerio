@@ -3,7 +3,7 @@ title = "Ed Sheeran on The Graham Norton Show"
 date = 2021-09-24T08:00:00Z
 draft = false
 toc = false
-tags = ['grahamnorton', 'interview']
+tags = ['Graham Norton', 'Interview', 'TV Appearance']
 videos = ['https://youtu.be/vyoYZFwY6eg']
 [[youtube_videos]]
 video = 'vyoYZFwY6eg'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises Boston Music Project students'
 date = 2023-07-01T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/enn0KQ7Q8f8']
 [[youtube_videos]]
 video = 'enn0KQ7Q8f8'

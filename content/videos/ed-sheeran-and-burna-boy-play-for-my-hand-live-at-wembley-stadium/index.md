@@ -3,7 +3,7 @@ title = 'Ed Sheeran invites Burna Boy on stage to play their hit "For My Hand" l
 date = 2022-06-30T08:00:00Z
 draft = false
 toc = false
-tags = ['burnaboy']
+tags = ['Burna Boy', 'Live Performance', 'Concert', 'Stage guest']
 videos = ['https://youtu.be/9J4WImLne1A']
 [[youtube_videos]]
 video = '9J4WImLne1A'

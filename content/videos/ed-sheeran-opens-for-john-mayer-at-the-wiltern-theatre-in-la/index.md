@@ -3,7 +3,7 @@ title = 'Ed Sheeran returns the favor and opens for John Mayer at the Wiltern Th
 date = 2023-09-19T08:00:00Z
 draft = false
 toc = false
-tags = ['johnmayer']
+tags = ['John Mayer', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/sSnkNHkWROk','https://youtu.be/pYDGRTfZzU0']
 [[youtube_videos]]
 video = 'sSnkNHkWROk'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran asks John Mayer to open for him at the Gillete Stadium in Fo
 date = 2023-06-30T08:00:00Z
 draft = false
 toc = false
-tags = ['johnmayer']
+tags = ['John Mayer', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/5tRIP4T-Zbg']
 [[youtube_videos]]
 video = '5tRIP4T-Zbg'

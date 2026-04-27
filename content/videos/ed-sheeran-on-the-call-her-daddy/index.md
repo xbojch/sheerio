@@ -3,7 +3,7 @@ title = 'Ed Sheeran on the "Call Her Daddy" podcast'
 date = 2025-04-09T08:00:00Z
 draft = false
 toc = false
-tags = ['callherdaddy', 'interview']
+tags = ['Call Her Daddy', 'Interview']
 videos = ['https://youtu.be/hb7Oqrj3F3k']
 [[youtube_videos]]
 video = 'hb7Oqrj3F3k'

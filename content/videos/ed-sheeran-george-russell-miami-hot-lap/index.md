@@ -3,7 +3,7 @@ title = 'Ed Sheeran gets a Miami Hot Lap with George Russell'
 date = 2024-05-05T08:00:00Z
 draft = false
 toc = false
-tags = ['georgerussell', 'f1', 'miami']
+tags = ['George Russell', 'F1', 'Miami']
 videos = ['https://youtu.be/LEPBw-gIFeY']
 [[youtube_videos]]
 video = 'LEPBw-gIFeY'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran goes record shopping in Belgium'
 date = 2025-08-07T08:00:00Z
 draft = false
 toc = false
-tags = ['interview']
+tags = ['Interview']
 videos = ['https://youtu.be/-JIBzmwZ_Ko']
 [[youtube_videos]]
 video = '-JIBzmwZ_Ko'

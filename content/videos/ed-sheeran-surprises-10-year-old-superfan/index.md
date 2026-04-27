@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises his 10-year-old superfan Rafa'
 date = 2021-06-25T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/HNfQTiR0CJM']
 [[youtube_videos]]
 video = 'HNfQTiR0CJM'

@@ -3,7 +3,7 @@ title = 'Passenger and Ed Sheeran play the mega hit "Let Her Go"'
 date = 2023-11-15T08:00:00Z
 draft = false
 toc = false
-tags = ['passenger']
+tags = ['Passenger', 'Live Performance']
 videos = ['https://youtu.be/ZHP6jeadJKg','https://youtu.be/HTcL9WkB_wg']
 [[youtube_videos]]
 video = 'ZHP6jeadJKg'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran joins James Corden in Carpool Karaoke and competes who can s
 date = 2017-07-17T08:00:00Z
 draft = false
 toc = false
-tags = ['jamescorden','maltesers','carpool']
+tags = ['James Corden', 'Maltesers', 'Carpool Karaoke', 'TV Appearance']
 videos = ['https://youtu.be/ckdsJ-LaCvM']
 [[youtube_videos]]
 video = 'ckdsJ-LaCvM'

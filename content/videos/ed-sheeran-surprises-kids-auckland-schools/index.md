@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprised kids at schools in Auckland'
 date = 2018-03-01T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise', 'newzealand']
+tags = ['Fan Surprise', 'New Zealand']
 videos = ['https://youtu.be/qwcPXhhERWs']
 [[youtube_videos]]
 video = 'qwcPXhhERWs'

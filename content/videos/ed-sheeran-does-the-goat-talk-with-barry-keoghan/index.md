@@ -3,7 +3,7 @@ title = 'Ed Sheeran does the GOAT Talk with Barry Keoghan'
 date = 2025-08-20T08:00:00Z
 draft = false
 toc = false
-tags = ['barrykeoghan', 'complex', 'goattalk', 'interview']
+tags = ['Barry Keoghan', 'Complex', 'GOAT Talk', 'Interview']
 videos = ['https://youtu.be/VATApY7E2DM']
 [[youtube_videos]]
 video = 'VATApY7E2DM'

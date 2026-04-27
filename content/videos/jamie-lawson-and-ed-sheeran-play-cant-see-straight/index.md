@@ -3,7 +3,7 @@ title = "Jamie Lawson and Ed Sheeran play an acoustic version of the song \"Can'
 date = 2017-08-04T08:00:00Z
 draft = false
 toc = false
-tags = ['jamielawson']
+tags = ['Jamie Lawson', 'Live Performance']
 videos = ['https://youtu.be/BBxmOd7ZGHA','https://youtu.be/youTOUvhZjY']
 [[youtube_videos]]
 video = 'BBxmOd7ZGHA'

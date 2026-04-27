@@ -3,7 +3,7 @@ title = "Ed Sheeran performs Visiting Hours at Michael Gudinski's State Memorial
 date = 2021-03-24T08:00:00Z
 draft = false
 toc = false
-tags = ['visitinghours', 'michaelgudinski', 'tribute']
+tags = ['Visiting Hours', 'Michael Gudinski', 'Tribute', 'Live Performance']
 videos = ['https://youtu.be/KjkTaWty0iM']
 [[youtube_videos]]
 video = 'KjkTaWty0iM'

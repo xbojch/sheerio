@@ -3,7 +3,7 @@ title = 'Olivia Rodrigo invites Ed Sheeran to perform "The A Team" live at BST H
 date = 2025-06-27T08:00:00Z
 draft = false
 toc = false
-tags = ['oliviarodrigo']
+tags = ['Olivia Rodrigo', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/ROBEgaEzEuU']
 [[youtube_videos]]
 video = 'ROBEgaEzEuU'

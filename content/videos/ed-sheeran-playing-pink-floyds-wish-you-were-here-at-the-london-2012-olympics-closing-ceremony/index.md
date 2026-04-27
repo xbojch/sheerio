@@ -3,7 +3,7 @@ title = "Ed Sheeran playing Pink Floyd's song at the Closing Ceremony of the Lon
 date = 2012-08-12T08:00:00Z
 draft = false
 toc = false
-tags = ['olympics','pinkfloyd','nickmason','mikerutherford','richardjones']
+tags = ['Olympics', 'Pink Floyd', 'Nick Mason', 'Mike Rutherford', 'Richard Jones', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/X_VGwqUzdvk']
 [[youtube_videos]]
 video = 'X_VGwqUzdvk'

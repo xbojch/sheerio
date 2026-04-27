@@ -3,7 +3,7 @@ title = "Ed Sheeran performs \"Perfect\" live at Queen's Platinum Jubilee Pagean
 date = 2022-06-05T08:00:00Z
 draft = false
 toc = false
-tags = ['queenelizabeth', 'jubilee']
+tags = ['Queen Elizabeth', 'Jubilee', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/a1pDI90NDUU']
 [[youtube_videos]]
 video = 'a1pDI90NDUU'

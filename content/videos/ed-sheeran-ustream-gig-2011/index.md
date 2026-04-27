@@ -3,7 +3,7 @@ title = 'Ed Sheeran Ustream gig'
 date = 2011-05-23T08:00:00Z
 draft = false
 toc = false
-tags = ['earlyyears', 'ustream', 'liveperformance']
+tags = ['Early years', 'Ustream', 'Live Performance']
 videos = ['https://youtu.be/dTIQC1-Ym-4','https://youtu.be/cOsLjoRBdeI','https://youtu.be/Oh9rtf30EYU','https://youtu.be/hY6tTjgfUMU']
 [[youtube_videos]]
 video = 'dTIQC1-Ym-4'

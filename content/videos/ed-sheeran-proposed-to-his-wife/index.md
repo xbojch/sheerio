@@ -3,7 +3,7 @@ title = 'Ed Sheeran tells the story how he proposed to his wife'
 date = 2021-10-11T08:00:00Z
 draft = false
 toc = false
-tags = ['proposal']
+tags = ['Proposal']
 videos = ['https://youtu.be/5dXoloNsXOg']
 [[youtube_videos]]
 video = '5dXoloNsXOg'

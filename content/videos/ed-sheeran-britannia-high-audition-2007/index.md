@@ -3,7 +3,7 @@ title = '16-Year-Old Ed Sheeran Auditions for Britannia High'
 date = 2007-01-01T08:00:00Z
 draft = false
 toc = false
-tags = ['earlyyears', 'audition', 'britanniahigh']
+tags = ['Early years', 'Audition', 'Britannia High']
 videos = ['https://youtu.be/ODTKedRXxwA']
 [[youtube_videos]]
 video = 'ODTKedRXxwA'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprise performance from atop a parked car on SoHo street i
 date = 2023-05-05T08:00:00Z
 draft = false
 toc = false
-tags = ['nyc', 'streetperformance']
+tags = ['NY City', 'Street Performing', 'Live Performance']
 videos = ['https://youtu.be/xX7jk-aUUW0']
 [[youtube_videos]]
 video = 'xX7jk-aUUW0'

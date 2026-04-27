@@ -3,7 +3,7 @@ title = "Ed Sheeran F64 Tribute to Jamal Edwards on SBTV"
 date = 2023-01-19T08:00:00Z
 draft = false
 toc = false
-tags = ['sbtv', 'jamaledwards', 'f64']
+tags = ['SBTV', 'Jamal Edwards', 'F64', 'Live Performance', 'Acoustic']
 videos = ['https://youtu.be/eZVBVIC2rwE']
 [[youtube_videos]]
 video = 'eZVBVIC2rwE'

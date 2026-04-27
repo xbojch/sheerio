@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises his fan Aimee Keogh on The Late Late Toy Show 2014
 date = 2014-11-28T08:00:00Z
 draft = false
 toc = false
-tags = ['latelatetoyshow', 'fansurprise']
+tags = ['Late Late Toy Show', 'Fan Surprise', 'TV Appearance']
 videos = ['https://youtu.be/c6ONH3f5Wsk']
 [[youtube_videos]]
 video = 'c6ONH3f5Wsk'

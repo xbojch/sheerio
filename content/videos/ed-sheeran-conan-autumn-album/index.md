@@ -3,7 +3,7 @@ title = "Ed Sheeran on how autumn inspired Autumn Variations"
 date = 2024-10-01T08:00:00Z
 draft = false
 toc = false
-tags = ['conan', 'autumn', 'interview']
+tags = ['Conan', 'Autumn', 'Interview']
 videos = ['https://youtu.be/_4955yb-v48']
 [[youtube_videos]]
 video = '_4955yb-v48'

@@ -3,7 +3,7 @@ title = 'Sam Smith joins Ed Sheeran on stage to perform his hit "Stay With Me" o
 date = 2022-06-25T08:00:00Z
 draft = false
 toc = false
-tags = ['samsmith']
+tags = ['Sam Smith', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/-pi5i7uSu0o']
 [[youtube_videos]]
 video = '-pi5i7uSu0o'

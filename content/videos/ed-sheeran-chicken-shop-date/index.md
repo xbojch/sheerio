@@ -3,7 +3,7 @@ title = 'Ed Sheeran goes on a Chicken shop date with Amelia Dimoldenberg'
 date = 2021-11-03T08:00:00Z
 draft = false
 toc = false
-tags = ['ameliadimoldenberg', 'chickenshopdate', 'interview']
+tags = ['Amelia Dimoldenberg', 'Chicken shop date', 'Interview']
 videos = ['https://youtu.be/Nu9Cnxk-Qio']
 [[youtube_videos]]
 video = 'Nu9Cnxk-Qio'

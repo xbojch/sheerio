@@ -3,7 +3,7 @@ title = 'Ed Sheeran invites Calum Scott on stage to perform "You Are The Reason"
 date = 2024-07-12T08:00:00Z
 draft = false
 toc = false
-tags = ['calumscott']
+tags = ['Calum Scott', 'Live Performance', 'Stage Guest']
 videos = ['https://youtu.be/KCuU9oIArPI']
 [[youtube_videos]]
 video = 'KCuU9oIArPI'

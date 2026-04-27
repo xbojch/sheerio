@@ -3,7 +3,7 @@ title = 'Chris Martin and Ed Sheeran perform "Viva la Vida" at the Global Citize
 date = 2024-09-28T08:00:00Z
 draft = false
 toc = false
-tags = ['chrismartin']
+tags = ['Chris Martin', 'Live Performance', 'Concert']
 videos = ['https://youtu.be/Ba8R9PHItCY']
 [[youtube_videos]]
 video = 'Ba8R9PHItCY'

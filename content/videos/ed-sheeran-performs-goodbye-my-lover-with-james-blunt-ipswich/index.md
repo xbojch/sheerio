@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Goodbye My Lover" with James Blunt'
 date = 2025-07-13T08:00:00Z
 draft = false
 toc = false
-tags = ['jamesblunt', 'goodbyemylover']
+tags = ['James Blunt', 'Goodbye My Lover', 'Live Performance', 'Concert', 'Stage Guest']
 videos = ['https://youtu.be/1tD8EuhXJ-8','https://youtu.be/6lXZx94ORw4']
 [[youtube_videos]]
 video = '1tD8EuhXJ-8'

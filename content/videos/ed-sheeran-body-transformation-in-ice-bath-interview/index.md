@@ -3,7 +3,7 @@ title = "Ed Sheeran joins Andrew Tracey for an ice bath interview"
 date = 2025-12-19T08:00:00Z
 draft = false
 toc = false
-tags = ['menshealth', 'interview']
+tags = ["Men's Health", "Interview"]
 videos = ['https://youtu.be/zJT91lmOgW8']
 [[youtube_videos]]
 video = 'zJT91lmOgW8'

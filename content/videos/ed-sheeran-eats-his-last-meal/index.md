@@ -3,7 +3,7 @@ title = 'Ed Sheeran Eats His Last Meal'
 date = 2025-10-09T08:00:00Z
 draft = false
 toc = false
-tags = ['mythicalkitchen', 'interview']
+tags = ['Mythical Kitchen', 'Interview']
 videos = ['https://youtu.be/sYlEkm9bcRU']
 [[youtube_videos]]
 video = 'sYlEkm9bcRU'

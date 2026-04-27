@@ -3,7 +3,7 @@ title = 'Ed Sheeran interview with Jackson Warne about grief, friendship and Sha
 date = 2026-03-23T08:00:00Z
 draft = false
 toc = false
-tags = ['shanewarne', 'jacksonwarne', 'interview']
+tags = ['Shane Warne', 'Jackson Warne', 'Interview']
 videos = ['https://youtu.be/7S5tDqnlnkw']
 [[youtube_videos]]
 video = '7S5tDqnlnkw'

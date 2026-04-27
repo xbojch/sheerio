@@ -3,7 +3,7 @@ title = 'Ed Sheeran surprises a fan singing his song at the mall in Edmonton'
 date = 2015-06-15T08:00:00Z
 draft = false
 toc = false
-tags = ['fansurprise']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/fPdm3wh-umc','https://youtu.be/RVlvdCjqJwo']
 [[youtube_videos]]
 video = 'fPdm3wh-umc'

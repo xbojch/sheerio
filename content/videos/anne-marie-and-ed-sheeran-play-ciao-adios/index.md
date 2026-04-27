@@ -3,7 +3,7 @@ title = 'Anne-Marie and Ed Sheeran play an acoustic version of her hit "Ciao Adi
 date = 2017-05-10T08:00:00Z
 draft = false
 toc = false
-tags = ['annemarie']
+tags = ['Anne-Marie', 'Live Performance']
 videos = ['https://youtu.be/X8DhlfxHhns']
 [[youtube_videos]]
 video = 'X8DhlfxHhns'

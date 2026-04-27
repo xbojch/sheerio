@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "Perfect Symphony" with Andrea Bocelli at Wembley S
 date = 2018-06-14T08:00:00Z
 draft = false
 toc = false
-tags = ['andreabocelli']
+tags = ['Andrea Bocelli', 'Live Performance', 'Concert', 'Stage Guest']
 videos = ['https://youtu.be/9qTLOVC_khU']
 [[youtube_videos]]
 video = '9qTLOVC_khU'

@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs with The Late Late Toy Show Choir'
 date = 2014-11-28T08:00:00Z
 draft = false
 toc = false
-tags = ['latelatetoyshow', 'interview']
+tags = ['Late Late Toy Show', 'Live Performance', 'TV Appearance']
 videos = ['https://youtu.be/-ETuyP9TCcU']
 [[youtube_videos]]
 video = '-ETuyP9TCcU'

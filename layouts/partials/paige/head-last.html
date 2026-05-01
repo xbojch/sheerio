@@ -24,35 +24,43 @@
 
 {{/* ── WebSite schema (home page only) ── */}}
 {{ if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ site.Title | jsonify }},
-  "url": {{ site.BaseURL | jsonify }},
-  "description": {{ $desc | jsonify }}
-}
-</script>
+{{ $websiteLD := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" site.Title
+    "url" site.BaseURL
+    "description" $desc
+}}
+<script type="application/ld+json">{{ $websiteLD | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{ end }}
 
 {{/* ── VideoObject schema (individual video pages) ── */}}
 {{ if and .IsPage (eq .Type "videos") }}
     {{ $page := . }}
-    {{ with .Params.youtube_videos }}
-        {{ $entry := index . 0 }}
+    {{ $title := $page.Title | default $page.LinkTitle | default "Ed Sheeran video" }}
+    {{ $summary := $page.Summary | plainify | htmlUnescape | chomp }}
+    {{ $description := $summary | default $title }}
+    {{ $uploadDate := $page.Date.Format "2006-01-02T15:04:05Z07:00" }}
+    {{ $videos := $page.Params.youtube_videos }}
+    {{ $count := len $videos }}
+    {{ range $i, $entry := $videos }}
         {{ with index $entry "video" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": {{ $page.Title | jsonify }},
-  "description": {{ $page.Summary | plainify | jsonify }},
-  "thumbnailUrl": "https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg",
-  "uploadDate": "{{ $page.Date.Format "2006-01-02" }}",
-  "embedUrl": "https://www.youtube.com/embed/{{ . }}",
-  "url": {{ $page.Permalink | jsonify }}
-}
-</script>
+            {{ $name := $title }}
+            {{ if gt $count 1 }}
+                {{ $name = printf "%s (Clip %d)" $title (add $i 1) }}
+            {{ end }}
+            {{ $videoLD := dict
+                "@context" "https://schema.org"
+                "@type" "VideoObject"
+                "name" $name
+                "description" $description
+                "thumbnailUrl" (printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" .)
+                "uploadDate" $uploadDate
+                "embedUrl" (printf "https://www.youtube.com/embed/%s" .)
+                "contentUrl" (printf "https://www.youtube.com/watch?v=%s" .)
+                "url" $page.Permalink
+            }}
+<script type="application/ld+json">{{ $videoLD | jsonify (dict "indent" "  ") | safeJS }}</script>
         {{ end }}
     {{ end }}
 {{ end }}

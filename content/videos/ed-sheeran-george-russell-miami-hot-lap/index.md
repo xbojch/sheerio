@@ -4,7 +4,10 @@ date = 2024-05-05T08:00:00Z
 draft = false
 toc = false
 tags = ['George Russell', 'F1', 'Miami']
-videos = ['https://youtu.be/LEPBw-gIFeY']
+videos = ['https://youtu.be/TNPK6wBLNdU','https://youtu.be/LEPBw-gIFeY']
+[[youtube_videos]]
+video = 'TNPK6wBLNdU'
+start = 457
 [[youtube_videos]]
 video = 'LEPBw-gIFeY'
 +++

@@ -1,9 +1,9 @@
 +++
 title = 'Ed Sheeran on This Past Weekend with Theo Von'
-date = 2025-08-11T08:00:00Z
+date = 2024-06-25T08:00:00Z
 draft = false
 toc = false
-tags = ['Theo Von', 'Interview']
+tags = ['Theo Von', 'Interview', 'Podcast']
 videos = ['https://youtu.be/Guspc7G92Gs']
 [[youtube_videos]]
 video = 'Guspc7G92Gs'

@@ -13,4 +13,6 @@ upload:
 	rsync -avz --delete --progress public/ dh_eckgii@pdx1-shared-a1-28.dreamhost.com:/home/dh_eckgii/sheerio.online/
 
 next:
-	YOUTUBE_TOKEN=$$(./scripts/oauth2l fetch --credentials scripts/client_secret_442268207105-l7gk3qpdv92it4ns4ua6q7pb09pcdbnl.apps.googleusercontent.com.json --scope youtube.readonly) ./scripts/next-from-playlist.sh
+	@video_id=$$(YOUTUBE_TOKEN=$$(./scripts/oauth2l fetch --credentials scripts/client_secret_442268207105-l7gk3qpdv92it4ns4ua6q7pb09pcdbnl.apps.googleusercontent.com.json --scope youtube.readonly) ./scripts/next-from-playlist.sh) && \
+		echo "$$video_id" && \
+		claude "/add-video $$video_id"

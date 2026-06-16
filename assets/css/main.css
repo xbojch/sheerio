@@ -475,10 +475,20 @@ body .link-secondary:hover {
 /* ── Video of the day ── */
 .sh-votd {
   width: 100%;
+  background: #fff;
+  border: 1px solid rgba(232, 98, 26, 0.14);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
 }
 
 .sh-votd-title {
   margin-bottom: 0;
+}
+
+/* Tighten the gap before the embed and let it fill the card width */
+.sh-votd .paige-youtube {
+  margin-top: 1.25rem;
 }
 
 /* ── Timeline year chip ── */
@@ -844,7 +854,8 @@ body .link-secondary:hover {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .sh-tl-card {
+  .sh-tl-card,
+  .sh-votd {
     background: #1f1209;
     border-color: rgba(232, 98, 26, 0.22);
   }

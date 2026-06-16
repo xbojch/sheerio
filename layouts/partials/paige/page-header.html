@@ -104,18 +104,35 @@
                     </p>
                 {{ end }}
 
-                {{ with $date }}
-                    <p class="paige-row-short text-secondary" id="paige-page-date">
-                        <time datetime="{{ .Format `2006-01-02` }}" {{ if $microdata }} itemprop="datePublished" {{ end }}>{{ time.Format $format . }}</time>
-                    </p>
-                {{ end }}
+                {{ if or $date $words $time }}
+                    <div class="paige-row-short sh-page-meta">
+                        {{ with $date }}
+                            <p class="text-secondary" id="paige-page-date">
+                                <svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 9h16M8 3v3m8-3v3M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+                                </svg>
+                                <time datetime="{{ .Format `2006-01-02` }}" {{ if $microdata }} itemprop="datePublished" {{ end }}>{{ time.Format $format . }}</time>
+                            </p>
+                        {{ end }}
 
-                {{ with $words }}
-                    <p class="paige-row-short text-secondary" id="paige-page-word-count" {{ if $microdata }} itemprop="wordCount" {{ end }}>{{ . }} {{ i18n "paige_words" . }}</p>
-                {{ end }}
+                        {{ with $words }}
+                            <p class="text-secondary" id="paige-page-word-count" {{ if $microdata }} itemprop="wordCount" {{ end }}>
+                                <svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h14M5 9h14M5 14h9M5 19h6"/>
+                                </svg>
+                                {{ . }} {{ i18n "paige_words" . }}
+                            </p>
+                        {{ end }}
 
-                {{ with $time }}
-                    <p class="paige-row-short text-secondary" id="paige-page-reading-time" {{ if $microdata }} itemprop="timeRequired" {{ end }}>{{ . }} {{ i18n "paige_minutes" . }}</p>
+                        {{ with $time }}
+                            <p class="text-secondary" id="paige-page-reading-time" {{ if $microdata }} itemprop="timeRequired" {{ end }}>
+                                <svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l2.5 2.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                </svg>
+                                {{ . }} {{ i18n "paige_minutes" . }}
+                            </p>
+                        {{ end }}
+                    </div>
                 {{ end }}
             </div>
         {{ end }}

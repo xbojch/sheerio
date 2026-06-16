@@ -42,5 +42,6 @@ Sheerios are known for their passion and loyalty, whether they're singing along 
 <p class="sh-official-links">
   <a href="https://sheeranloopers.com/" title="Sheeran Loopers" target="_blank">Sheeran Loopers</a>
   <a href="https://sheeranguitars.com/" title="Sheeran Guitars by Lowden" target="_blank">Sheeran Guitars by Lowden</a>
+  <a href="https://orangeamps.com/pages/ed-sheeran" title="Ed Sheeran x Orange Amps" target="_blank">Ed Sheeran x Orange Amps</a>
   <a href="https://www.instagram.com/tinglyteds/" title="Tingly Ted's" target="_blank">Tingly Ted's</a>
 </p>

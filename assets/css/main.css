@@ -472,6 +472,24 @@ body .link-secondary:hover {
   }
 }
 
+/* ── Video of the day ── */
+.sh-votd {
+  width: 100%;
+}
+
+.sh-votd-title {
+  margin-bottom: 0;
+}
+
+.sh-votd-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sh-votd-title a:hover {
+  color: var(--sh-orange) !important;
+}
+
 /* ── Timeline year chip ── */
 #sh-year-chip {
   position: fixed;

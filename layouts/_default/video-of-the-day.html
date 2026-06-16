@@ -1,0 +1,142 @@
+{{ define "main" }}
+{{ $page := . }}
+
+{{/* All eligible videos in a stable date order; JS reshuffles per cycle and picks today's.
+     Each entry carries what a video page shows: title, metadata, embed, and prev/next. */}}
+{{ $list := slice }}
+{{ range $v := (where site.RegularPages "Section" "videos").ByDate }}
+    {{ with $v.Params.youtube_videos }}
+        {{ $id := (index . 0).video }}
+        {{ if $id }}
+            {{ $prev := "" }}
+            {{ with $v.NextInSection }}{{ $prev = dict "url" .RelPermalink "title" .LinkTitle }}{{ end }}
+            {{ $next := "" }}
+            {{ with $v.PrevInSection }}{{ $next = dict "url" .RelPermalink "title" .LinkTitle }}{{ end }}
+            {{ $list = $list | append (dict
+                "id" $id
+                "title" $v.LinkTitle
+                "url" $v.RelPermalink
+                "date" ($v.PublishDate.Format "January 2, 2006")
+                "datetime" ($v.PublishDate.Format "2006-01-02")
+                "words" $v.WordCount
+                "minutes" $v.ReadingTime
+                "content" ($v.Content | string)
+                "prev" $prev
+                "next" $next
+            ) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<article class="align-items-center d-flex flex-column paige-kind-page paige-status-published" id="paige-page">
+    <header class="mw-100 text-center" id="paige-page-header">
+        <h1 class="fw-bold" id="paige-page-title">{{ $page.Title }}</h1>
+        {{ with $page.Content }}
+            <div class="paige-row-tall text-center" id="paige-page-description">{{ . }}</div>
+        {{ end }}
+    </header>
+
+    <main class="mw-100" id="paige-page-content">
+        <div id="sh-votd" class="sh-votd">
+            <noscript>
+                <p class="text-center">Enable JavaScript to see today's pick, or
+                <a href="{{ (site.GetPage "/videos").RelPermalink }}">browse all videos</a>.</p>
+            </noscript>
+        </div>
+    </main>
+
+    <footer class="mw-100" id="paige-page-footer">
+        <nav class="sh-page-nav" id="paige-page-siblings" aria-label="Video navigation"></nav>
+    </footer>
+</article>
+
+<script id="sh-votd-data" type="application/json">{{ $list | jsonify | safeJS }}</script>
+<script>
+(function () {
+    var dataEl = document.getElementById('sh-votd-data');
+    var mount = document.getElementById('sh-votd');
+    var nav = document.getElementById('paige-page-siblings');
+    if (!dataEl || !mount || !nav) return;
+
+    var videos;
+    try { videos = JSON.parse(dataEl.textContent); } catch (e) { return; }
+    if (!Array.isArray(videos) || videos.length === 0) return;
+
+    var N = videos.length;
+
+    // Day number at the visitor's LOCAL midnight.
+    var now = new Date();
+    var dayNum = Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000);
+
+    // Each block of N days is one cycle: every video appears exactly once before any
+    // repeat. A fresh seeded shuffle per cycle keeps the order random.
+    var cycle = Math.floor(dayNum / N);
+    var position = ((dayNum % N) + N) % N;
+
+    var order = videos.slice();
+    var rand = mulberry32(cycle + 1);
+    for (var i = order.length - 1; i > 0; i--) {
+        var j = Math.floor(rand() * (i + 1));
+        var tmp = order[i]; order[i] = order[j]; order[j] = tmp;
+    }
+
+    function mulberry32(a) {
+        return function () {
+            a |= 0; a = (a + 0x6D2B79F5) | 0;
+            var t = Math.imul(a ^ (a >>> 15), 1 | a);
+            t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+            return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        };
+    }
+
+    function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+    }
+
+    var ARROW_PREV = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4-4M1 5l4 4"/></svg>';
+    var ARROW_NEXT = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>';
+    var ICON_DATE = '<svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 9h16M8 3v3m8-3v3M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>';
+    var ICON_WORDS = '<svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h14M5 9h14M5 14h9M5 19h6"/></svg>';
+    var ICON_TIME = '<svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l2.5 2.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>';
+
+    function render(v) {
+        var meta = '<div class="paige-row-short sh-page-meta">' +
+            '<p class="text-secondary" id="paige-page-date">' + ICON_DATE +
+                '<time datetime="' + esc(v.datetime) + '">' + esc(v.date) + '</time></p>' +
+            '<p class="text-secondary" id="paige-page-word-count">' + ICON_WORDS +
+                ' ' + v.words + ' words</p>' +
+            '<p class="text-secondary" id="paige-page-reading-time">' + ICON_TIME +
+                ' ' + v.minutes + (v.minutes === 1 ? ' minute' : ' minutes') + '</p>' +
+            '</div>';
+
+        mount.innerHTML =
+            '<h2 class="fw-bold text-center sh-votd-title"><a href="' + esc(v.url) + '">' + esc(v.title) + '</a></h2>' +
+            meta +
+            (v.content || '') +
+            '<div class="paige-youtube"><div class="paige-video ratio ratio-16x9">' +
+                '<iframe allowfullscreen referrerpolicy="no-referrer-when-downgrade"' +
+                ' src="https://www.youtube.com/embed/' + encodeURIComponent(v.id) + '?hl=en-us&amp;modestbranding=1"' +
+                ' title="' + esc(v.title) + '"></iframe>' +
+            '</div></div>';
+
+        var prevBtn = v.prev ?
+            '<a class="sh-nav-btn sh-nav-prev" href="' + esc(v.prev.url) + '">' + ARROW_PREV +
+                '<span class="sh-nav-text"><span class="sh-nav-label">Previous</span>' +
+                '<span class="sh-nav-title">' + esc(v.prev.title) + '</span></span></a>' :
+            '<span class="sh-nav-spacer" aria-hidden="true"></span>';
+
+        var nextBtn = v.next ?
+            '<a class="sh-nav-btn sh-nav-next" href="' + esc(v.next.url) + '">' +
+                '<span class="sh-nav-text"><span class="sh-nav-label">Next</span>' +
+                '<span class="sh-nav-title">' + esc(v.next.title) + '</span></span>' + ARROW_NEXT + '</a>' :
+            '<span class="sh-nav-spacer" aria-hidden="true"></span>';
+
+        nav.innerHTML = prevBtn + nextBtn;
+    }
+
+    render(order[position]);
+})();
+</script>
+{{ end }}

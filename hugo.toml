@@ -77,14 +77,22 @@ disable = false # Disable all analytics
 
 [menus]
     [[menus.main]]
-        name = 'Start'
+        name = 'Home'
         pageRef = '/'
+        weight = 10
+    [[menus.main]]
+        name = 'Video of the day'
+        pageRef = '/video-of-the-day'
+        weight = 20
     [[menus.main]]
         name = 'Videos'
         pageRef = '/videos'
+        weight = 30
     [[menus.main]]
         name = 'Tags'
         pageRef = '/tags'
+        weight = 40
     [[menus.main]]
         name = 'Timeline'
         pageRef = '/timeline'
+        weight = 50

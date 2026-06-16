@@ -54,7 +54,7 @@
                         {{ range . }}
                             {{ $menuPath := strings.TrimPrefix $basePath .URL }}
 
-                            {{ $home := and (eq $menuPath "/") (eq $page.Section "") }}
+                            {{ $home := and (eq $menuPath "/") $page.IsHome }}
                             {{ $menu := and (ne $menuPath "/") (hasPrefix $pagePath $menuPath) }}
                             {{ $section := and (ne $menuPath "/") (hasPrefix $menuPath (printf "/%s/" $page.Section)) }}
 
@@ -113,7 +113,7 @@
 
                 <nav aria-label="{{ i18n `paige_menu` }}" class="paige-row-tall" id="paige-site-menu">
                     <ul class="align-items-center justify-content-center nav {{ if $pills }} nav-pills {{ else if $tabs }} nav-tabs {{ else if $underline }} nav-underline {{ end }}">
-                        {{ $active := eq $page.Section "" }}
+                        {{ $active := $page.IsHome }}
 
                         <li class="nav-item">
                             <a {{ if $active }} aria-current="page" {{ end }} class="{{ if $active }} active {{ if $links }} fw-bold text-body {{ end }} {{ end }} nav-link {{ if $links }} text-decoration-underline {{ end }}" href="{{ relLangURL `` }}">{{ i18n "paige_home" }}</a>
@@ -122,7 +122,7 @@
                         {{ range $pages }}
                             {{ $menuPath := strings.TrimPrefix $basePath .RelPermalink }}
 
-                            {{ $home := and (eq $menuPath "/") (eq $page.Section "") }}
+                            {{ $home := and (eq $menuPath "/") $page.IsHome }}
                             {{ $menu := and (ne $menuPath "/") (hasPrefix $pagePath $menuPath) }}
                             {{ $section := and (ne $menuPath "/") (hasPrefix $menuPath (printf "/%s/" $page.Section)) }}
 

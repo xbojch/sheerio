@@ -10,6 +10,9 @@
     {{ end }}
 {{ end }}
 
+{{/* ── Robots: noindex for pages whose content rotates (e.g. Video of the Day) ── */}}
+{{ if .Params.noindex }}<meta name="robots" content="noindex, follow">{{ end }}
+
 {{/* ── Canonical URL ── */}}
 <link rel="canonical" href="{{ .Permalink }}">
 

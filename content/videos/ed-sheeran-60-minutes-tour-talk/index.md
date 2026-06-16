@@ -3,7 +3,7 @@ title = 'Ed Sheeran on What Fans Can Expect from the Tour'
 date = 2025-07-27T08:00:00Z
 draft = false
 toc = false
-tags = ['interview', '60minutes', 'tour']
+tags = ['Interview', '60 Minutes Australia', 'Tour']
 videos = ['https://youtu.be/v8ba3XORIjw']
 [[youtube_videos]]
 video = 'v8ba3XORIjw'

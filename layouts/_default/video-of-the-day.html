@@ -1,8 +1,12 @@
 {{ define "main" }}
 {{ $page := . }}
 
-{{/* All eligible videos; JS orders them by a stable hash of their ID and picks today's.
-     Each entry carries what a video page shows: title, metadata, embed, and prev/next. */}}
+{{/* All eligible videos, ordered oldest-added first so a newly added video lands at
+     the back of the rotation. The order is set here and consumed verbatim by the JS,
+     which walks one entry per day from a fixed epoch (see below).
+     Each entry carries what a video page shows: title, metadata, embed, and prev/next.
+     `sortkey` is the added date (added_date, falling back to the publish date for
+     entries that predate the field) plus the YouTube ID as a deterministic tiebreaker. */}}
 {{ $list := slice }}
 {{ $seen := slice }}
 {{ range $v := (where site.RegularPages "Section" "videos").ByDate }}
@@ -10,6 +14,7 @@
         {{ $id := (index . 0).video }}
         {{ if and $id (not (in $seen $id)) }}
             {{ $seen = $seen | append $id }}
+            {{ $added := ($v.Params.added_date | default $v.Date) }}
             {{ $prev := "" }}
             {{ with $v.NextInSection }}{{ $prev = dict "url" .RelPermalink "title" .LinkTitle }}{{ end }}
             {{ $next := "" }}
@@ -25,10 +30,12 @@
                 "content" ($v.Content | string)
                 "prev" $prev
                 "next" $next
+                "sortkey" (printf "%s|%s" ($added.Format "2006-01-02T15:04:05Z07:00") $id)
             ) }}
         {{ end }}
     {{ end }}
 {{ end }}
+{{ $list = sort $list "sortkey" "asc" }}
 
 <article class="align-items-center d-flex flex-column paige-kind-page paige-status-published" id="paige-page">
     <header class="mw-100 text-center" id="paige-page-header">
@@ -70,25 +77,16 @@
     var now = new Date();
     var dayNum = Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000);
 
-    // One fixed, random-looking order keyed by each video's YouTube ID. Because the
-    // order never reshuffles, every rolling window of N days shows each video exactly
-    // once — no repeats until all are cycled. Adding a video just inserts it at its
-    // hashed position; the others keep their relative order.
-    var order = videos.slice().sort(function (a, b) {
-        var ha = hashId(a.id), hb = hashId(b.id);
-        return ha < hb ? -1 : ha > hb ? 1 : (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
-    });
-    var position = ((dayNum % N) + N) % N;
-
-    // FNV-1a 32-bit string hash — deterministic across all visitors and builds.
-    function hashId(s) {
-        var h = 2166136261 >>> 0;
-        for (var i = 0; i < s.length; i++) {
-            h ^= s.charCodeAt(i);
-            h = Math.imul(h, 16777619);
-        }
-        return h >>> 0;
-    }
+    // The build hands us the videos already ordered oldest-added first, so a newly
+    // added video sits at the back of this array. We walk one per day from a fixed
+    // epoch: every rolling window of N days shows each video exactly once — no repeats
+    // until all are cycled. Because the cursor counts days from EPOCH (not the raw
+    // calendar day), it stays within its first pass for the first N days after EPOCH,
+    // and during that window appending a video at the back leaves today's pick — and
+    // every upcoming pick of an existing video — untouched.
+    var EPOCH = Math.floor(Date.UTC(2026, 5, 1) / 86400000); // 2026-06-01
+    var order = videos;
+    var position = (((dayNum - EPOCH) % N) + N) % N;
 
     function esc(s) {
         return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {

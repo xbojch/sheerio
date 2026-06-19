@@ -1,5 +1,5 @@
 +++
-title = 'Video of the Day'
+title = 'Video of the day'
 layout = 'video-of-the-day'
 noindex = true
 [_build]

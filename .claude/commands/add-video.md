@@ -25,6 +25,8 @@ Do not write sensationally. Do not use dashes whenever possible.
 
 5. Format the publish date as `YYYY-MM-DDT08:00:00Z`.
 
+   Also set `added_date` to today's date in the same `YYYY-MM-DDT08:00:00Z` format. This is the date the video was added to the site (not when it was published on YouTube) and it controls the Video of the Day rotation: a newer `added_date` places the video at the back of the queue, so adding a video never disrupts today's pick.
+
 6. Create the folder `content/videos/SLUG/` and write `content/videos/SLUG/index.md` with this exact format (TOML front matter with `+++` delimiters):
    - For the `title` don't just copy the Youtube video title, create a shorter title, lose the parentheses and other characters or emojis.
 
@@ -32,6 +34,7 @@ Do not write sensationally. Do not use dashes whenever possible.
 +++
 title = 'TITLE'
 date = YYYY-MM-DDT08:00:00Z
+added_date = TODAY-DATET08:00:00Z
 draft = false
 toc = false
 tags = ['tag1', 'tag2']

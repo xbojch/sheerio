@@ -6,3 +6,4 @@ upload.sh
 .env
 /scripts/oauth2l
 /scripts/client_secret*
+/scripts/.youtube_token

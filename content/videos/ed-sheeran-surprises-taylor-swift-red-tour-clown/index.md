@@ -4,8 +4,10 @@ date = 2013-09-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'RED Tour', 'Fan Surprise', 'Live Performance', 'Concert']
-videos = ['https://youtu.be/0kEj5r1nf_o']
+videos = ['https://youtu.be/0kEj5r1nf_o', 'https://youtu.be/jb3RH-0Xl1w']
 [[youtube_videos]]
 video = '0kEj5r1nf_o'
+[[youtube_videos]]
+video = 'jb3RH-0Xl1w'
 +++
 On the final night of Taylor Swift's Red Tour, Ed Sheeran snuck onstage dressed as a clown during "We Are Never Ever Getting Back Together" — and Taylor's priceless reaction says it all. Pure best-friend chaos at its finest!

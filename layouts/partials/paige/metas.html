@@ -52,7 +52,11 @@
 {{ $ogType := "website" }}
 {{ if $page.IsPage }}{{ $ogType = "article" }}{{ end }}
 
-{{/* Resolve the share image. Default = site image; video pages = YouTube thumbnail. */}}
+{{/* Resolve the share image, in priority order:
+     1. Individual video pages → the YouTube thumbnail.
+     2. Any page with a generated "feature-image.png" bundle resource (the home,
+        video-of-the-day, videos and timeline landing pages) → that branded image.
+     3. Everything else → the site-default image. */}}
 {{ $defaultImage := (index site.Params.images 0) | default "images/sheerio-guitar.png" }}
 {{ $ogImage := $defaultImage | absURL }}
 {{ $imgWidth := 1200 }}
@@ -70,6 +74,11 @@
             {{ $imgType = "image/jpeg" }}
             {{ $imgAlt = printf "%s — video thumbnail" $title }}
         {{ end }}
+    {{ end }}
+{{ else }}
+    {{ with $page.Resources.GetMatch "feature-image.png" }}
+        {{ $ogImage = .Permalink }}
+        {{ $imgAlt = printf "%s — Sheerio Online" $title }}
     {{ end }}
 {{ end }}
 

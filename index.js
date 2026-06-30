@@ -8,7 +8,7 @@ const width = 1200;
 const height = 630;
 const maxWidth = 550;
 const paddingLeft = 50;
-const dir = path.join(__dirname, 'content/videos');
+const videosDir = path.join(__dirname, 'content/videos');
 
 process.stdout.write(`generating images\n`);
 
@@ -27,7 +27,7 @@ const getFontSize = (title) => {
     return 42;
 };
 
-const generateOgImage = async (title, tags, dest) => {
+const generateOgImage = async (title, dest) => {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext('2d');
 
@@ -68,14 +68,44 @@ const generateOgImage = async (title, tags, dest) => {
     fs.writeFileSync(path.join(dest), buffer);
 };
 
-fs.readdir(dir, (err, files) => {
-    files.forEach(async (folder) => {
-        const stat = fs.statSync(`${dir}/${folder}`);
-        if (stat && stat.isDirectory()) {
-            process.stdout.write(`${dir}/${folder}\n`);
-            const content = fs.readFileSync(`${dir}/${folder}/index.md`, 'utf-8');
-            const { data: post } = matter(content, { delimiters: '+++', engines: { toml: { parse: toml.parse.bind(toml) } }, language: 'toml' });
-            await generateOgImage(post.title, post.tags, `${dir}/${folder}/feature-image.png`);
-        }
-    });
-});
+const readTitle = (mdPath) => {
+    const content = fs.readFileSync(mdPath, 'utf-8');
+    const { data } = matter(content, { delimiters: '+++', engines: { toml: { parse: toml.parse.bind(toml) } }, language: 'toml' });
+    return data.title;
+};
+
+// Per-video share images.
+const generateForVideos = async () => {
+    const files = fs.readdirSync(videosDir);
+    for (const folder of files) {
+        const folderPath = path.join(videosDir, folder);
+        if (!fs.statSync(folderPath).isDirectory()) continue;
+        process.stdout.write(`${folderPath}\n`);
+        const title = readTitle(path.join(folderPath, 'index.md'));
+        await generateOgImage(title, path.join(folderPath, 'feature-image.png'));
+    }
+};
+
+// Landing/section pages. They share the same template + title treatment as videos.
+// `title` overrides the front-matter title (used for the home page, which has none).
+const sectionPages = [
+    { md: 'content/_index.md', title: 'Sheerio Online' },
+    { md: 'content/video-of-the-day/index.md' },
+    { md: 'content/videos/_index.md' },
+    { md: 'content/timeline/_index.md' },
+];
+
+const generateForSections = async () => {
+    for (const page of sectionPages) {
+        const mdPath = path.join(__dirname, page.md);
+        const title = page.title || readTitle(mdPath);
+        const dest = path.join(path.dirname(mdPath), 'feature-image.png');
+        process.stdout.write(`${dest}\n`);
+        await generateOgImage(title, dest);
+    }
+};
+
+(async () => {
+    await generateForVideos();
+    await generateForSections();
+})();

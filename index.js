@@ -8,7 +8,6 @@ const width = 1200;
 const height = 630;
 const maxWidth = 550;
 const paddingLeft = 50;
-const videosDir = path.join(__dirname, 'content/videos');
 
 // By default we only generate images that don't exist yet. Pass --force
 // (e.g. `yarn build --force`, run by `make rebuild`) to regenerate everything.
@@ -95,19 +94,8 @@ const readTitle = (mdPath) => {
     return data.title;
 };
 
-// Per-video share images.
-const generateForVideos = async () => {
-    const files = fs.readdirSync(videosDir);
-    for (const folder of files) {
-        const folderPath = path.join(videosDir, folder);
-        if (!fs.statSync(folderPath).isDirectory()) continue;
-        const indexMd = path.join(folderPath, 'index.md');
-        const title = readTitle(indexMd);
-        await generateOgImageIfNeeded(title, path.join(folderPath, 'feature-image.png'), indexMd);
-    }
-};
-
-// Landing/section pages. They share the same template + title treatment as videos.
+// Landing/section pages. Individual video pages use their YouTube thumbnail as
+// the share image, so only these landing pages get a generated template image.
 // `title` overrides the front-matter title (used for the home page, which has none).
 const sectionPages = [
     { md: 'content/_index.md', title: 'Sheerio Online' },
@@ -127,6 +115,5 @@ const generateForSections = async () => {
 };
 
 (async () => {
-    await generateForVideos();
     await generateForSections();
 })();

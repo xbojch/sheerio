@@ -19,7 +19,7 @@ if [[ -z "$video_id" ]]; then
 fi
 
 if grep -rl "$video_id" "$VIDEOS_DIR" --include="index.md" > /dev/null 2>&1; then
-  echo "Already added: $video_id" >&2
+  echo "Already added: https://youtu.be/$video_id" >&2
   exit 1
 fi
 

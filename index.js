@@ -72,13 +72,20 @@ const generateOgImage = async (title, dest) => {
     fs.writeFileSync(path.join(dest), buffer);
 };
 
-// Generate the share image, unless one already exists and --force wasn't given.
-const generateOgImageIfNeeded = async (title, dest) => {
+// Generate the share image. By default we skip it when an up-to-date image
+// already exists; we still regenerate when the source markdown (`src`) is newer
+// than the image (e.g. the title changed), or when --force is given.
+const generateOgImageIfNeeded = async (title, dest, src) => {
     if (!force && fs.existsSync(dest)) {
-        process.stdout.write(`skip (exists) ${dest}\n`);
-        return;
+        const upToDate = !src || fs.statSync(dest).mtimeMs >= fs.statSync(src).mtimeMs;
+        if (upToDate) {
+            process.stdout.write(`skip   ${dest}\n`);
+            return;
+        }
+        process.stdout.write(`stale  ${dest}\n`);
+    } else {
+        process.stdout.write(`new    ${dest}\n`);
     }
-    process.stdout.write(`generate     ${dest}\n`);
     await generateOgImage(title, dest);
 };
 
@@ -94,8 +101,9 @@ const generateForVideos = async () => {
     for (const folder of files) {
         const folderPath = path.join(videosDir, folder);
         if (!fs.statSync(folderPath).isDirectory()) continue;
-        const title = readTitle(path.join(folderPath, 'index.md'));
-        await generateOgImageIfNeeded(title, path.join(folderPath, 'feature-image.png'));
+        const indexMd = path.join(folderPath, 'index.md');
+        const title = readTitle(indexMd);
+        await generateOgImageIfNeeded(title, path.join(folderPath, 'feature-image.png'), indexMd);
     }
 };
 
@@ -114,7 +122,7 @@ const generateForSections = async () => {
         const mdPath = path.join(__dirname, page.md);
         const title = page.title || readTitle(mdPath);
         const dest = path.join(path.dirname(mdPath), 'feature-image.png');
-        await generateOgImageIfNeeded(title, dest);
+        await generateOgImageIfNeeded(title, dest, mdPath);
     }
 };
 

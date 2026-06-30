@@ -1,0 +1,94 @@
+{{ $page := . }}
+
+{{/* ── Basic metas (mirrors the Paige theme's metas.html) ── */}}
+{{ $author := slice }}
+{{ $authors := partial "paige/func-authors.html" $page }}
+{{ $color := $page.Param `paige.site.color` | default `#0d6efd` }}
+{{ $description := cond $page.IsHome ($page.Description | default ($page.Param "paige.site.description")) $page.Description | markdownify | plainify | htmlUnescape }}
+{{ $keywords := partial "paige/func-keywords.html" $page }}
+
+{{/* Fall back to the page summary, then the site description, when no explicit description is set. */}}
+{{ if not $description }}
+    {{ with $page.Summary }}
+        {{ $description = . | plainify | htmlUnescape | truncate 200 "…" }}
+    {{ else }}
+        {{ $description = site.Params.description | plainify | htmlUnescape }}
+    {{ end }}
+{{ end }}
+{{ $description = $description | chomp }}
+
+{{ range $authors }}
+    {{ $author = $author | append (.Params.paige.author.name | default (.Title | markdownify | plainify | htmlUnescape)) }}
+{{ end }}
+
+{{ $author = delimit $author ", " }}
+
+<meta charset="utf-8">
+<meta content="{{ site.Title | markdownify | plainify | htmlUnescape }}" name="apple-mobile-web-app-title">
+
+{{ with $author }}
+    <meta content="{{ . }}" name="author">
+{{ end }}
+
+{{ with $description }}
+    <meta content="{{ . }}" name="description">
+{{ end }}
+
+{{ with $keywords }}
+    <meta content="{{ . }}" name="keywords">
+{{ end }}
+
+<meta content="{{ $color }}" name="theme-color">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+{{/* ── Open Graph + Twitter card ──
+     We emit these ourselves (rather than via Hugo's internal templates) so that
+     every page gets a share image: individual video pages use their YouTube
+     thumbnail, everything else falls back to the site-default image. */}}
+
+{{ $title := cond $page.IsHome site.Title ($page.Title | default site.Title) | markdownify | plainify | htmlUnescape }}
+{{ $locale := replace (site.LanguageCode | default "en") "-" "_" }}
+
+{{ $ogType := "website" }}
+{{ if $page.IsPage }}{{ $ogType = "article" }}{{ end }}
+
+{{/* Resolve the share image. Default = site image; video pages = YouTube thumbnail. */}}
+{{ $defaultImage := (index site.Params.images 0) | default "images/sheerio-guitar.png" }}
+{{ $ogImage := $defaultImage | absURL }}
+{{ $imgWidth := 1200 }}
+{{ $imgHeight := 630 }}
+{{ $imgType := "image/png" }}
+{{ $imgAlt := $title }}
+
+{{ if and $page.IsPage (eq $page.Type "videos") }}
+    {{ $ogType = "video.other" }}
+    {{ with $page.Params.youtube_videos }}
+        {{ with index (index . 0) "video" }}
+            {{ $ogImage = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" . }}
+            {{ $imgWidth = 480 }}
+            {{ $imgHeight = 360 }}
+            {{ $imgType = "image/jpeg" }}
+            {{ $imgAlt = printf "%s — video thumbnail" $title }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<meta property="og:title" content="{{ $title }}">
+{{ with $description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:url" content="{{ $page.Permalink }}">
+<meta property="og:site_name" content="{{ site.Title | markdownify | plainify | htmlUnescape }}">
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:locale" content="{{ $locale }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:secure_url" content="{{ $ogImage }}">
+<meta property="og:image:type" content="{{ $imgType }}">
+<meta property="og:image:width" content="{{ $imgWidth }}">
+<meta property="og:image:height" content="{{ $imgHeight }}">
+<meta property="og:image:alt" content="{{ $imgAlt }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+{{ with $description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+<meta name="twitter:image" content="{{ $ogImage }}">
+<meta name="twitter:image:alt" content="{{ $imgAlt }}">
+{{ with site.Params.social.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}

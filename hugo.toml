@@ -31,6 +31,11 @@ title = "" # Site title. Appears above the menu, above the site description, if 
 style = "" # CSS included at the end of the stylesheet, before style-last.css
 
 [params]
+    # Default social-share (Open Graph / Twitter) image, used for every page
+    # that doesn't supply its own (individual video pages use their YouTube thumbnail).
+    images = ["images/sheerio-guitar.png"]
+    [params.social]
+        twitter = "sheerio_online"
     [params.paige]
         [params.paige.site]
             disable_credit = true

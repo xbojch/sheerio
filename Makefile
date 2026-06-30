@@ -1,10 +1,14 @@
-.PHONY: build server upload auth next delete
+.PHONY: build rebuild server upload auth next delete
 
 CREDENTIALS := scripts/client_secret_442268207105-l7gk3qpdv92it4ns4ua6q7pb09pcdbnl.apps.googleusercontent.com.json
 TOKEN_FILE := scripts/.youtube_token
 
 build:
 	yarn build
+	hugo build --cleanDestinationDir
+
+rebuild:
+	yarn build --force
 	hugo build --cleanDestinationDir
 
 server:

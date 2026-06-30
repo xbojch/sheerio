@@ -10,7 +10,11 @@ const maxWidth = 550;
 const paddingLeft = 50;
 const videosDir = path.join(__dirname, 'content/videos');
 
-process.stdout.write(`generating images\n`);
+// By default we only generate images that don't exist yet. Pass --force
+// (e.g. `yarn build --force`, run by `make rebuild`) to regenerate everything.
+const force = process.argv.includes('--force');
+
+process.stdout.write(`generating images${force ? ' (--force)' : ''}\n`);
 
 const fontPath = path.join(__dirname, 'static/fonts/PoetsenOne-Regular.ttf');
 
@@ -68,6 +72,16 @@ const generateOgImage = async (title, dest) => {
     fs.writeFileSync(path.join(dest), buffer);
 };
 
+// Generate the share image, unless one already exists and --force wasn't given.
+const generateOgImageIfNeeded = async (title, dest) => {
+    if (!force && fs.existsSync(dest)) {
+        process.stdout.write(`skip (exists) ${dest}\n`);
+        return;
+    }
+    process.stdout.write(`generate     ${dest}\n`);
+    await generateOgImage(title, dest);
+};
+
 const readTitle = (mdPath) => {
     const content = fs.readFileSync(mdPath, 'utf-8');
     const { data } = matter(content, { delimiters: '+++', engines: { toml: { parse: toml.parse.bind(toml) } }, language: 'toml' });
@@ -80,9 +94,8 @@ const generateForVideos = async () => {
     for (const folder of files) {
         const folderPath = path.join(videosDir, folder);
         if (!fs.statSync(folderPath).isDirectory()) continue;
-        process.stdout.write(`${folderPath}\n`);
         const title = readTitle(path.join(folderPath, 'index.md'));
-        await generateOgImage(title, path.join(folderPath, 'feature-image.png'));
+        await generateOgImageIfNeeded(title, path.join(folderPath, 'feature-image.png'));
     }
 };
 
@@ -101,8 +114,7 @@ const generateForSections = async () => {
         const mdPath = path.join(__dirname, page.md);
         const title = page.title || readTitle(mdPath);
         const dest = path.join(path.dirname(mdPath), 'feature-image.png');
-        process.stdout.write(`${dest}\n`);
-        await generateOgImage(title, dest);
+        await generateOgImageIfNeeded(title, dest);
     }
 };
 

@@ -93,6 +93,7 @@ const sectionPages = [
     { md: 'content/video-of-the-day/index.md' },
     { md: 'content/videos/_index.md' },
     { md: 'content/timeline/_index.md' },
+    { md: 'content/tags/_index.md' },
 ];
 
 const generateForSections = async () => {

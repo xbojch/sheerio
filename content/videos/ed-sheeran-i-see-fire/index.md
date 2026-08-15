@@ -4,6 +4,7 @@ date = 2013-11-06T08:00:00Z
 draft = false
 toc = false
 tags = ['The Hobbit', 'Music Video']
+songs = ['I See Fire']
 videos = ['https://youtu.be/mllXxyHTzfg']
 [[youtube_videos]]
 video = 'mllXxyHTzfg'

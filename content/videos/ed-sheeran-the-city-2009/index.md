@@ -5,6 +5,7 @@ added_date = 2026-07-04T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'The City']
+songs = ['The City']
 videos = ['https://youtu.be/p_uf9IfXNIo']
 [[youtube_videos]]
 video = 'p_uf9IfXNIo'

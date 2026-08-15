@@ -4,6 +4,7 @@ date = 2014-07-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Ruby Sessions']
+songs = ["Don't", 'Loyal', 'No Diggity', 'The Next Episode', 'Nina']
 videos = ['https://youtu.be/ZpiNUKpGI88']
 [[youtube_videos]]
 video = 'ZpiNUKpGI88'

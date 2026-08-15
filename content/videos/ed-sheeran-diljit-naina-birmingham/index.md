@@ -4,6 +4,7 @@ date = 2024-11-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Diljit Dosanjh', 'Live Performance']
+songs = ['Shape of You', 'Naina']
 videos = ['https://youtu.be/k0Ka-deab1s']
 [[youtube_videos]]
 video = 'k0Ka-deab1s'

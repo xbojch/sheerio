@@ -4,6 +4,7 @@ date = 2017-12-20T08:00:00Z
 draft = false
 toc = false
 tags = ['Shape Of You', 'nytimes', 'Interview', 'Making of', 'Behind The Scenes']
+songs = ['Shape of You']
 videos = ['https://youtu.be/ZpMNJbt3QDE']
 [[youtube_videos]]
 video = 'ZpMNJbt3QDE'

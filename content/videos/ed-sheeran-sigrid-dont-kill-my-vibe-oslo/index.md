@@ -4,6 +4,7 @@ date = 2025-07-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Sigrid', 'Live Performance', 'Ullevaal Stadion', 'Oslo']
+songs = ["Don't Kill My Vibe"]
 videos = ['https://youtu.be/CztP-ImZfZo']
 [[youtube_videos]]
 video = 'CztP-ImZfZo'

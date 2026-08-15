@@ -4,6 +4,7 @@ date = 2025-09-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Camera', 'Live Performance', 'Amazon Music']
+songs = ['Camera']
 videos = ['https://youtu.be/-hZH84Ajv2w']
 [[youtube_videos]]
 video = '-hZH84Ajv2w'

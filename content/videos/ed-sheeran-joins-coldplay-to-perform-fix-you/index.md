@@ -4,6 +4,7 @@ date = 2021-10-12T08:00:00Z
 draft = false
 toc = false
 tags = ['Coldplay', 'Live Performance', 'Concert']
+songs = ['Fix You']
 videos = ['https://youtu.be/n9aL0otZalc']
 [[youtube_videos]]
 video = 'n9aL0otZalc'

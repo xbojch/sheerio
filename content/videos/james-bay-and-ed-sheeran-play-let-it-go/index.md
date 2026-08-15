@@ -4,6 +4,7 @@ date = 2015-10-04T08:00:00Z
 draft = false
 toc = false
 tags = ['James Bay', 'Live Performance']
+songs = ['Let It Go']
 videos = ['https://youtu.be/WBrFkR2KnbQ']
 [[youtube_videos]]
 video = 'WBrFkR2KnbQ'

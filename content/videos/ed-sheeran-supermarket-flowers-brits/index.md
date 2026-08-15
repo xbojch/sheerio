@@ -4,6 +4,7 @@ date = 2018-02-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'BRIT Awards']
+songs = ['Supermarket Flowers']
 videos = ['https://youtu.be/EAGhzuitLXU']
 [[youtube_videos]]
 video = 'EAGhzuitLXU'

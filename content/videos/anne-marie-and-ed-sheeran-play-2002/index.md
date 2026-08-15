@@ -4,6 +4,7 @@ date = 2018-07-12T08:00:00Z
 draft = false
 toc = false
 tags = ['Anne-Marie', 'Live Performance']
+songs = ['2002']
 videos = ['https://youtu.be/u3ePPA0yzSU']
 [[youtube_videos]]
 video = 'u3ePPA0yzSU'

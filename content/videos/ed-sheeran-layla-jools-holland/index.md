@@ -4,6 +4,7 @@ date = 2018-01-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Jools Holland', 'Live Performance']
+songs = ['Layla']
 videos = ['https://youtu.be/5zP4yWzb24M']
 [[youtube_videos]]
 video = '5zP4yWzb24M'

@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Cover', 'Acoustic']
+songs = ['No Diggity']
 videos = ['https://youtu.be/b0N4yF4ezuI']
 [[youtube_videos]]
 video = 'b0N4yF4ezuI'

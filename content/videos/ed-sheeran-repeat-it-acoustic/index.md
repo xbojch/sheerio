@@ -5,6 +5,7 @@ added_date = 2026-06-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Martin Garrix', 'Acoustic']
+songs = ['Repeat It']
 videos = ['https://youtu.be/OoLZOerKTlU', 'https://youtu.be/yrt9GwugK7g']
 [[youtube_videos]]
 video = 'OoLZOerKTlU'

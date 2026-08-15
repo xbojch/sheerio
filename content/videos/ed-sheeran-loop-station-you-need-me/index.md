@@ -4,6 +4,7 @@ date = 2024-02-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Loop Station']
+songs = ["You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/QWi-4SwCrqc']
 [[youtube_videos]]
 video = 'QWi-4SwCrqc'

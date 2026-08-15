@@ -4,6 +4,7 @@ date = 2017-12-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Perfect']
+songs = ['Perfect']
 videos = ['https://youtu.be/e1r3byC868I']
 [[youtube_videos]]
 video = 'e1r3byC868I'

@@ -4,6 +4,7 @@ date = 2017-08-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Rita Ora', 'Live Performance']
+songs = ['Your Song']
 videos = ['https://youtu.be/4vAf1esMT8s']
 [[youtube_videos]]
 video = '4vAf1esMT8s'

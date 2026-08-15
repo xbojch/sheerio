@@ -5,6 +5,7 @@ added_date = 2026-07-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Gary Scott', 'American Pie']
+songs = ['American Pie']
 videos = ['https://youtu.be/CBF9eFIDuT8']
 [[youtube_videos]]
 video = 'CBF9eFIDuT8'

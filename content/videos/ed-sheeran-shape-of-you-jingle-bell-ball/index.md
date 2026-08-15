@@ -5,6 +5,7 @@ added_date = 2026-07-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Jingle Bell Ball', 'Live Performance', 'Shape Of You']
+songs = ['Shape of You']
 videos = ['https://youtu.be/SqBSCstCqNQ']
 [[youtube_videos]]
 video = 'SqBSCstCqNQ'

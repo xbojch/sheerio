@@ -5,6 +5,7 @@ added_date = 2026-07-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Unreleased']
+songs = ['Kids on Drugs']
 videos = ['https://youtu.be/adrBFZKu1Ks']
 [[youtube_videos]]
 video = 'adrBFZKu1Ks'

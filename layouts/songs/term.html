@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $page := . }}
+<div class="paige-list paige-kind-{{ $page.Kind }}">
+    {{ partial "paige/page.html" $page }}
+
+    {{/* Performances of this song, oldest first. */}}
+    <div class="sh-video-grid">
+        {{ range $page.Pages.ByDate }}
+        {{ partial "video-card.html" . }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

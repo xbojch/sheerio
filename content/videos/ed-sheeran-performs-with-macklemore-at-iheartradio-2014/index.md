@@ -4,6 +4,7 @@ date = 2014-09-20T08:00:00Z
 draft = false
 toc = false
 tags = ['Macklemore', 'iHeartRadio', 'Live Performance', 'Concert']
+songs = ['Same Love']
 videos = ['https://youtu.be/hj8ZOXtYRwo']
 [[youtube_videos]]
 video = 'hj8ZOXtYRwo'

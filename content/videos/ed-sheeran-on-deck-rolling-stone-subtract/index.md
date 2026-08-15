@@ -4,6 +4,7 @@ date = 2023-05-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Rolling Stone', 'Concert', 'Live Performance']
+songs = ['Boat', 'Eyes Closed', 'Life Goes On']
 videos = ['https://youtu.be/8pkJIo7RODo']
 [[youtube_videos]]
 video = '8pkJIo7RODo'

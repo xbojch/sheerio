@@ -5,6 +5,7 @@ added_date = 2026-07-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Amazon Music']
+songs = ['The Vow']
 videos = ['https://youtu.be/pJeCx_P8Kxw']
 [[youtube_videos]]
 video = 'pJeCx_P8Kxw'

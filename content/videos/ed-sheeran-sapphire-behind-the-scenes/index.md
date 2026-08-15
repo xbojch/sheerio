@@ -4,6 +4,7 @@ date = 2025-06-17T08:00:00Z
 draft = false
 toc = false
 tags = ['Sapphire', 'Behind The Scenes', 'Making of']
+songs = ['Sapphire']
 videos = ['https://youtu.be/8rx6IKbmPhA']
 [[youtube_videos]]
 video = '8rx6IKbmPhA'

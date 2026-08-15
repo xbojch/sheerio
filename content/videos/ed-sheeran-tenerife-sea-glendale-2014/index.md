@@ -4,6 +4,7 @@ date = 2014-08-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Acoustic', 'Live Performance']
+songs = ['Tenerife Sea']
 videos = ['https://youtu.be/g-2BWbAchNM']
 [[youtube_videos]]
 video = 'g-2BWbAchNM'

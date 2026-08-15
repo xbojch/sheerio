@@ -4,6 +4,7 @@ date = 2018-12-02T08:00:00Z
 draft = false
 toc = false
 tags = ['Beyoncé', 'Live Performance', 'Concert']
+songs = ['Perfect']
 videos = ['https://youtu.be/znaPlmuU3cM']
 [[youtube_videos]]
 video = 'znaPlmuU3cM'

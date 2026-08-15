@@ -4,6 +4,7 @@ date = 2025-04-11T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Azizam']
+songs = ['Azizam']
 videos = ['https://youtu.be/lNPJBHUePl0']
 [[youtube_videos]]
 video = 'lNPJBHUePl0'

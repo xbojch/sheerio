@@ -4,6 +4,7 @@ date = 2017-11-11T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Live Performance']
+songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/PQj3FfW5v0E']
 [[youtube_videos]]
 video = 'PQj3FfW5v0E'

@@ -4,6 +4,7 @@ date = 2023-05-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise', 'Florida']
+songs = ['Perfect']
 videos = ['https://youtu.be/ECg9S5k0uH4']
 [[youtube_videos]]
 video = 'ECg9S5k0uH4'

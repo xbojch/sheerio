@@ -4,6 +4,7 @@ date = 2015-06-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']
+songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/fPdm3wh-umc','https://youtu.be/RVlvdCjqJwo']
 [[youtube_videos]]
 video = 'fPdm3wh-umc'

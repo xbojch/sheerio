@@ -4,6 +4,7 @@ date = 2017-05-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Billboard Music Awards']
+songs = ['Castle on the Hill']
 videos = ['https://youtu.be/P2Q5VZlVOro']
 [[youtube_videos]]
 video = 'P2Q5VZlVOro'

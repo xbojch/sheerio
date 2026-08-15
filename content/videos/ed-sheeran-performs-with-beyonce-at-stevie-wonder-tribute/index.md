@@ -4,6 +4,7 @@ date = 2015-02-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Stevie Wonder', 'Beyoncé', 'Gary Clark Jr.', 'Live Performance', 'Concert']
+songs = ['Master Blaster', 'Higher Ground']
 videos = ['https://youtu.be/V2wGLgnFg6Y']
 [[youtube_videos]]
 video = 'V2wGLgnFg6Y'

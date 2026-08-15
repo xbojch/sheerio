@@ -4,6 +4,7 @@ date = 2013-06-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'Live Performance', 'TV Appearance']
+songs = ['Everything Has Changed']
 videos = ['https://youtu.be/7QyecF764SY']
 [[youtube_videos]]
 video = '7QyecF764SY'

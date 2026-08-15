@@ -4,6 +4,7 @@ date = 2016-05-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Stevie Wonder', 'Live Performance']
+songs = ['I Was Made to Love Her']
 videos = ['https://youtu.be/Q93R3du4Eb8']
 [[youtube_videos]]
 video = 'Q93R3du4Eb8'

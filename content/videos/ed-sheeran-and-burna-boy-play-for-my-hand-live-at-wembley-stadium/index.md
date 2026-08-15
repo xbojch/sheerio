@@ -4,6 +4,7 @@ date = 2022-06-30T08:00:00Z
 draft = false
 toc = false
 tags = ['Burna Boy', 'Live Performance', 'Concert', 'Stage guest']
+songs = ['For My Hand']
 videos = ['https://youtu.be/9J4WImLne1A']
 [[youtube_videos]]
 video = '9J4WImLne1A'

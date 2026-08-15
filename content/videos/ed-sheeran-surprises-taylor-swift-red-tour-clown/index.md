@@ -4,6 +4,7 @@ date = 2013-09-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'RED Tour', 'Fan Surprise', 'Live Performance', 'Concert']
+songs = ['We Are Never Ever Getting Back Together']
 videos = ['https://youtu.be/0kEj5r1nf_o', 'https://youtu.be/jb3RH-0Xl1w']
 [[youtube_videos]]
 video = '0kEj5r1nf_o'

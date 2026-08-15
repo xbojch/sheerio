@@ -4,6 +4,7 @@ date = 2023-11-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Passenger', 'Live Performance']
+songs = ['Let Her Go']
 videos = ['https://youtu.be/ZHP6jeadJKg','https://youtu.be/HTcL9WkB_wg']
 [[youtube_videos]]
 video = 'ZHP6jeadJKg'

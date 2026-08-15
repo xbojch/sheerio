@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['James Blunt', 'Elton John', 'Taratata', 'Live Performance', 'Cover']
+songs = ['Sacrifice']
 videos = ['https://youtu.be/I-TPEkjGhXE']
 [[youtube_videos]]
 video = 'I-TPEkjGhXE'

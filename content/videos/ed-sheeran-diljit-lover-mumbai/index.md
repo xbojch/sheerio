@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Diljit Dosanjh', 'Stage Guest', 'Live Performance']
+songs = ['Lover']
 videos = ['https://youtu.be/rY7NTiPM_TE']
 [[youtube_videos]]
 video = 'rY7NTiPM_TE'

@@ -4,6 +4,7 @@ date = 2021-10-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Tiny Desk', 'NPR Music', 'Live Performance']
+songs = ['Shivers', 'Overpass Graffiti', 'Visiting Hours', 'Bad Habits', 'Make It Rain']
 videos = ['https://youtu.be/4MsoqUv5gv4']
 [[youtube_videos]]
 video = '4MsoqUv5gv4'

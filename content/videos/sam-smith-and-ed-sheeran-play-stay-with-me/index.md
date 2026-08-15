@@ -4,6 +4,7 @@ date = 2022-06-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Sam Smith', 'Live Performance', 'Concert']
+songs = ['Stay With Me']
 videos = ['https://youtu.be/-pi5i7uSu0o']
 [[youtube_videos]]
 video = '-pi5i7uSu0o'

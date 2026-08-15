@@ -4,6 +4,7 @@ date = 2006-01-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Music Video', 'Early Years']
+songs = ['Open Your Ears']
 videos = ['https://youtu.be/-ETtJngV8vk']
 [[youtube_videos]]
 video = '-ETtJngV8vk'

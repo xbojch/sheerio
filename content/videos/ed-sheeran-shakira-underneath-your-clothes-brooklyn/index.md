@@ -5,6 +5,7 @@ added_date = 2026-07-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Shakira', 'Live Performance', 'Stage Guest']
+songs = ['Underneath Your Clothes']
 videos = ['https://youtu.be/ncmYqND278Q']
 [[youtube_videos]]
 video = 'ncmYqND278Q'

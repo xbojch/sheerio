@@ -1,0 +1,26 @@
+{{ $page := . }}
+
+{{/* The card used by the /videos, /tags/… and /songs/… grids. */}}
+<article class="sh-tl-card sh-tl-card-media sh-video-card">
+    {{ partial "video-thumb.html" $page }}
+
+    <div class="sh-video-card-body">
+        <time>{{ $page.Date.Format "2 Jan 2006" }}</time>
+        <h3><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h3>
+        {{/* A div, not a p: .Summary is already wrapped in a paragraph. */}}
+        <div class="sh-tl-body">{{ $page.Summary }}</div>
+        <div class="sh-tl-footer">
+            {{ with $page.GetTerms "tags" }}
+            <div class="sh-tl-tags">
+                {{ range . }}<a class="sh-tl-tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+            </div>
+            {{ end }}
+            <a class="sh-tl-btn" href="{{ $page.RelPermalink }}">
+                Watch video
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</article>

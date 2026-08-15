@@ -4,6 +4,7 @@ date = 2008-01-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Unreleased', 'Early years', 'MySpace']
+songs = ['Fulham Broadway']
 videos = ['https://youtu.be/laAnWCiMp0k']
 [[youtube_videos]]
 video = 'laAnWCiMp0k'

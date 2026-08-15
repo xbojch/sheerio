@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Concert', 'Anne-Marie']
+songs = ['Bloodstream', 'Shivers', 'Castle on the Hill', '2002', 'Perfect', 'Merry Christmas', 'Bad Habits']
 videos = ['https://youtu.be/POyM7UG_LWo']
 [[youtube_videos]]
 video = 'POyM7UG_LWo'

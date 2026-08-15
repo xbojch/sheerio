@@ -5,6 +5,7 @@ added_date = 2026-07-30T08:00:00Z
 draft = false
 toc = false
 tags = ['Stormzy', 'Wretch 32', 'Live Performance']
+songs = ['Blinded by Your Grace Pt 2']
 videos = ['https://youtu.be/DFTSK6CnECk']
 [[youtube_videos]]
 video = 'DFTSK6CnECk'

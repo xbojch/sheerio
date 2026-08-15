@@ -4,6 +4,7 @@ date = 2025-07-13T08:00:00Z
 draft = false
 toc = false
 tags = ['James Blunt', 'Goodbye My Lover', 'Live Performance', 'Concert', 'Stage Guest']
+songs = ['Goodbye My Lover']
 videos = ['https://youtu.be/1tD8EuhXJ-8','https://youtu.be/6lXZx94ORw4']
 [[youtube_videos]]
 video = '1tD8EuhXJ-8'

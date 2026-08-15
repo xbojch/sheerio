@@ -5,6 +5,7 @@ added_date = 2026-07-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Aitch', 'Music Video']
+songs = ['My G']
 videos = ['https://youtu.be/81ZwDYRE6uc']
 [[youtube_videos]]
 video = '81ZwDYRE6uc'

@@ -4,6 +4,7 @@ date = 2014-04-25T08:00:00Z
 draft = false
 toc = false
 tags = ['SBTV', 'Freestyle', 'Live Performance']
+songs = ['Take It Back']
 videos = ['https://youtu.be/gaQcpCDX5wE']
 [[youtube_videos]]
 video = 'gaQcpCDX5wE'

@@ -4,6 +4,7 @@ date = 2018-05-02T08:00:00Z
 draft = false
 toc = false
 tags = ['The Beatles', 'Live Performance', 'Cover']
+songs = ['In My Life']
 videos = ['https://youtu.be/wGQ9wW83MJU']
 [[youtube_videos]]
 video = 'wGQ9wW83MJU'

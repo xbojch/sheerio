@@ -4,6 +4,7 @@ date = 2025-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Soprano', 'Live Performance', 'Concert', 'Stage Guest']
+songs = ['En Feu']
 videos = ['https://youtu.be/ENR-RnDOvTk','https://youtu.be/ESjO6EHh7JI']
 [[youtube_videos]]
 video = 'ENR-RnDOvTk'

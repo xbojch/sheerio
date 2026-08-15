@@ -4,6 +4,7 @@ date = 2025-07-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Wheatus', 'Live Performance', 'Concert', 'Stage Guest']
+songs = ['Teenage Dirtbag']
 videos = ['https://youtu.be/p_HalzubIQk']
 [[youtube_videos]]
 video = 'p_HalzubIQk'

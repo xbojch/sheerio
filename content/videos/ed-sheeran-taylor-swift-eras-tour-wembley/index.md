@@ -4,6 +4,7 @@ date = 2024-08-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'Stage Guest', 'Live Performance']
+songs = ['Everything Has Changed', 'End Game', 'Thinking Out Loud']
 videos = ['https://youtu.be/fzhgocPrgbI']
 [[youtube_videos]]
 video = 'fzhgocPrgbI'

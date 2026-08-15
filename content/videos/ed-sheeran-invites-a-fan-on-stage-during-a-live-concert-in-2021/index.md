@@ -4,6 +4,7 @@ date = 2021-12-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan On Stage', 'Michael', 'Live Performance']
+songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/mQoMRB6QIbU']
 [[youtube_videos]]
 video = 'mQoMRB6QIbU'

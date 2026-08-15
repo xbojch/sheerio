@@ -5,6 +5,7 @@ added_date = 2026-07-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Aaron Dessner']
+songs = ['Eyes Closed']
 videos = ['https://youtu.be/MlAkMge-IPE']
 [[youtube_videos]]
 video = 'MlAkMge-IPE'

@@ -4,6 +4,7 @@ date = 2023-09-11T08:00:00Z
 draft = false
 toc = false
 tags = ['Wedding', 'Live Performance', 'Fan Surprise']
+songs = ['Magical']
 videos = ['https://youtu.be/UxvGtGaNTn4']
 [[youtube_videos]]
 video = 'UxvGtGaNTn4'

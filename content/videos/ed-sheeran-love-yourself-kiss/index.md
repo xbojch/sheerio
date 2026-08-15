@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Justin Bieber', 'Cover', 'Live Performance']
+songs = ['Love Yourself']
 videos = ['https://youtu.be/q0FylXxDGII']
 [[youtube_videos]]
 video = 'q0FylXxDGII'

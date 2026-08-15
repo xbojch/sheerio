@@ -4,6 +4,7 @@ date = 2023-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Aaron Dessner', 'Live Performance']
+songs = ['Boat']
 videos = ['https://youtu.be/I5S167L0poc']
 [[youtube_videos]]
 video = 'I5S167L0poc'

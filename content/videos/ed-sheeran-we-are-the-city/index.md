@@ -4,6 +4,7 @@ date = 2011-07-17T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Acoustic']
+songs = ['We Are', 'The City']
 videos = ['https://youtu.be/EmYzXaY4R7k']
 [[youtube_videos]]
 video = 'EmYzXaY4R7k'

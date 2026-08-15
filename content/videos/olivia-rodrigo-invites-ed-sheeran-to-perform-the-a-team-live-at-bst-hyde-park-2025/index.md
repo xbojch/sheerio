@@ -4,6 +4,7 @@ date = 2025-06-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Olivia Rodrigo', 'Live Performance', 'Concert']
+songs = ['The A Team']
 videos = ['https://youtu.be/ROBEgaEzEuU']
 [[youtube_videos]]
 video = 'ROBEgaEzEuU'

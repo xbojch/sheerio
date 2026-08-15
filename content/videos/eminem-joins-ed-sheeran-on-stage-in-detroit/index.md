@@ -4,6 +4,7 @@ date = 2023-07-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Eminem', 'Live Performance', 'Concert']
+songs = ['Lose Yourself', 'Stan']
 videos = ['https://youtu.be/jNYR1ioecJY']
 [[youtube_videos]]
 video = 'jNYR1ioecJY'

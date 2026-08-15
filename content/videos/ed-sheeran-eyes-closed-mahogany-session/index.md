@@ -5,6 +5,7 @@ added_date = 2026-08-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Acoustic', 'Mahogany Session']
+songs = ['Eyes Closed']
 videos = ['https://youtu.be/uSXIluiEcjo']
 [[youtube_videos]]
 video = 'uSXIluiEcjo'

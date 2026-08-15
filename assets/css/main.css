@@ -220,11 +220,55 @@ body .link-secondary:hover {
 .sh-video-card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  /* Skip layout and paint for cards that are far off screen. The remembered
+     size keeps the scrollbar steady once a card has been rendered once. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 400px;
 }
 
 .sh-video-card:hover {
   box-shadow: 0 6px 24px rgba(232, 98, 26, 0.15);
   transform: translateY(-2px);
+}
+
+/* YouTube thumbnail preview. hqdefault is 4:3 with letterbox bars, so we crop
+   it back to the 16:9 frame. */
+.sh-video-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--sh-dark);
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.sh-video-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Fade the thumbnail in once the lazy loader has fetched it. */
+.sh-video-thumb img.sh-lazy {
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.3s ease;
+}
+
+.sh-video-thumb img.sh-lazy-loaded {
+  opacity: 1;
+}
+
+.sh-video-card:hover .sh-video-thumb img {
+  transform: scale(1.04);
+}
+
+.sh-video-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem;
 }
 
 .sh-video-card .sh-tl-footer {
@@ -563,6 +607,10 @@ body .link-secondary:hover {
   position: relative;
   width: 50%;
   padding-bottom: 2.5rem;
+  /* Skip layout and paint for items that are far off screen. The remembered
+     size keeps the scrollbar steady once an item has been rendered once. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
 }
 
 .sh-tl-left {
@@ -629,6 +677,25 @@ body .link-secondary:hover {
   top: 1.35rem;
   border: 10px solid transparent;
   border-right: 10px solid #fff;
+}
+
+/* Cards that lead with a thumbnail, in the timeline and in the video grids:
+   the padding moves to the body so the image reaches the card border. Must
+   stay after .sh-tl-card, which sets the padding these cards drop.
+   The timeline arrow anchors to the bottom so it points at the card's own
+   background rather than at the edge of the image. */
+.sh-tl-card-media {
+  padding: 0;
+}
+
+.sh-tl-left .sh-tl-card-media::after,
+.sh-tl-right .sh-tl-card-media::before {
+  top: auto;
+  bottom: 1.35rem;
+}
+
+.sh-tl-item:hover .sh-video-thumb img {
+  transform: scale(1.04);
 }
 
 .sh-tl-card time {
@@ -868,4 +935,195 @@ body .link-secondary:hover {
   .sh-tl-body      { color: #9a8070; }
 
   .sh-tl-dot { border-color: #110a04; }
+}
+
+/* ── Songbook (Songs index) ── */
+.sh-songbook {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+.sh-songbook-intro {
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8a7466;
+  margin: 0;
+}
+
+.sh-song-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin: 1rem 0 2rem;
+}
+
+.sh-song-jump a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--sh-orange) !important;
+  border: 1px solid rgba(232, 98, 26, 0.3);
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sh-song-jump a:hover {
+  background: var(--sh-orange);
+  color: #fff !important;
+}
+
+.sh-song-letter {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--sh-orange);
+  margin: 2.25rem 0 0.85rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid rgba(232, 98, 26, 0.2);
+  scroll-margin-top: 5rem;
+}
+
+.sh-song {
+  background: #fff;
+  border: 1px solid rgba(232, 98, 26, 0.14);
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.85rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sh-song:hover {
+  box-shadow: 0 6px 24px rgba(232, 98, 26, 0.15);
+  transform: translateY(-2px);
+}
+
+.sh-song-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.7rem;
+}
+
+.sh-song-title a,
+.sh-song-title a:visited {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+.sh-song-count {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--sh-orange);
+  border: 1px solid rgba(232, 98, 26, 0.35);
+  border-radius: 999px;
+  padding: 0.05rem 0.5rem;
+}
+
+.sh-song-performances {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sh-song-performances li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+}
+
+.sh-song-performances time {
+  flex: 0 0 6.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--sh-orange);
+}
+
+.sh-song-performances a,
+.sh-song-performances a:visited {
+  font-size: 0.9rem;
+  color: #444 !important;
+  text-decoration: none !important;
+}
+
+.sh-song-performances a:hover {
+  color: var(--sh-orange) !important;
+  text-decoration: underline !important;
+}
+
+/* ── Song pills (video pages) ── */
+#sh-page-songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0;
+}
+
+.sh-song-pills-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a7466;
+}
+
+.sh-song-pill,
+.sh-song-pill:visited {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff !important;
+  background: var(--sh-orange);
+  border: 1px solid var(--sh-orange);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  text-decoration: none !important;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.sh-song-pill:hover {
+  background: var(--sh-amber);
+  border-color: var(--sh-amber);
+  color: #1c1008 !important;
+}
+
+@media (max-width: 575px) {
+  .sh-song-performances li {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .sh-song-performances time {
+    flex: none;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .sh-song {
+    background: #1f1209;
+    border-color: rgba(232, 98, 26, 0.22);
+  }
+
+  .sh-song-title a,
+  .sh-song-title a:visited { color: #f0e8e0 !important; }
+
+  .sh-song-performances a,
+  .sh-song-performances a:visited { color: #bfa895 !important; }
+  .sh-songbook-intro,
+  .sh-song-pills-label { color: #9a8070; }
 }

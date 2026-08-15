@@ -4,6 +4,7 @@ date = 2017-12-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Fairytale of New York']
+songs = ['Fairytale of New York']
 videos = ['https://youtu.be/blpvhKAbul8']
 [[youtube_videos]]
 video = 'blpvhKAbul8'

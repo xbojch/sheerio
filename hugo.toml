@@ -9,6 +9,11 @@ path = "github.com/willfaught/paige"
         source = 'layouts/.*'
         target = 'css'
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  song = 'songs'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -93,6 +98,10 @@ disable = false # Disable all analytics
         name = 'Videos'
         pageRef = '/videos'
         weight = 30
+    [[menus.main]]
+        name = 'Songs'
+        pageRef = '/songs'
+        weight = 35
     [[menus.main]]
         name = 'Tags'
         pageRef = '/tags'

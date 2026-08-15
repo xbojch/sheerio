@@ -21,6 +21,8 @@ Do not write sensationally. Do not use dashes whenever possible.
    - A clean display title (the raw oEmbed title is fine).
    - Relevant tags: infer 1–3 short tag strings from the people or topics mentioned in the title (e.g. `Taylor Swift`, `Eminem`, `Coldplay`, `Beyoncé`). Use spaces in tags and capitalize first letters when appropriate.
    - Use this tags when relevant to provide consistency ("Live Performance", "Interview", "Fan On Stage", "Fan POV", "Stage Guest").
+   - The songs featured in the video, for the `songs` key. Only list a song when it is actually heard: a live performance, a music video, official audio, or studio/making-of footage of that track. Videos that merely talk about a song (interviews) get no `songs` key at all. List every song for medleys and multi-song sets when the set list is known, in the order they are played.
+   - Use the official song title with its normal capitalisation, and check `content/songs/` (or https://sheerio.online/songs/) for an existing spelling first so performances group together instead of splitting into two entries.
    - DO NOT just copy Youtube titles as SLUG, come up with a short cave man style SLUG preferrably starting with `ed-sheeran-`
 
 5. Format the publish date as `YYYY-MM-DDT08:00:00Z`.
@@ -38,12 +40,15 @@ added_date = TODAY-DATET08:00:00Z
 draft = false
 toc = false
 tags = ['tag1', 'tag2']
+songs = ['Song Title']
 videos = ['https://youtu.be/VIDEO_ID']
 [[youtube_videos]]
 video = 'VIDEO_ID'
 +++
 DESCRIPTION
 ```
+
+   Omit the `songs` line entirely when no song is performed in the video.
 
    The `DESCRIPTION` should be 1–2 sentences written in an enthusiastic, fan-site tone describing what happens in the video. Base it on the title and any context available from the page fetch.
 

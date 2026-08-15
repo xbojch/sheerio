@@ -4,6 +4,7 @@ date = 2022-02-08T08:00:00Z
 draft = false
 toc = false
 tags = ['BRIT Awards', 'Bring Me The Horizon', 'Live Performance', 'TV Appearance']
+songs = ['Bad Habits']
 videos = ['https://youtu.be/HuzlYAMwwJY']
 [[youtube_videos]]
 video = 'HuzlYAMwwJY'

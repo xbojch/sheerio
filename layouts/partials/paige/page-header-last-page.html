@@ -1,0 +1,9 @@
+{{ $page := . }}
+
+{{/* Songs performed in this video, linking to the song's page. */}}
+{{ with $page.GetTerms "songs" }}
+    <p id="sh-page-songs">
+        <span class="sh-song-pills-label">{{ if eq (len .) 1 }}Song{{ else }}Songs{{ end }}</span>
+        {{ range . }}<a class="sh-song-pill" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+    </p>
+{{ end }}

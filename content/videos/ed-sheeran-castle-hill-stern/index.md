@@ -5,6 +5,7 @@ added_date = 2026-08-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Howard Stern', 'Castle on the Hill']
+songs = ['Castle on the Hill']
 videos = ['https://youtu.be/UYgPbU-IT3M']
 [[youtube_videos]]
 video = 'UYgPbU-IT3M'

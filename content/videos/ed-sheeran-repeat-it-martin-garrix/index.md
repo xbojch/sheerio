@@ -4,6 +4,7 @@ date = 2026-05-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Martin Garrix', 'Music Video']
+songs = ['Repeat It']
 videos = ['https://youtu.be/Sf9NZF5qBak']
 [[youtube_videos]]
 video = 'Sf9NZF5qBak'

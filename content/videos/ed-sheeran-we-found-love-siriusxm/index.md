@@ -4,6 +4,7 @@ date = 2012-10-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Rihanna', 'Live Performance']
+songs = ['We Found Love']
 videos = ['https://youtu.be/Lyv_u4pspTY']
 [[youtube_videos]]
 video = 'Lyv_u4pspTY'

@@ -4,6 +4,7 @@ date = 2024-09-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Chris Martin', 'Live Performance', 'Concert']
+songs = ['Viva la Vida']
 videos = ['https://youtu.be/Ba8R9PHItCY']
 [[youtube_videos]]
 video = 'Ba8R9PHItCY'

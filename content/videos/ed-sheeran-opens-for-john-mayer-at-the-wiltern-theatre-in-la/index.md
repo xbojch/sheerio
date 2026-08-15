@@ -4,6 +4,7 @@ date = 2023-09-19T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Live Performance', 'Concert']
+songs = ['Slow Dancing in a Burning Room']
 videos = ['https://youtu.be/sSnkNHkWROk','https://youtu.be/pYDGRTfZzU0']
 [[youtube_videos]]
 video = 'sSnkNHkWROk'

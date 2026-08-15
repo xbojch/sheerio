@@ -4,6 +4,7 @@ date = 2022-03-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Luke Combs', 'Live Performance', 'Concert']
+songs = ['Dive']
 videos = ['https://youtu.be/StWygkPN92E']
 [[youtube_videos]]
 video = 'StWygkPN92E'

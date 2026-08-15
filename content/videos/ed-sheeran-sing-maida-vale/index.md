@@ -4,6 +4,7 @@ date = 2014-05-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Zane Lowe']
+songs = ['Sing']
 videos = ['https://youtu.be/8AjW1krVE3A']
 [[youtube_videos]]
 video = '8AjW1krVE3A'

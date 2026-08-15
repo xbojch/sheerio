@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $page := . }}
+
+{{/* Songs, A–Z. Each song lists every video it is performed in, oldest first. */}}
+{{ $songs := $page.Pages.ByTitle }}
+{{ $letters := slice }}
+{{ range $songs }}
+  {{ $letter := substr .LinkTitle 0 1 | upper }}
+  {{ if not (in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" $letter) }}{{ $letter = "0-9" }}{{ end }}
+  {{ if not (in $letters $letter) }}{{ $letters = $letters | append $letter }}{{ end }}
+{{ end }}
+
+<div class="paige-list paige-kind-{{ $page.Kind }}">
+    {{ partial "paige/page.html" $page }}
+
+    <div class="sh-songbook">
+        <p class="sh-songbook-intro">
+            {{ len $songs }} songs across {{ len (where site.RegularPages "Params.songs" "!=" nil) }} videos.
+        </p>
+
+        <nav class="sh-song-jump" aria-label="Jump to letter">
+            {{ range $letters }}<a href="#songs-{{ . | urlize }}">{{ . }}</a>{{ end }}
+        </nav>
+
+        {{ $current := "" }}
+        {{ range $songs }}
+            {{ $letter := substr .LinkTitle 0 1 | upper }}
+            {{ if not (in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" $letter) }}{{ $letter = "0-9" }}{{ end }}
+            {{ if ne $letter $current }}
+                {{ $current = $letter }}
+                <h2 class="sh-song-letter" id="songs-{{ $letter | urlize }}">{{ $letter }}</h2>
+            {{ end }}
+
+            <section class="sh-song">
+                <h3 class="sh-song-title">
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    <span class="sh-song-count">{{ len .Pages }}</span>
+                </h3>
+                <ol class="sh-song-performances">
+                    {{ range .Pages.ByDate }}
+                    <li>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    </li>
+                    {{ end }}
+                </ol>
+            </section>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

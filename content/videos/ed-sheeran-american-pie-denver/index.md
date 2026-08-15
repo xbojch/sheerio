@@ -5,6 +5,7 @@ added_date = 2026-07-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Fan POV', 'American Pie']
+songs = ['American Pie']
 videos = ['https://youtu.be/njv_TjFQ2Cs']
 [[youtube_videos]]
 video = 'njv_TjFQ2Cs'

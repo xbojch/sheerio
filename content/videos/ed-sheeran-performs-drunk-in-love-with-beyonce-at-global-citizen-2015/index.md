@@ -4,6 +4,7 @@ date = 2015-09-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Beyoncé', 'Live Performance', 'Concert']
+songs = ['Drunk in Love']
 videos = ['https://youtu.be/YjXF_n_0ebk']
 [[youtube_videos]]
 video = 'YjXF_n_0ebk'

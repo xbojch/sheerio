@@ -4,6 +4,7 @@ date = 2023-12-09T08:00:00Z
 draft = false
 toc = false
 tags = ['The Darkness', 'Justin Hawkins', 'Live Performance', 'Concert']
+songs = ['Love Is Only a Feeling']
 videos = ['https://youtu.be/CzhJ4y1iFgg','https://youtu.be/ndSncq0qzi0']
 [[youtube_videos]]
 video = 'CzhJ4y1iFgg'

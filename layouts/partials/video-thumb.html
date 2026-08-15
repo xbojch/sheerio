@@ -1,0 +1,14 @@
+{{ $page := . }}
+
+{{/* The video's YouTube thumbnail, the same image used as its share image.
+     The source lives in data-src so the browser fetches nothing until the card
+     scrolls into view. See the lazy-image observer in body-last.html. */}}
+{{ with $page.Params.youtube_videos }}
+    {{ with (index . 0).video }}
+        {{ $src := printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" . }}
+        <a class="sh-video-thumb" href="{{ $page.RelPermalink }}" tabindex="-1" aria-hidden="true">
+            <img class="sh-lazy" data-src="{{ $src }}" alt="" width="480" height="360" decoding="async">
+            <noscript><img src="{{ $src }}" alt="" width="480" height="360" loading="lazy"></noscript>
+        </a>
+    {{ end }}
+{{ end }}

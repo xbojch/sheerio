@@ -4,6 +4,7 @@ date = 2011-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Jools Holland', 'Live Performance', 'TV Appearance', 'Early years']
+songs = ['The A Team']
 videos = ['https://youtu.be/Myv13ziyIBc']
 [[youtube_videos]]
 video = 'Myv13ziyIBc'

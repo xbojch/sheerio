@@ -5,6 +5,7 @@ added_date = 2026-06-23T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Acoustic']
+songs = ['Wild Mountain Thyme']
 videos = ['https://youtu.be/_Z_kwFPyBlw']
 [[youtube_videos]]
 video = '_Z_kwFPyBlw'

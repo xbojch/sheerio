@@ -4,6 +4,7 @@ date = 2021-03-24T08:00:00Z
 draft = false
 toc = false
 tags = ['Visiting Hours', 'Michael Gudinski', 'Tribute', 'Live Performance']
+songs = ['Visiting Hours']
 videos = ['https://youtu.be/KjkTaWty0iM']
 [[youtube_videos]]
 video = 'KjkTaWty0iM'

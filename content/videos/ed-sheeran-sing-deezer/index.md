@@ -5,6 +5,7 @@ added_date = 2026-07-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Acoustic']
+songs = ['Sing']
 videos = ['https://youtu.be/ZUSnCzG3qrY']
 [[youtube_videos]]
 video = 'ZUSnCzG3qrY'

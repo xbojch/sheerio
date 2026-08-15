@@ -4,6 +4,7 @@ date = 2023-08-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Macklemore', 'Thrift Shop', 'Live Performance']
+songs = ['Thrift Shop']
 videos = ['https://youtu.be/hXLdxGb6vsg']
 [[youtube_videos]]
 video = 'hXLdxGb6vsg'

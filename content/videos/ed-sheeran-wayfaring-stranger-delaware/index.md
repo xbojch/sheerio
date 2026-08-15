@@ -4,6 +4,7 @@ date = 2013-09-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Wayfaring Stranger']
+songs = ['Wayfaring Stranger']
 videos = ['https://youtu.be/sbGPwEytz98']
 [[youtube_videos]]
 video = 'sbGPwEytz98'

@@ -4,6 +4,7 @@ date = 2025-08-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Lukas Graham', 'Live Performance', 'Stage Guest']
+songs = ['7 Years']
 videos = ['https://youtu.be/Z5FXV7JdoU0']
 [[youtube_videos]]
 video = 'Z5FXV7JdoU0'

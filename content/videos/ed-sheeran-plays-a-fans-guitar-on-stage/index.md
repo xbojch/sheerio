@@ -4,6 +4,7 @@ date = 2015-04-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise', 'Live Performance', 'Concert']
+songs = ['The Hills of Aberfeldy']
 videos = ['https://youtu.be/F77KEgbImfw']
 [[youtube_videos]]
 video = 'F77KEgbImfw'

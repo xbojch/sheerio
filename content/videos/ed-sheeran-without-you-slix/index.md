@@ -5,6 +5,7 @@ added_date = 2026-07-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Slix']
+songs = ['Without You']
 videos = ['https://youtu.be/dSvpPz08NF0']
 [[youtube_videos]]
 video = 'dSvpPz08NF0'

@@ -4,6 +4,7 @@ date = 2011-01-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Street Performing', 'Live Performance']
+songs = ["You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/GWZmD5mMZWc']
 [[youtube_videos]]
 video = 'GWZmD5mMZWc'

@@ -4,6 +4,7 @@ date = 2024-07-12T08:00:00Z
 draft = false
 toc = false
 tags = ['Calum Scott', 'Live Performance', 'Stage Guest']
+songs = ['You Are the Reason']
 videos = ['https://youtu.be/KCuU9oIArPI']
 [[youtube_videos]]
 video = 'KCuU9oIArPI'

@@ -4,6 +4,7 @@ date = 2013-08-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Oasis', 'Live Performance', 'Cover']
+songs = ['Wonderwall']
 videos = ['https://youtu.be/l07cwNvZni8']
 [[youtube_videos]]
 video = 'l07cwNvZni8'

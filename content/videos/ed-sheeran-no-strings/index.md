@@ -5,6 +5,7 @@ added_date = 2026-07-07T08:00:00Z
 draft = false
 toc = false
 tags = ['No Strings', 'Official Video', 'Subtract']
+songs = ['No Strings']
 videos = ['https://youtu.be/juwh4K2Dvrk']
 [[youtube_videos]]
 video = 'juwh4K2Dvrk'

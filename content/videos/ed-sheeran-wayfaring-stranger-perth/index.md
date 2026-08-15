@@ -5,6 +5,7 @@ added_date = 2026-06-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Cover', 'Fan POV']
+songs = ['Wayfaring Stranger']
 videos = ['https://youtu.be/TfGb5nPNF4g']
 [[youtube_videos]]
 video = 'TfGb5nPNF4g'

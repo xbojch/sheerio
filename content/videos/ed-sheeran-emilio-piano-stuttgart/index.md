@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Street Performing', 'Emilio Piano']
+songs = ['Sapphire', 'Perfect']
 videos = ['https://youtu.be/Q5FJf9JJmP0', 'https://youtu.be/KuQkEs8vIko']
 [[youtube_videos]]
 video = 'Q5FJf9JJmP0'

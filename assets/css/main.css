@@ -603,14 +603,13 @@ body .link-secondary:hover {
 }
 
 /* Items */
+/* No content-visibility here: it implies paint containment, which clips the
+   contents to the padding box and cuts off the dot and the card arrow, both
+   of which sit outside the item on purpose. */
 .sh-tl-item {
   position: relative;
   width: 50%;
   padding-bottom: 2.5rem;
-  /* Skip layout and paint for items that are far off screen. The remembered
-     size keeps the scrollbar steady once an item has been rendered once. */
-  content-visibility: auto;
-  contain-intrinsic-size: auto 420px;
 }
 
 .sh-tl-left {

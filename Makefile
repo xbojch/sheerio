@@ -1,4 +1,6 @@
-.PHONY: build rebuild server upload auth next delete
+.SUFFIXES:
+
+.PHONY: build rebuild server auth next delete
 
 CREDENTIALS := scripts/client_secret_442268207105-l7gk3qpdv92it4ns4ua6q7pb09pcdbnl.apps.googleusercontent.com.json
 TOKEN_FILE := scripts/.youtube_token
@@ -13,11 +15,6 @@ rebuild:
 
 server:
 	hugo server
-
-upload:
-	yarn build
-	hugo build --cleanDestinationDir
-	rsync -avz --delete --progress public/ dh_eckgii@pdx1-shared-a1-28.dreamhost.com:/home/dh_eckgii/sheerio.online/
 
 auth:
 	@./scripts/oauth2l fetch --credentials $(CREDENTIALS) --scope youtube | grep '^ya29\.' > $(TOKEN_FILE)

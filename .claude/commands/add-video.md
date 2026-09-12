@@ -6,6 +6,20 @@ Add a new video entry to `content/videos/` given a YouTube video ID.
 
 Do not write sensationally. Do not use dashes whenever possible.
 
+## Source check
+
+Before creating anything, confirm the video is genuine footage. Drama farm and AI
+generated channels reupload fabricated celebrity incidents, and an entry here states
+the event as fact with a `date`.
+
+Treat as suspect: a disclaimer in the description saying scenes may be dramatized,
+edited or based on online reports; a title describing a dramatic incident with no
+coverage anywhere else; an unofficial channel with a generic news style name; a hashtag
+wall such as `#CelebrityDrama #DramaAlert #BreakingNews`.
+
+If the video looks fabricated, do not create the entry. Report what you found and let
+the user decide.
+
 ## Steps
 
 1. Check if the video with this ID was already added. Do not add it twice. Also point out if a video with same date exists, maybe we should merge them.

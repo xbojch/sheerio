@@ -13,3 +13,4 @@ upload.sh
 !.yarn/releases
 !.yarn/versions
 .pnp.*
+.wrangler/

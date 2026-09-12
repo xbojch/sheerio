@@ -5,6 +5,7 @@ added_date = 2026-07-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Compilation']
+songs = ['Tenerife Sea', 'Give Me Love', 'I See Fire', 'The Parting Glass']
 videos = ['https://youtu.be/2SbZSmJgO-M']
 [[youtube_videos]]
 video = '2SbZSmJgO-M'

@@ -4,6 +4,7 @@ date = 2023-07-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']
+songs = ['The Hills of Aberfeldy', 'Eyes Closed']
 videos = ['https://youtu.be/enn0KQ7Q8f8']
 [[youtube_videos]]
 video = 'enn0KQ7Q8f8'

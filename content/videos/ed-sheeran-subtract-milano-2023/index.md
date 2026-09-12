@@ -5,6 +5,7 @@ added_date = 2026-06-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Subtract']
+songs = ['Boat', 'Salt Water', 'Eyes Closed', 'Life Goes On', 'End of Youth', 'Colourblind', 'Sycamore', 'No Strings', 'The Hills of Aberfeldy', 'Perfect', 'Bad Habits', 'Shivers', 'Thinking Out Loud', 'Shape of You', 'The Parting Glass', 'Afterglow']
 videos = ['https://youtu.be/BLjs2dLiUrg']
 [[youtube_videos]]
 video = 'BLjs2dLiUrg'

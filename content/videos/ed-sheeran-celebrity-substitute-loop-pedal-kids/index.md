@@ -4,6 +4,7 @@ date = 2025-10-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Celebrity Substitute', 'Live Performance', 'Loop Pedal']
+songs = ['Photograph']
 videos = ['https://youtu.be/hlrPZHJj50Q']
 [[youtube_videos]]
 video = 'hlrPZHJj50Q'

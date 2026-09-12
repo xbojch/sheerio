@@ -4,6 +4,7 @@ date = 2026-05-23T08:00:00Z
 draft = false
 toc = false
 tags = ['Martin Garrix', 'Live Performance']
+songs = ['Repeat It', 'Shape of You', 'Photograph', 'Bloodstream', 'Galway Girl', 'Shivers', 'Sapphire', 'Perfect', 'Bad Habits', 'Castle on the Hill', 'Beautiful People', 'Celestial']
 videos = ['https://youtu.be/p-nL0FjuCPs']
 [[youtube_videos]]
 video = 'p-nL0FjuCPs'

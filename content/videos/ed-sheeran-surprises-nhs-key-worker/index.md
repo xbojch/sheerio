@@ -4,6 +4,7 @@ date = 2021-06-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']
+songs = ['Bad Habits']
 videos = ['https://youtu.be/wvPXcvAeodk']
 [[youtube_videos]]
 video = 'wvPXcvAeodk'

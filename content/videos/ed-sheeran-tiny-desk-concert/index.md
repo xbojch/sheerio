@@ -4,6 +4,7 @@ date = 2025-09-09T08:00:00Z
 draft = false
 toc = false
 tags = ['NPR', 'Tiny Desk', 'Live Performance', 'Acoustic']
+songs = ['Sapphire', 'A Little More', 'Camera', 'Photograph', 'Azizam']
 videos = ['https://youtu.be/Q2CW9TZ81wo']
 [[youtube_videos]]
 video = 'Q2CW9TZ81wo'

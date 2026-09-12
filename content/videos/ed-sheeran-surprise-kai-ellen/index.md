@@ -4,6 +4,7 @@ date = 2017-02-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Ellen', 'Fan Surprise', 'TV Appearance']
+songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/3CjFgSDWi1I']
 [[youtube_videos]]
 video = '3CjFgSDWi1I'

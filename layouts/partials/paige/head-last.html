@@ -16,14 +16,13 @@
 {{/* ── Canonical URL ── */}}
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{/* ── Meta description ── */}}
+{{/* Meta description is emitted once, by paige/metas.html. */}}
 {{ $desc := "" }}
 {{ if .Description }}
     {{ $desc = .Description }}
 {{ else if .Summary }}
     {{ $desc = .Summary | plainify | truncate 160 "…" }}
 {{ end }}
-{{ with $desc }}<meta name="description" content="{{ . }}">{{ end }}
 
 {{/* ── WebSite schema (home page only) ── */}}
 {{ if .IsHome }}

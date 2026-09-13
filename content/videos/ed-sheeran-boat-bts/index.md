@@ -4,7 +4,7 @@ date = 2023-06-20T08:00:00Z
 added_date = 2026-07-01T08:00:00Z
 draft = false
 toc = false
-tags = ['Boat', 'Behind The Scenes']
+tags = ['Behind The Scenes']
 songs = ['Boat']
 videos = ['https://youtu.be/o5_k4bHPqoU']
 [[youtube_videos]]

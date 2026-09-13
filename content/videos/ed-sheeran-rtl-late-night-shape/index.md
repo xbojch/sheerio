@@ -4,7 +4,7 @@ date = 2017-02-24T08:00:00Z
 added_date = 2026-08-15T08:00:00Z
 draft = false
 toc = false
-tags = ['Shape of You', 'Live Performance', 'RTL Late Night']
+tags = ['Live Performance', 'RTL Late Night']
 songs = ['Shape of You']
 videos = ['https://youtu.be/3mSsQQkMpUw']
 [[youtube_videos]]

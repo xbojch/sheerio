@@ -3,7 +3,7 @@ title = 'Ed Sheeran answers fan questions with British GQ'
 date = 2021-10-01T08:00:00Z
 draft = false
 toc = false
-tags = ['Interview', 'British GQ']
+tags = ['Interview', 'GQ']
 videos = ['https://youtu.be/zZPk4Zr1MgA']
 [[youtube_videos]]
 video = 'zZPk4Zr1MgA'

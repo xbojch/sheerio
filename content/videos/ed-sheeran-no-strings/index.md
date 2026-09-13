@@ -4,7 +4,7 @@ date = 2023-05-05T08:00:00Z
 added_date = 2026-07-07T08:00:00Z
 draft = false
 toc = false
-tags = ['No Strings', 'Official Video', 'Subtract']
+tags = ['Music Video', 'Subtract']
 songs = ['No Strings']
 videos = ['https://youtu.be/juwh4K2Dvrk']
 [[youtube_videos]]

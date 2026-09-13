@@ -4,7 +4,7 @@ date = 2025-05-19T08:00:00Z
 added_date = 2026-08-15T08:00:00Z
 draft = false
 toc = false
-tags = ['Old Phone', 'Music Video', 'Play']
+tags = ['Music Video', 'Play']
 songs = ['Old Phone']
 videos = ['https://youtu.be/f9ZYzStCtfE']
 [[youtube_videos]]

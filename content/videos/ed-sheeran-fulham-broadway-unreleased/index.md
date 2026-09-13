@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs Fulham Broadway an unreleased song'
 date = 2008-01-01T08:00:00Z
 draft = false
 toc = false
-tags = ['Unreleased', 'Early years', 'MySpace']
+tags = ['Unreleased', 'Early Years', 'MySpace']
 songs = ['Fulham Broadway']
 videos = ['https://youtu.be/laAnWCiMp0k']
 [[youtube_videos]]

@@ -3,7 +3,7 @@ title = 'Thinking Out Loud on The Late Late Show'
 date = 2014-10-03T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Thinking Out Loud']
+tags = ['Live Performance']
 songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/ADZl0SzrDNM']
 [[youtube_videos]]

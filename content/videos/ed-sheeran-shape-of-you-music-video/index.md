@@ -4,7 +4,7 @@ date = 2017-01-30T08:00:00Z
 added_date = 2026-08-31T08:00:00Z
 draft = false
 toc = false
-tags = ['Shape of You', 'Music Video', 'Divide']
+tags = ['Music Video', 'Divide']
 songs = ['Shape of You']
 videos = ['https://youtu.be/JGwWNGJdvx8']
 [[youtube_videos]]

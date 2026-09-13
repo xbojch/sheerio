@@ -4,7 +4,7 @@ date = 2016-03-26T08:00:00Z
 added_date = 2026-07-05T08:00:00Z
 draft = false
 toc = false
-tags = ['Gary Scott', 'American Pie']
+tags = ['Gary Scott']
 songs = ['American Pie']
 videos = ['https://youtu.be/CBF9eFIDuT8']
 [[youtube_videos]]

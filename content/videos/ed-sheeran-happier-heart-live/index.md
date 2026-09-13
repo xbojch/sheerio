@@ -3,7 +3,7 @@ title = 'Ed Sheeran - Happier (Heart Live)'
 date = 2018-12-20T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Happier']
+tags = ['Live Performance']
 songs = ['Happier']
 videos = ['https://youtu.be/Mchu3f08d4w']
 [[youtube_videos]]

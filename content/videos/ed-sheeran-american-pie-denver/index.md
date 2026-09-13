@@ -4,7 +4,7 @@ date = 2026-07-04T08:00:00Z
 added_date = 2026-07-07T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Fan POV', 'American Pie']
+tags = ['Live Performance', 'Fan POV']
 songs = ['American Pie']
 videos = ['https://youtu.be/njv_TjFQ2Cs']
 [[youtube_videos]]

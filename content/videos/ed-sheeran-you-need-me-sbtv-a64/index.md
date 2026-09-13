@@ -3,7 +3,7 @@ title = "You Need Me, I Don't Need You, Acoustic on SBTV"
 date = 2010-02-28T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Acoustic', 'Early years']
+tags = ['Live Performance', 'Acoustic', 'Early Years']
 songs = ["You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/temYymFGSEc']
 [[youtube_videos]]

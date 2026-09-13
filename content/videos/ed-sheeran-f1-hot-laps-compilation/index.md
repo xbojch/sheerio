@@ -3,7 +3,7 @@ title = 'Ed Sheeran in F1 Hot Laps Compilation'
 date = 2025-06-16T08:00:00Z
 draft = false
 toc = false
-tags = ['f1', 'formula1']
+tags = ['F1']
 videos = ['https://youtu.be/TNPK6wBLNdU']
 [[youtube_videos]]
 video = 'TNPK6wBLNdU'

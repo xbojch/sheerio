@@ -3,7 +3,7 @@ title = 'Wayfaring Stranger at University of Delaware'
 date = 2013-09-19T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Wayfaring Stranger']
+tags = ['Live Performance']
 songs = ['Wayfaring Stranger']
 videos = ['https://youtu.be/sbGPwEytz98']
 [[youtube_videos]]

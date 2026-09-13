@@ -3,7 +3,7 @@ title = 'Ed Sheeran performs "The A Team" for the first time on "Later... with J
 date = 2011-04-26T08:00:00Z
 draft = false
 toc = false
-tags = ['Jools Holland', 'Live Performance', 'TV Appearance', 'Early years']
+tags = ['Jools Holland', 'Live Performance', 'TV Appearance', 'Early Years']
 songs = ['The A Team']
 videos = ['https://youtu.be/Myv13ziyIBc']
 [[youtube_videos]]

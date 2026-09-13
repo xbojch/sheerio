@@ -3,7 +3,7 @@ title = "Ed Sheeran - Making of A Little More"
 date = 2025-08-19T08:00:00Z
 draft = false
 toc = false
-tags = ['A Little More', 'Behind The Scenes', 'Making of']
+tags = ['Behind The Scenes', 'Making of']
 songs = ['A Little More']
 videos = ['https://youtu.be/utjZbJ9iQec']
 [[youtube_videos]]

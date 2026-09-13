@@ -3,7 +3,7 @@ title = 'Tour Diary 2011'
 date = 2011-01-01T08:00:00Z
 draft = false
 toc = false
-tags = ['Tour Diary', 'Behind the Scenes']
+tags = ['Tour Diary', 'Behind The Scenes']
 videos = ['https://youtu.be/JR5PM5diRxM','https://youtu.be/uqOmD7vEDHE','https://youtu.be/aCOHFIBrWkg']
 [[youtube_videos]]
 video = 'JR5PM5diRxM'

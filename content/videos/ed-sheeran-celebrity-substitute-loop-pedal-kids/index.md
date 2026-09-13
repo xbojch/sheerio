@@ -3,7 +3,7 @@ title = 'Ed Sheeran records a new song with kids using his loop pedal'
 date = 2025-10-22T08:00:00Z
 draft = false
 toc = false
-tags = ['Celebrity Substitute', 'Live Performance', 'Loop Pedal']
+tags = ['Celebrity Substitute', 'Live Performance', 'Loop Station']
 songs = ['Photograph']
 videos = ['https://youtu.be/hlrPZHJj50Q']
 [[youtube_videos]]

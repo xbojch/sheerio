@@ -4,7 +4,7 @@ date = 2011-11-01T08:00:00Z
 added_date = 2026-07-31T08:00:00Z
 draft = false
 toc = false
-tags = ['Lego House', 'Behind The Scenes', 'Rupert Grint']
+tags = ['Behind The Scenes', 'Rupert Grint']
 songs = ['Lego House']
 videos = ['https://youtu.be/Px6nTLFD6do']
 [[youtube_videos]]

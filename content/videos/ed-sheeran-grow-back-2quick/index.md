@@ -3,7 +3,7 @@ title = 'Ed Sheeran Performs Grow Back Live at 2Quick'
 date = 2007-11-08T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Grow Back']
+tags = ['Live Performance']
 songs = ['Grow Back']
 videos = ['https://youtu.be/a784RCt2Zus']
 [[youtube_videos]]

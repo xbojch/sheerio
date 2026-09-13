@@ -4,7 +4,7 @@ date = 2008-01-01T08:00:00Z
 added_date = 2026-07-10T08:00:00Z
 draft = false
 toc = false
-tags = ['Slix', 'Ruff Sqwad', 'Early years', 'Grime']
+tags = ['Slix', 'Ruff Sqwad', 'Early Years', 'Grime']
 songs = ['Without You']
 videos = ['https://youtu.be/dSvpPz08NF0']
 [[youtube_videos]]

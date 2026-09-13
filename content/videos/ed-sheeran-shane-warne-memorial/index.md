@@ -3,7 +3,7 @@ title = 'Thinking Out Loud at Shane Warne Memorial'
 date = 2022-03-30T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Thinking Out Loud', 'Shane Warne']
+tags = ['Live Performance', 'Shane Warne']
 songs = ['Thinking Out Loud']
 videos = ['https://youtu.be/M24JlbMv8So']
 [[youtube_videos]]

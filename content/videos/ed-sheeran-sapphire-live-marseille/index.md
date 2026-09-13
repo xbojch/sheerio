@@ -3,7 +3,7 @@ title = 'Sapphire Live from Marseille'
 date = 2025-06-24T08:00:00Z
 draft = false
 toc = false
-tags = ['Sapphire', 'Live Performance', 'Concert']
+tags = ['Live Performance', 'Concert']
 songs = ['Sapphire']
 videos = ['https://youtu.be/3GvjV7I-DEk']
 [[youtube_videos]]

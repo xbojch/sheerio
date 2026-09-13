@@ -3,7 +3,7 @@ title = 'Camera Live in Stockholm'
 date = 2025-08-22T08:00:00Z
 draft = false
 toc = false
-tags = ['Camera', 'Live Performance', 'Concert', 'Fan POV', 'Stockholm']
+tags = ['Live Performance', 'Concert', 'Fan POV', 'Stockholm']
 songs = ['Camera']
 videos = ['https://youtu.be/2_u9-R0--yU']
 [[youtube_videos]]

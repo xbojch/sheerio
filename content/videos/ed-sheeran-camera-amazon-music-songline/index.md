@@ -3,7 +3,7 @@ title = 'Camera for Amazon Music Songline'
 date = 2025-09-15T08:00:00Z
 draft = false
 toc = false
-tags = ['Camera', 'Live Performance', 'Amazon Music']
+tags = ['Live Performance', 'Amazon Music']
 songs = ['Camera']
 videos = ['https://youtu.be/-hZH84Ajv2w']
 [[youtube_videos]]

@@ -4,7 +4,7 @@ date = 2021-10-28T08:00:00Z
 added_date = 2026-07-03T08:00:00Z
 draft = false
 toc = false
-tags = ['Fans']
+tags = ['Fan Surprise']
 videos = ['https://youtu.be/THXHcBXZGD8']
 [[youtube_videos]]
 video = 'THXHcBXZGD8'

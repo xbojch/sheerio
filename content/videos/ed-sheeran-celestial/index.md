@@ -3,7 +3,7 @@ title = 'Ed Sheeran x Pokémon - Celestial'
 date = 2022-09-29T08:00:00Z
 draft = false
 toc = false
-tags = ['Pokémon', 'Official Video']
+tags = ['Pokémon', 'Music Video']
 songs = ['Celestial']
 videos = ['https://youtu.be/23g5HBOg3Ic']
 [[youtube_videos]]

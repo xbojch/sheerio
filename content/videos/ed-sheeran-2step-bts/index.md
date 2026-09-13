@@ -4,7 +4,7 @@ date = 2022-04-26T08:00:00Z
 added_date = 2026-07-01T08:00:00Z
 draft = false
 toc = false
-tags = ['Lil Baby', 'Behind the Scenes']
+tags = ['Lil Baby', 'Behind The Scenes']
 songs = ['2step']
 videos = ['https://youtu.be/vBPFdmotU_4']
 [[youtube_videos]]

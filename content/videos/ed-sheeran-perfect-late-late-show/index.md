@@ -3,7 +3,7 @@ title = 'Perfect on The Late Late Show'
 date = 2017-12-15T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'Perfect']
+tags = ['Live Performance']
 songs = ['Perfect']
 videos = ['https://youtu.be/e1r3byC868I']
 [[youtube_videos]]

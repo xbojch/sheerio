@@ -4,7 +4,7 @@ date = 2017-03-07T08:00:00Z
 added_date = 2026-08-21T08:00:00Z
 draft = false
 toc = false
-tags = ['iHeartRadio', 'NY', 'Live Performance', 'Divide']
+tags = ['iHeartRadio', 'New York', 'Live Performance', 'Divide']
 songs = ['Shape of You']
 videos = ['https://youtu.be/ocPa8w0UHks']
 [[youtube_videos]]

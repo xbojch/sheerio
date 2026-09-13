@@ -3,7 +3,7 @@ title = 'Ed Sheeran Breakout Story'
 date = 2025-02-18T08:00:00Z
 draft = false
 toc = false
-tags = ['Documentary', 'Early Career']
+tags = ['Documentary', 'Early Years']
 videos = ['https://youtu.be/cwR0MOU1aDE']
 [[youtube_videos]]
 video = 'cwR0MOU1aDE'

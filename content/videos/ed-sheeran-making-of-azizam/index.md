@@ -3,7 +3,7 @@ title = 'Making of Azizam'
 date = 2025-04-02T08:00:00Z
 draft = false
 toc = false
-tags = ['Azizam', 'Studio', 'Behind The Scenes']
+tags = ['Studio', 'Behind The Scenes']
 songs = ['Azizam']
 videos = ['https://youtu.be/ffnpjr8BsNo']
 [[youtube_videos]]

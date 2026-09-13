@@ -1,6 +1,6 @@
 +++
 title = 'Full Warm Up Show in Dublin'
-date = 2025-12-16T08:00:00Z
+date = 2025-12-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']

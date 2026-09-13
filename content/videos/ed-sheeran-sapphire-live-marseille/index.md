@@ -1,6 +1,6 @@
 +++
 title = 'Sapphire Live from Marseille'
-date = 2025-06-24T08:00:00Z
+date = 2025-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Concert']

@@ -7,13 +7,35 @@
 {{ $description := cond $page.IsHome ($page.Description | default ($page.Param "paige.site.description")) $page.Description | markdownify | plainify | htmlUnescape }}
 {{ $keywords := partial "paige/func-keywords.html" $page }}
 
-{{/* Fall back to the page summary, then the site description, when no explicit description is set. */}}
+{{/* Fall back to the page summary, then a generated description for taxonomy
+     term pages (songs and tags have no body text of their own), then the site
+     description, when no explicit description is set. */}}
 {{ if not $description }}
     {{ with $page.Summary }}
         {{ $description = . | plainify | htmlUnescape | truncate 200 "…" }}
-    {{ else }}
-        {{ $description = site.Params.description | plainify | htmlUnescape }}
     {{ end }}
+{{ end }}
+
+{{ if and (not $description) (eq $page.Kind "term") }}
+    {{ $term := $page.LinkTitle | markdownify | plainify | htmlUnescape }}
+    {{ $n := len $page.Pages }}
+    {{ if eq $page.Data.Plural "songs" }}
+        {{ if eq $n 1 }}
+            {{ $description = printf "The one Ed Sheeran performance of %s collected on Sheerio Online — a fan-curated archive of live shows, acoustic sessions and TV appearances." $term }}
+        {{ else }}
+            {{ $description = printf "%d Ed Sheeran performances of %s, oldest first — live shows, acoustic sessions, TV appearances and studio takes, collected on Sheerio Online." $n $term }}
+        {{ end }}
+    {{ else }}
+        {{ if eq $n 1 }}
+            {{ $description = printf "One Ed Sheeran video tagged %s on Sheerio Online — a fan-curated archive of performances, interviews and surprise appearances." $term }}
+        {{ else }}
+            {{ $description = printf "%d Ed Sheeran videos tagged %s on Sheerio Online — a fan-curated archive of performances, interviews and surprise appearances." $n $term }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if not $description }}
+    {{ $description = site.Params.description | plainify | htmlUnescape }}
 {{ end }}
 {{ $description = $description | chomp }}
 

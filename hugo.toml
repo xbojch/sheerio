@@ -36,6 +36,9 @@ title = "" # Site title. Appears above the menu, above the site description, if 
 style = "" # CSS included at the end of the stylesheet, before style-last.css
 
 [params]
+    # Last-resort meta description, for any page with no description, no summary
+    # and no generated one (see layouts/partials/paige/metas.html).
+    description = "Sheerio Online is a fan-curated archive of the best Ed Sheeran videos — live performances, surprise appearances, collaborations and interviews."
     # Default social-share (Open Graph / Twitter) image, used for every page
     # that doesn't supply its own (individual video pages use their YouTube thumbnail).
     images = ["images/sheerio-guitar.png"]

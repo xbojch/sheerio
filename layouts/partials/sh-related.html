@@ -1,0 +1,103 @@
+{{- /*
+    Related videos for a single video page.
+
+    Ranking is IDF-style: a term shared with few other videos is a strong signal,
+    a term shared with many is a weak one. That means "John Mayer" (7 videos)
+    outranks "Live Performance" (165) without maintaining a list of which tags are
+    format labels and which are entities — the counts sort it out on their own.
+
+    Songs carry a higher base weight than tags: two videos of the same song are
+    related in a way two videos sharing a venue are not.
+
+    Time proximity is added last and is small enough to act only as a tiebreaker.
+    It matters for videos whose only link is a broad tag: among a hundred equally
+    weighted interviews, the nearest ones in time are the better guess.
+
+    Videos that match nothing at all are padded with their nearest neighbours in
+    time, so no video page is ever a dead end.
+*/ -}}
+
+{{- $page := . -}}
+{{- $limit := 6 -}}
+
+{{- $weights := dict -}}
+{{- $mine := slice -}}
+{{- $candidates := slice -}}
+
+{{- range $taxonomy, $base := (dict "songs" 1000.0 "tags" 300.0) -}}
+    {{- range $term := $page.GetTerms $taxonomy -}}
+        {{- $weights = merge $weights (dict $term.RelPermalink (div $base (len $term.Pages))) -}}
+        {{- $mine = $mine | append $term.RelPermalink -}}
+        {{- range $term.Pages -}}
+            {{- if ne .RelPermalink $page.RelPermalink -}}
+                {{- $candidates = $candidates | append . -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $scored := slice -}}
+{{- range $candidate := ($candidates | uniq) -}}
+    {{- $songScore := 0.0 -}}
+    {{- $tagScore := 0.0 -}}
+    {{- range $term := $candidate.GetTerms "songs" -}}
+        {{- if in $mine $term.RelPermalink -}}
+            {{- $songScore = add $songScore (index $weights $term.RelPermalink) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- range $term := $candidate.GetTerms "tags" -}}
+        {{- if in $mine $term.RelPermalink -}}
+            {{- $tagScore = add $tagScore (index $weights $term.RelPermalink) -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- /* Damp the song score by how many songs the candidate carries. Matching
+           one of a full concert's twenty songs says far less than matching the
+           only song on a single-performance clip. Tags are left alone: they run
+           one to five per video either way, and normalising them just rewards
+           thin tagging. */ -}}
+    {{- $songCount := len ($candidate.GetTerms "songs") -}}
+    {{- if gt $songCount 1 -}}
+        {{- $songScore = div $songScore (math.Sqrt (float $songCount)) -}}
+    {{- end -}}
+
+    {{- /* Tiebreaker: at most 1.0, decaying with the gap in years. */ -}}
+    {{- $gap := sub $page.Date.Unix $candidate.Date.Unix -}}
+    {{- if lt $gap 0 -}}{{- $gap = mul $gap -1 -}}{{- end -}}
+    {{- $recency := div 1.0 (add 1.0 (div (float $gap) 31557600.0)) -}}
+
+    {{- $scored = $scored | append (dict "page" $candidate "score" (add (add $songScore $tagScore) $recency)) -}}
+{{- end -}}
+
+{{- $picks := slice -}}
+{{- range first $limit (sort $scored "score" "desc") -}}
+    {{- $picks = $picks | append .page -}}
+{{- end -}}
+
+{{- /* Pad when the taxonomies give us nothing to work with. */ -}}
+{{- if lt (len $picks) $limit -}}
+    {{- $seen := slice $page.RelPermalink -}}
+    {{- range $picks -}}{{- $seen = $seen | append .RelPermalink -}}{{- end -}}
+    {{- $pool := slice -}}
+    {{- range where site.RegularPages "Type" "videos" -}}
+        {{- if not (in $seen .RelPermalink) -}}
+            {{- $gap := sub $page.Date.Unix .Date.Unix -}}
+            {{- if lt $gap 0 -}}{{- $gap = mul $gap -1 -}}{{- end -}}
+            {{- $pool = $pool | append (dict "page" . "gap" $gap) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- range first (sub $limit (len $picks)) (sort $pool "gap" "asc") -}}
+        {{- $picks = $picks | append .page -}}
+    {{- end -}}
+{{- end -}}
+
+{{- with $picks }}
+<section class="sh-related">
+    <h2 class="sh-related-title">Related videos</h2>
+    <div class="sh-video-grid sh-related-grid">
+        {{- range . }}
+        {{ partial "video-card.html" . }}
+        {{- end }}
+    </div>
+</section>
+{{- end -}}

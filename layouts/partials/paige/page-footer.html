@@ -6,6 +6,7 @@
 {{ $last := templates.Exists "partials/paige/page-footer-last.html" }}
 {{ $next := $page.NextInSection | and ($page.Param "paige.pages.disable_next" | not) }}
 {{ $prev := $page.PrevInSection | and ($page.Param "paige.pages.disable_prev" | not) }}
+{{ $related := and $page.IsPage (eq $page.Type "videos") }}
 
 {{ if $page.File }}
     {{ if $edit }}
@@ -17,9 +18,12 @@
     {{ end }}
 {{ end }}
 
-{{ if or $edit $history $first $last $next $prev }}
+{{ if or $edit $history $first $last $next $prev $related }}
     <footer class="mw-100" id="paige-page-footer">
         {{ partial "paige/func-include.html" (dict "name" "page-footer-first%s.html" "page" $page) | safeHTML }}
+
+        {{/* Related videos, above the chronological prev/next nav. */}}
+        {{ if $related }}{{ partial "sh-related.html" $page }}{{ end }}
 
         {{ if or $edit $history }}
             <div id="paige-page-file">

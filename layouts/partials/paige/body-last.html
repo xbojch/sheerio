@@ -1,6 +1,5 @@
-{{/* ── Cookie consent overlay + banner ── */}}
-<div id="sh-cookie-overlay" hidden></div>
-<div id="sh-cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+{{/* ── Cookie consent banner (non-blocking: the page stays usable until a choice is made) ── */}}
+<div id="sh-cookie-banner" role="region" aria-live="polite" aria-label="Cookie consent" hidden>
   <p>We use cookies for analytics (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Analytics</a>) to help improve this site. No personal data is sold.</p>
   <div class="sh-cookie-actions">
     <button id="sh-cookie-accept" class="sh-cookie-btn sh-cookie-btn--accept">Accept</button>
@@ -14,15 +13,11 @@
     var banner = document.getElementById('sh-cookie-banner');
     var consent = localStorage.getItem('sh-cookie-consent');
 
-    var overlay = document.getElementById('sh-cookie-overlay');
-
     function showBanner() {
-        if (overlay) overlay.hidden = false;
         banner.hidden = false;
     }
 
     function hideBanner() {
-        if (overlay) overlay.hidden = true;
         banner.hidden = true;
     }
 

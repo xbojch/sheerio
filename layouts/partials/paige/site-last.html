@@ -20,3 +20,14 @@
     window.shLoadGA();
   }
 </script>
+
+{{/*
+  Cloudflare Web Analytics. Cookieless and storage-free, so it sits OUTSIDE the
+  cookie-consent gate above and measures every visitor — including the ones who
+  never answer the banner, and the ones whose ad blocker eats Google Analytics.
+  It is the baseline the Google Analytics numbers should be read against.
+*/}}
+{{ with .Site.Params.cloudflare_web_analytics_token }}
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{ end }}

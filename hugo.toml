@@ -36,6 +36,11 @@ title = "" # Site title. Appears above the menu, above the site description, if 
 style = "" # CSS included at the end of the stylesheet, before style-last.css
 
 [params]
+    # Cloudflare Web Analytics beacon token. Cloudflare dashboard → Web Analytics →
+    # the site → Manage site → copy the token out of the JS snippet.
+    # The beacon is cookieless, so unlike Google Analytics it loads for every
+    # visitor, outside the consent gate. Empty string = beacon disabled.
+    cloudflare_web_analytics_token = "7039995c06ac42e18266e361c04c124d"
     # Last-resort meta description, for any page with no description, no summary
     # and no generated one (see layouts/partials/paige/metas.html).
     description = "Sheerio Online is a fan-curated archive of the best Ed Sheeran videos — live performances, surprise appearances, collaborations and interviews."

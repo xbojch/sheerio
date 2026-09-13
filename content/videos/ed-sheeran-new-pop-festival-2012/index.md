@@ -4,6 +4,7 @@ date = 2012-09-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']
+songs = ['Give Me Love', 'Drunk', 'Grade 8', 'Wayfaring Stranger', 'Lego House', "You Need Me, I Don't Need You", 'The Parting Glass', 'The A Team', 'Be My Husband', 'Guiding Light']
 videos = ['https://youtu.be/oKaNX-DbIlA']
 [[youtube_videos]]
 video = 'oKaNX-DbIlA'

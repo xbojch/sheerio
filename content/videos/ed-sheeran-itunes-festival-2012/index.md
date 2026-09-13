@@ -5,6 +5,7 @@ added_date = 2026-07-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'iTunes Festival']
+songs = ['Give Me Love', 'Drunk', 'Homeless', 'UNI', 'Grade 8', 'Small Bump', 'The City', 'This', 'Be My Husband', 'Kiss Me', 'Lego House', 'The A Team', 'Chasing Cars', "You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/VsUf743_m7I']
 [[youtube_videos]]
 video = 'VsUf743_m7I'

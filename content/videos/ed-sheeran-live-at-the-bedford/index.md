@@ -4,6 +4,7 @@ date = 2010-10-17T08:00:00Z
 draft = false
 toc = false
 tags = ['The Bedford', 'Remedies', 'Live Performance', 'Acoustic', 'Early years']
+songs = ['The A Team', 'Homeless', 'UNI', 'The City', 'Fall', 'Where We Land', 'Cold Coffee', 'We Are', 'Wayfaring Stranger', 'Wake Me Up', "You Need Me, I Don't Need You", 'She', 'Sunburn']
 videos = ['https://youtu.be/Z_gPjun4n-0']
 [[youtube_videos]]
 video = 'Z_gPjun4n-0'

@@ -4,6 +4,7 @@ date = 2025-09-21T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'iHeartRadio']
+songs = ['Shivers', 'Sapphire', 'Perfect', 'Azizam', 'Shape of You', 'Bad Habits']
 videos = ['https://youtu.be/HXUnJG2EI7w']
 [[youtube_videos]]
 video = 'HXUnJG2EI7w'

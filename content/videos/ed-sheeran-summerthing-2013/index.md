@@ -4,6 +4,7 @@ date = 2013-06-24T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'San Francisco']
+songs = ['Give Me Love', 'Drunk', 'Grade 8', 'UNI', 'Small Bump', 'The City', 'Kiss Me', 'Lego House', "You Need Me, I Don't Need You", 'The A Team']
 videos = ['https://youtu.be/I0iy8uhCg5Y', 'https://youtu.be/Rq-IlcbtH1M', 'https://youtu.be/p4OYQ0musPo', 'https://youtu.be/hreQJfGiQIs', 'https://youtu.be/XiyHCVLsJH8', 'https://youtu.be/wFvjQwZYFWM', 'https://youtu.be/GAmQEN-cPdc', 'https://youtu.be/_a-NNbAaD-s']
 aliases = [
   '/videos/ed-sheeran-san-francisco-summerthing/',

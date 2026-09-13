@@ -1,6 +1,6 @@
 +++
 title = 'Ed Sheeran at Cafe 1001'
-date = 2009-03-02T08:00:00Z
+date = 2009-02-24T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Early Years']

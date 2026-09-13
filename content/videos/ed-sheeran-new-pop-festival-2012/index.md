@@ -1,6 +1,6 @@
 +++
 title = 'Ed Sheeran Live at SWR3 New Pop Festival'
-date = 2012-09-27T08:00:00Z
+date = 2012-09-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']

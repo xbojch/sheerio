@@ -4,6 +4,7 @@ date = 2010-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Train Station', 'Street Performing', 'Live Performance', 'Early years']
+songs = ['Wayfaring Stranger', 'Let It Out', "You Need Me, I Don't Need You", 'All My Life', 'Sexual Healing']
 videos = ['https://youtu.be/6MUSESYSa_o']
 [[youtube_videos]]
 video = '6MUSESYSa_o'

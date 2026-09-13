@@ -4,6 +4,7 @@ date = 2009-03-02T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Early Years']
+songs = ['The City', 'We Are', 'Underground', "I'm Coming Home", 'Let It Out', "You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/EZCEk7xosho', 'https://youtu.be/CE81bO_3R2s']
 [[youtube_videos]]
 video = 'EZCEk7xosho'

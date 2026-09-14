@@ -9,4 +9,4 @@ videos = ['https://youtu.be/y5c7Ys4WPwY']
 [[youtube_videos]]
 video = 'y5c7Ys4WPwY'
 +++
-Ed opens up to Etalk about life as a dad to Lyla and Jupiter, declaring that girls are simply the best. He also talks about the emotional parenthood song Dusty and hands out his own parenting tips.
+Ed opens up to Etalk about life as a dad to Lyra and Jupiter, declaring that girls are simply the best. He also talks about the emotional parenthood song Dusty and hands out his own parenting tips.

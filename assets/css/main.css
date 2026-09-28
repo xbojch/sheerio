@@ -1134,3 +1134,69 @@ body .link-secondary:hover {
   max-width: none;
   padding: 1.25rem 0 0;
 }
+
+/* ── Not Found page ── */
+.sh-404 {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sh-404-header {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+.sh-404-lead {
+  color: #6b5a4e;
+  font-size: 1.1rem;
+}
+
+.sh-404-ways {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 0.8rem;
+  margin: 2rem 0 0;
+}
+
+.sh-404-suggest-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.sh-404-suggest-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(28, 16, 8, 0.08);
+}
+
+.sh-404-suggest-list a {
+  font-weight: 600;
+  color: var(--sh-orange) !important;
+  text-decoration: none !important;
+}
+
+.sh-404-suggest-list a:hover {
+  text-decoration: underline !important;
+}
+
+.sh-404-kind {
+  flex-shrink: 0;
+  min-width: 3.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9a8070;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sh-related { border-top-color: rgba(255, 255, 255, 0.1); }
+  .sh-related-title { color: #f0e8e0; }
+  .sh-404-lead { color: #c8b8aa; }
+  .sh-404-suggest-list li { border-bottom-color: rgba(255, 255, 255, 0.08); }
+}

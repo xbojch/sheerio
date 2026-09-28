@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+{{/* Everything a visitor could have been looking for, for the "did you mean"
+     match below: every video, song and tag page, with the words to match on.
+     Drafted videos are not built, so a video that went private lands here and
+     usually finds a sibling performance of the same song. */}}
+{{ $targets := slice }}
+{{ range where site.RegularPages "Section" "videos" }}
+    {{ $words := slice }}
+    {{ range .GetTerms "songs" }}{{ $words = $words | append .LinkTitle }}{{ end }}
+    {{ range .GetTerms "tags" }}{{ $words = $words | append .LinkTitle }}{{ end }}
+    {{ $targets = $targets | append (dict "t" .LinkTitle "u" .RelPermalink "w" (delimit $words " ") "k" "Video") }}
+{{ end }}
+{{ range $taxonomy, $label := (dict "songs" "Song" "tags" "Tag") }}
+    {{ with site.Taxonomies }}{{ with index . $taxonomy }}
+        {{ range .Alphabetical }}
+            {{ $targets = $targets | append (dict "t" .Page.LinkTitle "u" .Page.RelPermalink "w" "" "k" $label) }}
+        {{ end }}
+    {{ end }}{{ end }}
+{{ end }}
+
+{{/* Newest additions first, using the same added_date the Video of the Day uses. */}}
+{{ $recent := slice }}
+{{ range where site.RegularPages "Section" "videos" }}
+    {{ $added := (.Params.added_date | default .Date) }}
+    {{ $recent = $recent | append (dict "page" . "added" ($added.Format "2006-01-02T15:04:05Z07:00")) }}
+{{ end }}
+
+<article class="sh-404">
+    <header class="sh-404-header">
+        <h1 class="display-5 fw-bold">Not Found</h1>
+        <p class="sh-404-lead">This page doesn't exist, or the video it showed was taken down on YouTube.</p>
+    </header>
+
+    <section class="sh-404-suggest" id="sh-404-suggest" hidden>
+        <h2 class="sh-related-title">Maybe you were looking for</h2>
+        <ul class="sh-404-suggest-list" id="sh-404-suggest-list"></ul>
+    </section>
+
+    <nav class="sh-404-ways" aria-label="Ways back into the site">
+        {{ range site.Menus.main }}
+        <a class="sh-tag-cloud-item" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+
+    <section class="sh-related">
+        <h2 class="sh-related-title">Recently added</h2>
+        <div class="sh-video-grid sh-related-grid">
+            {{ range first 6 (sort $recent "added" "desc") }}
+            {{ partial "video-card.html" .page }}
+            {{ end }}
+        </div>
+    </section>
+</article>
+
+{{/* Served as its own fingerprinted file rather than inlined, so the page stays
+     light and the list is cached across visits. */}}
+{{ $index := resources.FromString "404-index.json" ($targets | jsonify) | fingerprint }}
+<script>
+(function () {
+    var box = document.getElementById('sh-404-suggest');
+    var list = document.getElementById('sh-404-suggest-list');
+    if (!box || !list) return;
+
+    // Words that appear in nearly every URL and say nothing about which page was meant.
+    var STOP = { ed: 1, sheeran: 1, videos: 1, songs: 1, tags: 1, the: 1, a: 1, an: 1,
+        and: 1, of: 1, at: 1, in: 1, on: 1, to: 1, with: 1, for: 1, live: 1 };
+
+    function words(s) {
+        return String(s).toLowerCase()
+            .normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .replace(/['’]/g, '')
+            .split(/[^a-z0-9]+/)
+            .filter(function (w) { return w && !STOP[w]; });
+    }
+
+    // One letter off (a typo, a missing or extra letter) still counts.
+    function nearly(a, b) {
+        if (Math.abs(a.length - b.length) > 1) return false;
+        var i = 0, j = 0, edits = 0;
+        while (i < a.length && j < b.length) {
+            if (a[i] === b[j]) { i++; j++; continue; }
+            if (++edits > 1) return false;
+            if (a.length > b.length) i++;
+            else if (b.length > a.length) j++;
+            else { i++; j++; }
+        }
+        return edits + (a.length - i) + (b.length - j) <= 1;
+    }
+
+    // Longer words also match by prefix, so a truncated slug still lands
+    // ("mathemat" finds "mathematics"). Short words must match exactly, or
+    // "kings" would find every "king".
+    function matches(w, h) {
+        if (h === w) return true;
+        if (w.length < 5 || h.length < 5) return false;
+        return h.indexOf(w) === 0 || w.indexOf(h) === 0 || (w.length >= 6 && nearly(w, h));
+    }
+
+    var path;
+    try { path = decodeURIComponent(location.pathname); } catch (e) { path = location.pathname; }
+    var wanted = words(path).filter(function (w, i, all) { return all.indexOf(w) === i; });
+    if (wanted.length === 0) return;
+
+    function suggest(targets) {
+        var pages = targets.map(function (t) {
+            return { t: t, have: words(t.u + ' ' + t.t + ' ' + t.w) };
+        });
+        var hitsFor = function (w) {
+            return pages.filter(function (p) {
+                return p.have.some(function (h) { return matches(w, h); });
+            });
+        };
+
+        // A rare word ("brooklyn") says far more about the page that was meant
+        // than a common one ("performance"), so each word is weighted by how few
+        // pages carry it. Words no page carries are dropped from the total.
+        var weight = {};
+        var total = 0;
+        wanted.forEach(function (w) {
+            var n = hitsFor(w).length;
+            if (n === 0) return;
+            weight[w] = Math.log(1 + pages.length / n);
+            total += weight[w];
+        });
+        if (total === 0) return;
+
+        var scored = pages.map(function (p) {
+            var score = 0;
+            wanted.forEach(function (w) {
+                if (weight[w] && p.have.some(function (h) { return matches(w, h); })) score += weight[w];
+            });
+            // Lightly favour pages with fewer words, so a focused match outranks
+            // a long concert page that mentions everything.
+            return { t: p.t, score: score / total - p.have.length / 10000 };
+        }).filter(function (s) { return s.score >= 0.2; });
+
+        scored.sort(function (a, b) { return b.score - a.score; });
+        if (scored.length === 0) return;
+
+        scored.slice(0, 5).forEach(function (s) {
+            var li = document.createElement('li');
+            var kind = document.createElement('span');
+            kind.className = 'sh-404-kind';
+            kind.textContent = s.t.k;
+            var a = document.createElement('a');
+            a.href = s.t.u;
+            a.textContent = s.t.t;
+            li.appendChild(kind);
+            li.appendChild(a);
+            list.appendChild(li);
+        });
+        box.hidden = false;
+    }
+
+    fetch({{ $index.RelPermalink }})
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(suggest)
+        .catch(function () {});
+})();
+</script>
+{{ end }}

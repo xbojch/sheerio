@@ -1,7 +1,7 @@
 +++
 title = 'Ed Sheeran surprise performance from atop a parked car on SoHo street in New York City'
 date = 2023-05-05T08:00:00Z
-draft = true
+draft = false
 toc = false
 tags = ['New York', 'Street Performing', 'Live Performance']
 videos = ['https://youtu.be/xX7jk-aUUW0']

@@ -7,6 +7,7 @@ disable_toc = true
 disable_word_count = true
 disable_collections = true
 disable_sections = true
+disable_pages = true
 disable_description = true
 +++
 

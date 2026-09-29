@@ -118,3 +118,7 @@ disable = false # Disable all analytics
         name = 'Timeline'
         pageRef = '/timeline'
         weight = 50
+    [[menus.main]]
+        name = 'About'
+        pageRef = '/about'
+        weight = 60

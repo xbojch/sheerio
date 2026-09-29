@@ -1,0 +1,12 @@
+{{/* Live counts for the About page, so the numbers never go stale. Drafted
+     (private or removed) videos are not built, so they are not counted. */}}
+{{ $videos := where site.RegularPages "Section" "videos" }}
+{{ $years := slice }}
+{{ range $videos }}{{ $years = $years | append .Date.Year }}{{ end }}
+{{ $years = $years | uniq | sort }}
+<dl class="sh-archive-stats">
+    <div><dt>Videos</dt><dd>{{ len $videos }}</dd></div>
+    <div><dt>Songs</dt><dd>{{ len site.Taxonomies.songs }}</dd></div>
+    <div><dt>Tags</dt><dd>{{ len site.Taxonomies.tags }}</dd></div>
+    {{ with $years }}<div><dt>Years covered</dt><dd>{{ index . 0 }}–{{ index . (sub (len .) 1) }}</dd></div>{{ end }}
+</dl>

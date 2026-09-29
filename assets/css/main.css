@@ -1200,3 +1200,33 @@ body .link-secondary:hover {
   .sh-404-lead { color: #c8b8aa; }
   .sh-404-suggest-list li { border-bottom-color: rgba(255, 255, 255, 0.08); }
 }
+
+/* ── About page stats ── */
+.sh-archive-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.sh-archive-stats > div {
+  border: 1.5px solid rgba(232, 98, 26, 0.35);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sh-archive-stats dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.sh-archive-stats dd {
+  margin: 0.25rem 0 0;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--sh-orange);
+}

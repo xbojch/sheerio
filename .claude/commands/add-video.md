@@ -66,5 +66,16 @@ DESCRIPTION
 
    The `DESCRIPTION` should be 1–2 sentences written in an enthusiastic, fan-site tone describing what happens in the video. Base it on the title and any context available from the page fetch.
 
-7. Report the created file path and the front matter to the user.
-8. Prepare a one or two sentence post for X (Twitter) in this shape: "That time Ed Sheeran ..." with a link to the video page (https://sheerio.online/videos/{slug}/). Output it in one line, no other embelishments, like quote or line breaks.
+7. Move the video from the "Sheerio" playlist to the "Sheerio - processed" playlist:
+
+   ```
+   ./scripts/move-to-processed-playlist.sh VIDEO_ID
+   ```
+
+   Only run this once the entry is written, never when the video was skipped (duplicate,
+   fabricated). If it reports `not found in playlist`, the video was added by hand and
+   was never in the playlist; mention it and carry on. If it reports `not authorized`,
+   tell the user to run `make auth` and then rerun the script.
+
+8. Report the created file path and the front matter to the user.
+9. Prepare a one or two sentence post for X (Twitter) in this shape: "That time Ed Sheeran ..." with a link to the video page (https://sheerio.online/videos/{slug}/). Output it in one line, no other embelishments, like quote or line breaks.

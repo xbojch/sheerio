@@ -18,13 +18,16 @@ load_youtube_token() {
   export YOUTUBE_TOKEN
 }
 
-# Authorized YouTube API call. Usage: yt_api METHOD URL
+# Authorized YouTube API call. Usage: yt_api METHOD URL [JSON_BODY]
 # Prints the response body on success. On HTTP 401 (missing/expired token)
 # it tells the user to re-authorize; other errors print the API body.
 yt_api() {
-  local method="$1" url="$2" response status body
-  response="$(curl -s -w $'\n%{http_code}' -X "$method" \
-    -H "Authorization: Bearer ${YOUTUBE_TOKEN}" "$url")"
+  local method="$1" url="$2" data="${3:-}" response status body
+  local args=(-s -w $'\n%{http_code}' -X "$method" -H "Authorization: Bearer ${YOUTUBE_TOKEN}")
+  if [[ -n "$data" ]]; then
+    args+=(-H "Content-Type: application/json" --data "$data")
+  fi
+  response="$(curl "${args[@]}" "$url")"
   status="${response##*$'\n'}"
   body="${response%$'\n'*}"
 

@@ -18,8 +18,8 @@ run `make next`.
 
    The script exits non zero in two expected cases. Report them and stop:
    - `Already added: ...` means the head of the playlist is already in `content/videos/`.
-     Tell the user, and point out that `make delete ID=<id>` clears it from the playlist
-     so the next run advances.
+     Tell the user, and point out that `./scripts/move-to-processed-playlist.sh <id>`
+     moves it out of the playlist so the next run advances.
    - `Could not extract video ID ...` usually means the YouTube token expired. Tell the
      user to run `make auth`.
 
@@ -28,12 +28,4 @@ run `make next`.
    metadata fetching, slug and title style, tags, songs, dates and front matter format.
    Do not restate or re-derive those rules here.
 
-3. After the entry is written, print the command to clear the video from the playlist so
-   the next run advances:
-
-   ```
-   make delete ID=<video_id>
-   ```
-
-   Ask before running it. It changes the user's YouTube playlist, and they may want to
-   review the entry first.
+   That includes moving the video to the processed playlist, so the next run advances.

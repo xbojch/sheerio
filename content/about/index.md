@@ -1,5 +1,5 @@
 +++
-title = 'About the Sheerio Online Archive'
+title = 'About Sheerio Online'
 description = "Who runs Sheerio Online, what the archive includes, how videos are found and dated, and how to suggest a missing one."
 [paige.pages]
 disable_description = true

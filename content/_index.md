@@ -11,7 +11,7 @@ disable_pages = true
 disable_description = true
 +++
 
-This site is a fan-curated collection of the best videos from Ed Sheeran's incredible career — live performances, surprise appearances, funny interviews, and all the magical moments in between. [Read more about the mission](/about/), including who runs it and how videos are chosen and dated.
+This site is a fan-curated collection of the best videos from Ed Sheeran's incredible career — live performances, surprise appearances, funny interviews, and all the magical moments in between. [Read more about it](/about/), including who runs it and how videos are chosen and dated.
 
 There's so much out there, so we need your help! If you know of a great video that belongs here — whether it's a rare acoustic session, a legendary collaboration, or just a clip that made you smile — we'd love to hear about it.
 

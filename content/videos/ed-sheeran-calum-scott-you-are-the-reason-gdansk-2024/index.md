@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran invites Calum Scott on stage to perform "You Are The Reason" together'
 date = 2024-07-12T08:00:00Z
+added_date = 2026-04-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Calum Scott', 'Live Performance', 'Stage Guest']

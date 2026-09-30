@@ -1,6 +1,7 @@
 +++
 title = 'Castle On The Hill at the Billboard Music Awards'
 date = 2017-05-22T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Billboard Music Awards']

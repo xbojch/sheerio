@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs the whole Play set on TikTok Live'
 date = 2025-09-13T08:00:00Z
+added_date = 2026-05-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'TikTok Live', 'Play']

@@ -1,6 +1,7 @@
 +++
 title = 'Making of Azizam'
 date = 2025-04-02T08:00:00Z
+added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Studio', 'Behind The Scenes']

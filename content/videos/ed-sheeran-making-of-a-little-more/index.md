@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran - Making of A Little More"
 date = 2025-08-19T08:00:00Z
+added_date = 2026-05-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Behind The Scenes', 'Making of']

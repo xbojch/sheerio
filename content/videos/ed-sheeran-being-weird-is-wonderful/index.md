@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on how being weird is wonderful'
 date = 2017-10-17T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Speech', 'Motivational']

@@ -1,6 +1,7 @@
 +++
 title = 'Olivia Rodrigo invites Ed Sheeran to perform "The A Team" live at BST Hyde Park 2025'
 date = 2025-06-27T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Olivia Rodrigo', 'Live Performance', 'Concert']

@@ -1,6 +1,7 @@
 +++
 title = 'Tour Diary 2011'
 date = 2011-01-01T08:00:00Z
+added_date = 2026-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Tour Diary', 'Behind The Scenes']

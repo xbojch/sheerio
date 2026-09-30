@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Thrift Shop" with Macklemore in Seattle'
 date = 2023-08-26T08:00:00Z
+added_date = 2026-05-04T08:00:00Z
 draft = false
 toc = false
 tags = ['Macklemore', 'Live Performance']

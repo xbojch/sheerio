@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs \"Don't\" in a Capital Live Session"
 date = 2014-07-24T08:00:00Z
+added_date = 2026-05-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Capital FM']

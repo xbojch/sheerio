@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Surprises Superfan Tiara in NYC'
 date = 2015-10-09T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise', 'New York']

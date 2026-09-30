@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran joins Shakira and Beéle performing the Anniversary Edition of her hit \"Hips Don't Lie\""
 date = 2025-10-29T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Shakira', 'Beéle']

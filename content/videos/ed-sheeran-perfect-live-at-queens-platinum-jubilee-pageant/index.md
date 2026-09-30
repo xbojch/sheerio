@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs \"Perfect\" live at Queen's Platinum Jubilee Pageant"
 date = 2022-06-05T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Queen Elizabeth', 'Jubilee', 'Live Performance', 'Concert']

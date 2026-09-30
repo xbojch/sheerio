@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs \"Don't Kill My Vibe\" with Sigrid in Oslo"
 date = 2025-07-26T08:00:00Z
+added_date = 2026-05-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Sigrid', 'Live Performance', 'Ullevaal Stadion', 'Oslo']

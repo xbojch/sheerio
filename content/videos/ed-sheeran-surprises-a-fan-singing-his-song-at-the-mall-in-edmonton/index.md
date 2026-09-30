@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises a fan singing his song at the mall in Edmonton'
 date = 2015-06-15T08:00:00Z
+added_date = 2025-03-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']

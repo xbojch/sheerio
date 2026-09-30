@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran answers fan questions with British GQ'
 date = 2021-10-01T08:00:00Z
+added_date = 2026-04-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'GQ']

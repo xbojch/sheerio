@@ -1,6 +1,7 @@
 +++
 title = 'Luke Combs invites Ed Sheeran to sing his hit "Dive" on stage at the C2C Festival 2022' 
 date = 2022-03-13T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Luke Combs', 'Live Performance', 'Concert']

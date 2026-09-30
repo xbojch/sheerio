@@ -1,6 +1,7 @@
 +++
 title = 'Supermarket Flowers Live at the BRITs 2018'
 date = 2018-02-22T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'BRIT Awards']

@@ -1,6 +1,7 @@
 +++
 title = 'How Ed Sheeran Got His Groove Back'
 date = 2025-04-16T08:00:00Z
+added_date = 2026-06-16T08:00:00Z
 draft = false
 toc = false
 tags = ['TIME100', 'Interview']

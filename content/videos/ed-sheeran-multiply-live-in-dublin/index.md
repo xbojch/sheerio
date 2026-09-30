@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs his show from the Multiply tour live in Dublin'
 date = 2014-05-10T08:00:00Z
+added_date = 2025-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Multiply', 'Live Performance', 'Concert']

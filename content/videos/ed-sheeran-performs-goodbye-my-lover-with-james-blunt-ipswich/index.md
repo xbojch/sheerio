@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Goodbye My Lover" with James Blunt'
 date = 2025-07-13T08:00:00Z
+added_date = 2026-04-25T08:00:00Z
 draft = false
 toc = false
 tags = ['James Blunt', 'Live Performance', 'Concert', 'Stage Guest']

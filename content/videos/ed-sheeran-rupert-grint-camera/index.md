@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Rupert Grint and the Camera music video'
 date = 2025-09-18T08:00:00Z
+added_date = 2026-05-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'KISS', 'Rupert Grint']

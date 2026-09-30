@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran eats spicy wings on "Hot Ones"'
 date = 2021-07-08T08:00:00Z
+added_date = 2025-03-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Hot Ones', 'Interview']

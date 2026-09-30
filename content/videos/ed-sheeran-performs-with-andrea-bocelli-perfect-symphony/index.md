@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Perfect Symphony" with Andrea Bocelli at Wembley Stadium'
 date = 2018-06-14T08:00:00Z
+added_date = 2024-11-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Andrea Bocelli', 'Live Performance', 'Concert', 'Stage Guest']

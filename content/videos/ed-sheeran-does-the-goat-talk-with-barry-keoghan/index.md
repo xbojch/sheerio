@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran does the GOAT Talk with Barry Keoghan'
 date = 2025-08-20T08:00:00Z
+added_date = 2026-04-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Barry Keoghan', 'Complex', 'GOAT Talk', 'Interview']

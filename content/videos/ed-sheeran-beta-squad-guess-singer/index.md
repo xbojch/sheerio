@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran guesses the singer with Beta Squad'
 date = 2025-07-26T08:00:00Z
+added_date = 2026-05-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Beta Squad', 'Gameshow', 'Interview']

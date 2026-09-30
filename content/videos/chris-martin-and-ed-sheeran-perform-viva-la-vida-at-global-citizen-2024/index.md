@@ -1,6 +1,7 @@
 +++
 title = 'Chris Martin and Ed Sheeran perform "Viva la Vida" at the Global Citizen Festival NYC 2024' 
 date = 2024-09-28T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Chris Martin', 'Live Performance', 'Concert']

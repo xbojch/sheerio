@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises Boston Music Project students'
 date = 2023-07-01T08:00:00Z
+added_date = 2026-04-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']

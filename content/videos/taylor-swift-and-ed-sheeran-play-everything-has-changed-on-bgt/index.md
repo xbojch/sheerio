@@ -1,6 +1,7 @@
 +++
 title = 'Taylor Swift and Ed Sheeran play their hit song Everything Has Changed on BGT'
 date = 2013-06-08T08:00:00Z
+added_date = 2025-05-23T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'Live Performance', 'TV Appearance']

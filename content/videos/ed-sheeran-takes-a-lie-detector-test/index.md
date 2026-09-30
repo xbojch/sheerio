@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran takes a lie detector test for Vanity Fair'
 date = 2025-05-15T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Vanity Fair', 'Interview']

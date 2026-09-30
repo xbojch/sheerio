@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran is Back'
 date = 2021-05-28T08:00:00Z
+added_date = 2026-06-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'BBC Radio 1']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Advice for Young Performers'
 date = 2015-10-19T08:00:00Z
+added_date = 2026-06-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Advice']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Ustream gig'
 date = 2011-05-23T08:00:00Z
+added_date = 2026-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Early Years', 'Ustream', 'Live Performance']

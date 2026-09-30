@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran being so cute as a first-time dad'
 date = 2021-06-29T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Family']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Shape of You being Apple Music Most-Streamed song'
 date = 2025-07-06T08:00:00Z
+added_date = 2026-04-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Apple Music', 'Shape Of You', 'Interview']

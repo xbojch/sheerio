@@ -1,6 +1,7 @@
 +++
 title = 'Thinking Out Loud with John Mayer'
 date = 2017-11-11T08:00:00Z
+added_date = 2026-06-05T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Live Performance']

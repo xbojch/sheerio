@@ -1,6 +1,7 @@
 +++
 title = "Jamie Lawson and Ed Sheeran play an acoustic version of the song \"Can't See Straight\""
 date = 2017-08-04T08:00:00Z
+added_date = 2025-02-11T08:00:00Z
 draft = false
 toc = false
 tags = ['Jamie Lawson', 'Live Performance']

@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran joins Coldplay on stage at the Shepherd's Bush Empire to perform \"Fix You\"" 
 date = 2021-10-12T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Coldplay', 'Live Performance', 'Concert']

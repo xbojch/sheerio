@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Interview on KJ103'
 date = 2017-08-18T08:00:00Z
+added_date = 2026-06-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'JJ Ryan']

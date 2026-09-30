@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Surprises Kai on The Ellen Show'
 date = 2017-02-14T08:00:00Z
+added_date = 2026-04-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Ellen', 'Fan Surprise', 'TV Appearance']

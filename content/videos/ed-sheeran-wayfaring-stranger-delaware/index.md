@@ -1,6 +1,7 @@
 +++
 title = 'Wayfaring Stranger at University of Delaware'
 date = 2013-09-19T08:00:00Z
+added_date = 2026-06-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']

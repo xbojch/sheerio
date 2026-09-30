@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on "What it takes to be great"'
 date = 2025-09-29T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['And The Writer Is', 'Ross Golan', 'Interview']

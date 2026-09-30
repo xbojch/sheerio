@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises his fan Aimee Keogh on The Late Late Toy Show 2014 on RTÉ One'
 date = 2014-11-28T08:00:00Z
+added_date = 2026-04-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Late Late Toy Show', 'Fan Surprise', 'TV Appearance']

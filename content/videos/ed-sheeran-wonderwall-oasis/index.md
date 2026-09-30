@@ -1,6 +1,7 @@
 +++
 title = 'Wonderwall (Oasis Cover)'
 date = 2013-08-08T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Oasis', 'Live Performance', 'Cover']

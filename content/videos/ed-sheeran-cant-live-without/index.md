@@ -1,6 +1,7 @@
 +++
 title = "10 Things Ed Sheeran Can't Live Without"
 date = 2023-10-13T08:00:00Z
+added_date = 2026-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['GQ', 'Interview']

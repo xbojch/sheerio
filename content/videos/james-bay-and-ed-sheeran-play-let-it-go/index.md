@@ -1,6 +1,7 @@
 +++
 title = 'James Bay plays his hit song "Let It Go" with Ed Sheeran'
 date = 2015-10-04T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['James Bay', 'Live Performance']

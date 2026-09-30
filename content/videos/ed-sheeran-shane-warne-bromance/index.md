@@ -1,6 +1,7 @@
 +++
 title = 'Shane Warne on his bromance with Ed Sheeran'
 date = 2018-06-25T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Shane Warne', 'Interview']

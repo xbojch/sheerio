@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran playing Pink Floyd's song at the Closing Ceremony of the London 2012 Olympics"
 date = 2012-08-12T08:00:00Z
+added_date = 2025-03-21T08:00:00Z
 draft = false
 toc = false
 tags = ['Olympics', 'Pink Floyd', 'Nick Mason', 'Mike Rutherford', 'Richard Jones', 'Live Performance', 'Concert']

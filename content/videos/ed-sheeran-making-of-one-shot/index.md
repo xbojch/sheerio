@@ -1,6 +1,7 @@
 +++
 title = 'The Making of ONE SHOT with Ed Sheeran'
 date = 2025-11-21T08:00:00Z
+added_date = 2026-05-21T08:00:00Z
 draft = false
 toc = false
 tags = ['One Shot', 'Netflix', 'Behind The Scenes', 'Making of']

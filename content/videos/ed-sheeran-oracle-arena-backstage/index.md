@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Backstage at Oracle Arena'
 date = 2017-08-04T08:00:00Z
+added_date = 2026-06-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

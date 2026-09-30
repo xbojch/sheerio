@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on the "Call Her Daddy" podcast'
 date = 2025-04-09T08:00:00Z
+added_date = 2026-04-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Call Her Daddy', 'Interview']

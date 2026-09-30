@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Brings a Fan On Stage in Melbourne'
 date = 2012-08-03T08:00:00Z
+added_date = 2026-06-17T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan On Stage', 'Live Performance']

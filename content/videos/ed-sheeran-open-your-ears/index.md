@@ -1,6 +1,7 @@
 +++
 title = 'Open Your Ears'
 date = 2006-01-01T08:00:00Z
+added_date = 2026-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Music Video', 'Early Years']

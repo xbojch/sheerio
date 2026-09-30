@@ -1,6 +1,7 @@
 +++
 title = 'In My Life, A Beatles Tribute'
 date = 2018-05-02T08:00:00Z
+added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
 tags = ['The Beatles', 'Live Performance', 'Cover']

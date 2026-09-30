@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran on the most special moments not being on camera"
 date = 2025-09-18T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Hits Radio']

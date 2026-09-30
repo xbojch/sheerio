@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran's UK Tour Diary from 2012"
 date = 2012-10-15T08:00:00Z
+added_date = 2026-05-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Tour Diary', 'UK Tour', 'Behind The Scenes']

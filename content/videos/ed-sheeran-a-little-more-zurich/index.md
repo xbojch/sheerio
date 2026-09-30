@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "A Little More" in Zürich'
 date = 2025-08-02T08:00:00Z
+added_date = 2026-05-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Fan POV', 'Zürich']

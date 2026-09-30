@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on 1LIVE Radio'
 date = 2014-04-22T08:00:00Z
+added_date = 2026-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', '1LIVE']

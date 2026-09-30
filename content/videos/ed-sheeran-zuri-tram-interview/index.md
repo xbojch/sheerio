@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran talks with SRF 3 in a Zürich Tram'
 date = 2025-08-04T08:00:00Z
+added_date = 2026-05-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'SRF 3', 'Nemo']

@@ -1,6 +1,7 @@
 +++
 title = 'Sapphire Live from Marseille'
 date = 2025-06-06T08:00:00Z
+added_date = 2026-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Concert']

@@ -1,6 +1,7 @@
 +++
 title = 'I See Fire'
 date = 2013-11-06T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['The Hobbit', 'Music Video']

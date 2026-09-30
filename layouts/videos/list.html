@@ -1,11 +1,24 @@
 {{ define "main" }}
 {{ $page := . }}
+
+{{/* Newest additions first. `sortkey` is the added date (added_date, falling back to
+     the event date for entries that predate the field — same rule as Video of the Day),
+     then the event date, then the path as a deterministic tiebreaker. */}}
+{{ $videos := slice }}
+{{ range $page.Pages }}
+    {{ $added := (.Params.added_date | default .Date) | time }}
+    {{ $videos = $videos | append (dict
+        "page" .
+        "sortkey" (printf "%s|%s|%s" ($added.Format "2006-01-02T15:04:05Z07:00") (.Date.Format "2006-01-02T15:04:05Z07:00") .File.Path)
+    ) }}
+{{ end }}
+
 <div class="paige-list paige-kind-{{ $page.Kind }}">
     {{ partial "paige/page.html" $page }}
 
     <div class="sh-video-grid">
-        {{ range $page.Pages.ByDate.Reverse }}
-        {{ partial "video-card.html" . }}
+        {{ range sort $videos "sortkey" "desc" }}
+        {{ partial "video-card.html" .page }}
         {{ end }}
     </div>
 </div>

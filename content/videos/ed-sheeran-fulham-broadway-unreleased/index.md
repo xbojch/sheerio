@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs Fulham Broadway an unreleased song'
 date = 2008-01-01T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Unreleased', 'Early Years', 'MySpace']

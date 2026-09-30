@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs Castle On The Hill and Shape Of You with Stormzy at the 2017 Brit Awards"
 date = 2017-02-22T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Stormzy', 'BRIT Awards', 'Live Performance', 'TV Appearance']

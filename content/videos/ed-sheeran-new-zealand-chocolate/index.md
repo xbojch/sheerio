@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on New Zealand and Its Chocolate'
 date = 2015-04-08T08:00:00Z
+added_date = 2026-06-08T08:00:00Z
 draft = false
 toc = false
 tags = ['New Zealand', 'Interview']

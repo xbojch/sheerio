@@ -1,6 +1,7 @@
 +++
 title = 'Loop Tour Diaries: Latin America'
 date = 2026-06-09T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Latin America', 'Tour Diary']

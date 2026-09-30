@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Eats His Last Meal'
 date = 2025-10-09T08:00:00Z
+added_date = 2026-04-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Mythical Kitchen', 'Interview']

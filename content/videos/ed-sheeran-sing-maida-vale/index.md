@@ -1,6 +1,7 @@
 +++
 title = 'Sing Live At Maida Vale'
 date = 2014-05-06T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Zane Lowe']

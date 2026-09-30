@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran's Subtract Interview with Zane Lowe"
 date = 2023-05-04T08:00:00Z
+added_date = 2026-06-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Zane Lowe', 'Apple Music']

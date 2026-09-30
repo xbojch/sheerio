@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on His Love for Germany on Frauke Trifft'
 date = 2025-09-14T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Germany']

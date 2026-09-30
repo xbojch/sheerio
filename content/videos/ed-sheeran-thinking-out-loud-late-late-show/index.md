@@ -1,6 +1,7 @@
 +++
 title = 'Thinking Out Loud on The Late Late Show'
 date = 2014-10-03T08:00:00Z
+added_date = 2026-06-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']

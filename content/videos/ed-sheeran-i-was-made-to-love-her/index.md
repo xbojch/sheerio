@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran - I Was Made To Love Her'
 date = 2016-05-16T08:00:00Z
+added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Stevie Wonder', 'Live Performance']

@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran - Making of Sapphire in the Studio"
 date = 2025-07-02T08:00:00Z
+added_date = 2026-04-21T08:00:00Z
 draft = false
 toc = false
 tags = ['Behind The Scenes', 'Making of']

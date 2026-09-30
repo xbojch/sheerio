@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran returns the favor and opens for John Mayer at the Wiltern Theatre in LA'
 date = 2023-09-19T08:00:00Z
+added_date = 2025-02-23T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Live Performance', 'Concert']

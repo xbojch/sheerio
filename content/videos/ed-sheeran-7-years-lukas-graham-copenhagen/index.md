@@ -1,6 +1,7 @@
 +++
 title = '7 Years with Lukas Graham in Copenhagen'
 date = 2025-08-31T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Lukas Graham', 'Live Performance', 'Stage Guest']

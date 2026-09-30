@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran on making Shape of You"
 date = 2017-12-20T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['nytimes', 'Interview', 'Making of', 'Behind The Scenes']

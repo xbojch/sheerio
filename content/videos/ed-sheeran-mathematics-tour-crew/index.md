@@ -1,6 +1,7 @@
 +++
 title = 'Behind the Scenes with the Mathematics Tour Crew'
 date = 2022-11-05T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Mathematics Tour', 'Behind The Scenes']

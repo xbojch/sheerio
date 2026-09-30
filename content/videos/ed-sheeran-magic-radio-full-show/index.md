@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Live at Magic Radio'
 date = 2018-11-20T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Magic Radio']

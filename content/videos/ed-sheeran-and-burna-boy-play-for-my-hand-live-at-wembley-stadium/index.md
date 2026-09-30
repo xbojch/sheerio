@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran invites Burna Boy on stage to play their hit "For My Hand" live at Wembley Stadium'
 date = 2022-06-30T08:00:00Z
+added_date = 2025-02-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Burna Boy', 'Live Performance', 'Concert', 'Stage Guest']

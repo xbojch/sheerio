@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Not Gonna Lie with Kylie Kelce'
 date = 2025-07-10T08:00:00Z
+added_date = 2026-05-01T08:00:00Z
 draft = false
 toc = false
 tags = ['Beyoncé', 'Kylie Kelce', 'Elton John', 'Interview']

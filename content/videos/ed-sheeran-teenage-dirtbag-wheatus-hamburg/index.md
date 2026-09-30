@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs Teenage Dirtbag with Brendan Brown (Wheatus) in Hamburg'
 date = 2025-07-05T08:00:00Z
+added_date = 2026-04-21T08:00:00Z
 draft = false
 toc = false
 tags = ['Wheatus', 'Live Performance', 'Concert', 'Stage Guest']

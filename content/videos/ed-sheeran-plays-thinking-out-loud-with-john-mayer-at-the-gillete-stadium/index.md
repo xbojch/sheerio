@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran invites John Mayer to play "Thinking Out Loud" at the Gillete Stadium in Foxborough'
 date = 2023-06-30T08:00:00Z
+added_date = 2025-02-23T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Live Performance', 'Concert']

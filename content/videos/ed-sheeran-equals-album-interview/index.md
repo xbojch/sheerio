@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on His Album Equals'
 date = 2021-10-28T08:00:00Z
+added_date = 2026-06-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

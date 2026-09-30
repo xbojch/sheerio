@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran goes on a Chicken shop date with Amelia Dimoldenberg'
 date = 2021-11-03T08:00:00Z
+added_date = 2026-03-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Amelia Dimoldenberg', 'Chicken shop date', 'Interview']

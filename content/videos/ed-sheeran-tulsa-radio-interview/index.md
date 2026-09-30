@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Tulsa Radio Interview'
 date = 2013-10-13T08:00:00Z
+added_date = 2026-06-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Radio']

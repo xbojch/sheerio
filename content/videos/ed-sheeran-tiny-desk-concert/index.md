@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs a Tiny Desk Concert'
 date = 2025-09-09T08:00:00Z
+added_date = 2026-04-14T08:00:00Z
 draft = false
 toc = false
 tags = ['NPR', 'Tiny Desk', 'Live Performance', 'Acoustic']

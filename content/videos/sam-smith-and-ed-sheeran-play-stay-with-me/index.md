@@ -1,6 +1,7 @@
 +++
 title = 'Sam Smith joins Ed Sheeran on stage to perform his hit "Stay With Me" on the Mathematics Tour at Wembley Stadium'
 date = 2022-06-25T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Sam Smith', 'Live Performance', 'Concert']

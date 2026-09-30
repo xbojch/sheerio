@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs You Need Me with Ellie Banke"
 date = 2025-06-02T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Ellie Banke', 'Live Performance']

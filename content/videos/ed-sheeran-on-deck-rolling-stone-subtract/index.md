@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs On Deck for Rolling Stone'
 date = 2023-05-05T08:00:00Z
+added_date = 2026-04-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Rolling Stone', 'Concert', 'Live Performance']

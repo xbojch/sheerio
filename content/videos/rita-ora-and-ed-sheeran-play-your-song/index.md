@@ -1,6 +1,7 @@
 +++
 title = 'Rita Ora and Ed Sheeran play her hit "Your song"'
 date = 2017-08-29T08:00:00Z
+added_date = 2024-11-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Rita Ora', 'Live Performance']

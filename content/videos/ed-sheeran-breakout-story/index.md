@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Breakout Story'
 date = 2025-02-18T08:00:00Z
+added_date = 2026-06-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Documentary', 'Early Years']

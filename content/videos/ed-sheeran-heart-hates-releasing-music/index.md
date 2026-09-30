@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Why He Hates Releasing Music'
 date = 2025-09-19T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Heart Radio']

@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran's emotional moment with his Mum"
 date = 2018-03-01T08:00:00Z
+added_date = 2026-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

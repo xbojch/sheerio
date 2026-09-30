@@ -1,6 +1,7 @@
 +++
 title = 'Thinking Out Loud at Shane Warne Memorial'
 date = 2022-03-30T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Shane Warne']

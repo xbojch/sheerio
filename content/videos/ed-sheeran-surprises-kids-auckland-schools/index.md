@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprised kids at schools in Auckland'
 date = 2018-03-01T08:00:00Z
+added_date = 2026-04-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise', 'New Zealand']

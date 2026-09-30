@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Perfect" with Beyonce at the "Global Citizen" Festival 2018'
 date = 2018-12-02T08:00:00Z
+added_date = 2025-01-04T08:00:00Z
 draft = false
 toc = false
 tags = ['Beyoncé', 'Live Performance', 'Concert']

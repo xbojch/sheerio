@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performing at a train station before he was famous'
 date = 2010-06-10T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Train Station', 'Street Performing', 'Live Performance', 'Early Years']

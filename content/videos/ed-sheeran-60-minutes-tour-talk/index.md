@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on What Fans Can Expect from the Tour'
 date = 2025-07-27T08:00:00Z
+added_date = 2026-05-04T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', '60 Minutes Australia', 'Tour']

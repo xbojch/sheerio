@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran gets his music knowledge tested on Track Star*"
 date = 2024-12-19T08:00:00Z
+added_date = 2026-03-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Track Star*']

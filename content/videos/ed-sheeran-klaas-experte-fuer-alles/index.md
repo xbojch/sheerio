@@ -1,6 +1,7 @@
 +++
 title = "Klaas as Ed Sheeran's Personal Assistant"
 date = 2025-09-16T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Klaas', 'Experte für Alles', 'Interview']

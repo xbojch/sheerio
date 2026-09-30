@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Full Concert in Cork 2022'
 date = 2022-04-29T08:00:00Z
+added_date = 2026-06-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Cork', 'Live Performance', 'Full Concert']

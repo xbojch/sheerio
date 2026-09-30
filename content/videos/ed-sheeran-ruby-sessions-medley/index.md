@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Live at the Ruby Sessions'
 date = 2014-07-31T08:00:00Z
+added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Ruby Sessions']

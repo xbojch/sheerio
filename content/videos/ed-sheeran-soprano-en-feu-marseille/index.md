@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran invites Soprano on stage to perform "En Feu" at Stade Vélodrome'
 date = 2025-06-06T08:00:00Z
+added_date = 2026-04-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Soprano', 'Live Performance', 'Concert', 'Stage Guest']

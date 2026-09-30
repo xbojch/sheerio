@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran interviewed by Zane Lowe in 2025'
 date = 2025-09-10T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Zane Lowe']

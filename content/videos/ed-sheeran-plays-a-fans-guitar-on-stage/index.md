@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran plays a fan's guitar on stage in Adelaide"
 date = 2015-04-01T08:00:00Z
+added_date = 2025-03-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise', 'Live Performance', 'Concert']

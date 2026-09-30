@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs Tenerife Sea acoustic in Glendale, Arizona'
 date = 2014-08-31T08:00:00Z
+added_date = 2026-04-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Acoustic', 'Live Performance']

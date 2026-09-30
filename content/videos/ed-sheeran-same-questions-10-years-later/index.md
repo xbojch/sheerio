@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran gets asked The Same Questions 10 Years Later'
 date = 2022-12-11T08:00:00Z
+added_date = 2026-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Song Des Tages']

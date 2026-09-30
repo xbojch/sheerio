@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs with The Late Late Toy Show Choir'
 date = 2014-11-28T08:00:00Z
+added_date = 2026-04-12T08:00:00Z
 draft = false
 toc = false
 tags = ['Late Late Toy Show', 'Live Performance', 'TV Appearance']

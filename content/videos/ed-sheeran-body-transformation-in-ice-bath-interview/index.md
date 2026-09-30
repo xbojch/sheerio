@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran joins Andrew Tracey for an ice bath interview"
 date = 2025-12-19T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ["Men's Health", "Interview"]

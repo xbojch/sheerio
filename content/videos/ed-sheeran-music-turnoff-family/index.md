@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Explains Why His Music Is a Turnoff For His Family'
 date = 2015-06-02T08:00:00Z
+added_date = 2026-06-05T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

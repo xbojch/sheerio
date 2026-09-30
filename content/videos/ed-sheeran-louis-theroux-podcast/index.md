@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran on The Louis Theroux Podcast"
 date = 2025-06-10T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Louis Theroux', 'Interview']

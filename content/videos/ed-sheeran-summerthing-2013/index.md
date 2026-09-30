@@ -1,6 +1,7 @@
 +++
 title = "Alice's Summerthing 2013"
 date = 2013-06-24T08:00:00Z
+added_date = 2026-06-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'San Francisco']

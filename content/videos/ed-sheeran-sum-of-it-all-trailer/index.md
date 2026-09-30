@@ -1,6 +1,7 @@
 +++
 title = 'The Sum Of It All Trailer'
 date = 2023-03-20T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Documentary', 'Trailer', 'Disney+']

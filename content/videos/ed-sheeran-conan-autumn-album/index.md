@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran on how autumn inspired Autumn Variations"
 date = 2024-10-01T08:00:00Z
+added_date = 2026-04-17T08:00:00Z
 draft = false
 toc = false
 tags = ['Conan', 'Autumn', 'Interview']

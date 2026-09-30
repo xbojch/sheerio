@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran interview with Jackson Warne about grief, friendship and Shane Warne'
 date = 2026-03-23T08:00:00Z
+added_date = 2026-04-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Shane Warne', 'Jackson Warne', 'Interview']

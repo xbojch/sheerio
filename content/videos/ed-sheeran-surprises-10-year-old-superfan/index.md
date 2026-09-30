@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises his 10-year-old superfan Rafa'
 date = 2021-06-25T08:00:00Z
+added_date = 2025-04-25T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']

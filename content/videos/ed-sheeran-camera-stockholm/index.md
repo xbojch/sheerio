@@ -1,6 +1,7 @@
 +++
 title = 'Camera Live in Stockholm'
 date = 2025-08-22T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Concert', 'Fan POV', 'Stockholm']

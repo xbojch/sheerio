@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran plays her hit "Thursday" with Jess Glynne'
 date = 2018-11-02T08:00:00Z
+added_date = 2024-11-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Jess Glynne', 'Live Performance']

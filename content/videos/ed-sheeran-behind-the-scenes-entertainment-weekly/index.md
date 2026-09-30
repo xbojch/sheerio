@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran behind the scenes interview'
 date = 2015-05-20T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Entertainment Weekly', 'Interview', 'Behind The Scenes']

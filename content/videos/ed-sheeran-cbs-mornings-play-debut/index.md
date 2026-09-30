@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on CBS Mornings: Play Debut and Life Changes'
 date = 2025-09-12T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['CBS Mornings', 'Interview', 'Live Performance']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran extended interview on 60 Minutes Australia'
 date = 2025-07-27T08:00:00Z
+added_date = 2026-05-04T08:00:00Z
 draft = false
 toc = false
 tags = ['60 Minutes Australia', 'Interview']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran full live set at the Hurricane Festival 2024'
 date = 2024-06-21T08:00:00Z
+added_date = 2026-04-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Hurricane Festival', 'Live Performance', 'Concert']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs with Beyonce and Gary Clark Jr. at the Stevie Wonder Tribute'
 date = 2015-02-10T08:00:00Z
+added_date = 2024-05-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Stevie Wonder', 'Beyoncé', 'Gary Clark Jr.', 'Live Performance', 'Concert']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performing on the street for friends'
 date = 2011-01-01T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Street Performing', 'Live Performance']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran plays live at The Bedford'
 date = 2010-10-17T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['The Bedford', 'Remedies', 'Live Performance', 'Acoustic', 'Early Years']

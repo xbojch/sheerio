@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran with JME and Tracks UK on DJ AG Live in Sheffield'
 date = 2025-05-20T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['JME', 'DJ AG']

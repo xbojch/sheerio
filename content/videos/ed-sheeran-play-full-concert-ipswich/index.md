@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran full Play Concert at Portman Road, Ipswich'
 date = 2025-07-11T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Play Tour', 'Ipswich', 'Concert', 'Fan POV']

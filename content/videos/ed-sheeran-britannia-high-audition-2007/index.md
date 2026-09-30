@@ -1,6 +1,7 @@
 +++
 title = '16-Year-Old Ed Sheeran Auditions for Britannia High'
 date = 2007-01-01T08:00:00Z
+added_date = 2026-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Early Years', 'Audition', 'Britannia High']

@@ -1,6 +1,7 @@
 +++
 title = 'Kai Cenat Meets Ed Sheeran'
 date = 2025-09-19T08:00:00Z
+added_date = 2026-05-14T08:00:00Z
 draft = false
 toc = false
 tags = ['Kai Cenat', 'Interview']

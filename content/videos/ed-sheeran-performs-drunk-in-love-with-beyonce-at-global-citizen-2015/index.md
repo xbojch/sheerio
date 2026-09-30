@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Drunk in love" with Beyonce at the "Global Citizen" Festival 2015'
 date = 2015-09-26T08:00:00Z
+added_date = 2025-01-04T08:00:00Z
 draft = false
 toc = false
 tags = ['Beyoncé', 'Live Performance', 'Concert']

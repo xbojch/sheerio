@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on This Past Weekend with Theo Von'
 date = 2025-08-11T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Theo Von', 'Interview']

@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran on \"Talking Watches\" with John Mayer"
 date = 2023-10-12T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['John Mayer', 'Watches', 'Hodinkee', 'Interview']

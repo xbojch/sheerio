@@ -1,6 +1,7 @@
 +++
 title = 'Eminem joins Ed Sheeran on stage in Detroit'
 date = 2023-07-15T08:00:00Z
+added_date = 2026-01-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Eminem', 'Live Performance', 'Concert']

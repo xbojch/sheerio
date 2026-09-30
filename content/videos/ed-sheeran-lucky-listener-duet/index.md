@@ -1,6 +1,7 @@
 +++
 title = 'Lucky Listener Sings with Ed Sheeran'
 date = 2013-03-28T08:00:00Z
+added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Fan On Stage']

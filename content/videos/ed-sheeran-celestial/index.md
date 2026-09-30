@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran x Pokémon - Celestial'
 date = 2022-09-29T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Pokémon', 'Music Video']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises Irish fans in Dublin with free tickets for his concert'
 date = 2017-04-13T08:00:00Z
+added_date = 2025-04-28T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan Surprise']

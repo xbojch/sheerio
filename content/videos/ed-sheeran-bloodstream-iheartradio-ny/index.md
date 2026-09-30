@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Bloodstream" live at iHeartRadio Theater NY'
 date = 2014-10-28T08:00:00Z
+added_date = 2026-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['iHeartRadio', 'New York', 'Live Performance', 'Concert']

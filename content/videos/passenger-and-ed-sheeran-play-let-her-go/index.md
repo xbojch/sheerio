@@ -1,6 +1,7 @@
 +++
 title = 'Passenger and Ed Sheeran play the mega hit "Let Her Go"'
 date = 2023-11-15T08:00:00Z
+added_date = 2025-01-29T08:00:00Z
 draft = false
 toc = false
 tags = ['Passenger', 'Live Performance']

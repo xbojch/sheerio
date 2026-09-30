@@ -1,6 +1,7 @@
 +++
 title = 'What Grief, Love, and Fatherhood Have Taught Me'
 date = 2025-06-16T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Podcast']

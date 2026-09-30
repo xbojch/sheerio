@@ -1,6 +1,7 @@
 +++
 title = 'One Shot Interview on The Tonight Show'
 date = 2025-11-27T08:00:00Z
+added_date = 2026-05-21T08:00:00Z
 draft = false
 toc = false
 tags = ['One Shot', 'Jimmy Fallon', 'Tonight Show', 'Interview']

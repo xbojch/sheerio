@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on his ridiculous disguise and being ginger'
 date = 2025-09-22T08:00:00Z
+added_date = 2026-05-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Capital FM']

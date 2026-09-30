@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Being Weird and Strange as a Child'
 date = 2015-06-01T08:00:00Z
+added_date = 2026-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

@@ -1,6 +1,7 @@
 +++
 title = 'We Found Love Live at SiriusXM'
 date = 2012-10-25T08:00:00Z
+added_date = 2026-06-07T08:00:00Z
 draft = false
 toc = false
 tags = ['Rihanna', 'Live Performance']

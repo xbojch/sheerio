@@ -1,6 +1,7 @@
 +++
 title = 'Boat Live From Chatham Dockyard'
 date = 2023-04-28T08:00:00Z
+added_date = 2026-06-10T08:00:00Z
 draft = false
 toc = false
 tags = ['Aaron Dessner', 'Live Performance']

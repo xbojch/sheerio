@@ -1,6 +1,7 @@
 +++
 title = 'Perfect on The Late Late Show'
 date = 2017-12-15T08:00:00Z
+added_date = 2026-06-08T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance']

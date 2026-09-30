@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs with his long admired band The Darkness their hit song "Love is only a feeling"'
 date = 2023-12-09T08:00:00Z
+added_date = 2024-11-09T08:00:00Z
 draft = false
 toc = false
 tags = ['The Darkness', 'Justin Hawkins', 'Live Performance', 'Concert']

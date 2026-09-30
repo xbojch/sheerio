@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran 'No Fluff' Popcast Interview"
 date = 2025-09-10T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Popcast', 'Interview']

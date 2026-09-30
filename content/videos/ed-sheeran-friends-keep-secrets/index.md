@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran on Friends Keep Secrets'
 date = 2026-03-10T08:00:00Z
+added_date = 2026-04-15T08:00:00Z
 draft = false
 toc = false
 tags = ['Benny Blanco', 'Friends Keep Secrets', 'Interview']

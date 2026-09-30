@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Joins Taylor Swift on The Eras Tour at Wembley'
 date = 2024-08-15T08:00:00Z
+added_date = 2026-05-21T08:00:00Z
 draft = true
 toc = false
 tags = ['Taylor Swift', 'Stage Guest', 'Live Performance']

@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran and Grime Gran Backstage Kiss at Jingle Bell Ball'
 date = 2025-12-08T08:00:00Z
+added_date = 2026-06-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Grime Gran', 'Jingle Bell Ball']

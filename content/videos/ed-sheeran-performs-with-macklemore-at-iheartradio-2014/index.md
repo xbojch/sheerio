@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran performs "Same love" with Macklemore at iHeartRadio Music Festival 2014'
 date = 2014-09-20T08:00:00Z
+added_date = 2024-05-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Macklemore', 'iHeartRadio', 'Live Performance', 'Concert']

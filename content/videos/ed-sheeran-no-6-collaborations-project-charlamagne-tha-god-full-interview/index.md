@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran gets interviewed by Charlamagne Tha God about his "No.6 Collaborations Project"'
 date = 2019-07-12T08:00:00Z
+added_date = 2026-03-27T08:00:00Z
 draft = false
 toc = false
 tags = ['Charlamagne Tha God', 'Interview']

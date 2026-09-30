@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran goes record shopping in Belgium'
 date = 2025-08-07T08:00:00Z
+added_date = 2026-03-22T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview']

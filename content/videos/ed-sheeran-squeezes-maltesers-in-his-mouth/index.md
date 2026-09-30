@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran joins James Corden in Carpool Karaoke and competes who can squeeze more Maltesers in their mouth'
 date = 2017-07-17T08:00:00Z
+added_date = 2024-03-30T08:00:00Z
 draft = false
 toc = false
 tags = ['James Corden', 'Maltesers', 'Carpool Karaoke', 'TV Appearance']

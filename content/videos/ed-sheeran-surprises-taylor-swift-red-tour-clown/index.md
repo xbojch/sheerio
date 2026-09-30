@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran surprises Taylor Swift on the Red Tour dressed as a clown'
 date = 2013-09-22T08:00:00Z
+added_date = 2026-04-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Taylor Swift', 'RED Tour', 'Fan Surprise', 'Live Performance', 'Concert']

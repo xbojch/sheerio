@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran Goes Sneaker Shopping with Complex'
 date = 2021-11-01T08:00:00Z
+added_date = 2026-05-13T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Complex', 'Sneakers']

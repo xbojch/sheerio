@@ -1,6 +1,7 @@
 +++
 title = "Ed Sheeran performs Visiting Hours at Michael Gudinski's State Memorial"
 date = 2021-03-24T08:00:00Z
+added_date = 2026-04-19T08:00:00Z
 draft = false
 toc = false
 tags = ['Michael Gudinski', 'Tribute', 'Live Performance']

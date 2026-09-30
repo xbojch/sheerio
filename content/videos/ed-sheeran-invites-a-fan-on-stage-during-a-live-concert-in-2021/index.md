@@ -1,6 +1,7 @@
 +++
 title = 'Ed Sheeran invites a fan on stage during a live concert in 2021'
 date = 2021-12-10T08:00:00Z
+added_date = 2025-03-18T08:00:00Z
 draft = false
 toc = false
 tags = ['Fan On Stage', 'Michael', 'Live Performance']

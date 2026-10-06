@@ -2,10 +2,15 @@
      (private or removed) videos are not built, so they are not counted. */}}
 {{ $videos := where site.RegularPages "Section" "videos" }}
 {{ $years := slice }}
-{{ range $videos }}{{ $years = $years | append .Date.Year }}{{ end }}
+{{/* Count YouTube clips, not pages: merged entries hold several clips each. */}}
+{{ $clips := 0 }}
+{{ range $videos }}
+  {{ $years = $years | append .Date.Year }}
+  {{ $clips = add $clips (len (.Params.youtube_videos | default slice)) }}
+{{ end }}
 {{ $years = $years | uniq | sort }}
 <dl class="sh-archive-stats">
-    <div><dt>Videos</dt><dd>{{ len $videos }}</dd></div>
+    <div><dt>Videos</dt><dd>{{ $clips }}</dd></div>
     <div><dt>Songs</dt><dd>{{ len site.Taxonomies.songs }}</dd></div>
     <div><dt>Tags</dt><dd>{{ len site.Taxonomies.tags }}</dd></div>
     {{ with $years }}<div><dt>Years covered</dt><dd>{{ index . 0 }}–{{ index . (sub (len .) 1) }}</dd></div>{{ end }}

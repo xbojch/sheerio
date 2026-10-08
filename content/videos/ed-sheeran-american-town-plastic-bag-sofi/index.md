@@ -10,4 +10,4 @@ videos = ['https://youtu.be/ocVbCjmhIoU']
 [[youtube_videos]]
 video = 'ocVbCjmhIoU'
 +++
-A month before Autumn Variations comes out, Ed plays the unreleased American Town and Plastic Bag for the SoFi Stadium crowd in Inglewood.
+A week before Autumn Variations comes out, Ed plays the unreleased American Town and Plastic Bag for the SoFi Stadium crowd in Inglewood.

@@ -4,10 +4,12 @@ date = 2023-02-02T08:00:00Z
 added_date = 2026-09-09T08:00:00Z
 draft = false
 toc = false
-tags = ['Fan On Stage', 'Live Performance']
+tags = ['Fan On Stage', 'Live Performance', 'Fan POV', 'Mathematics Tour', 'New Zealand']
 songs = ['Galway Girl']
-videos = ['https://youtu.be/Cpl1YPb374c']
+videos = ['https://youtu.be/Cpl1YPb374c', 'https://youtu.be/_ohJkzOJGwo']
 [[youtube_videos]]
 video = 'Cpl1YPb374c'
+[[youtube_videos]]
+video = '_ohJkzOJGwo'
 +++
-Ed Sheeran loses the words to Galway Girl at Sky Stadium in Wellington and pulls a girl named Pippa out of the crowd to bail him out. Once she has a mic and monitors on, she takes over the lyrics and carries the rest of the song with him.
+Ed Sheeran loses the words to Galway Girl at Sky Stadium in Wellington and pulls a girl named Pippa out of the crowd to bail him out. Once she has a mic and monitors on, she takes over the lyrics and carries the rest of the song with him. A second clip from the crowd catches the whole moment from another angle.

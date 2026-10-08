@@ -6,8 +6,10 @@ draft = false
 toc = false
 tags = ['Live Performance']
 songs = ['Give Me Love', 'Drunk', 'Grade 8', 'Wayfaring Stranger', 'Lego House', "You Need Me, I Don't Need You", 'The Parting Glass', 'The A Team', 'Be My Husband', 'Guiding Light']
-videos = ['https://youtu.be/oKaNX-DbIlA']
+videos = ['https://youtu.be/oKaNX-DbIlA', 'https://youtu.be/VZnanyWHdSU']
 [[youtube_videos]]
 video = 'oKaNX-DbIlA'
+[[youtube_videos]]
+video = 'VZnanyWHdSU'
 +++
-Ed Sheeran takes the stage at the SWR3 New Pop Festival in Germany, broadcast live on EinsPlus. An early concert moment from a young Ed winning over a German crowd with just his guitar and loop pedal.
+Ed Sheeran takes the stage at the SWR3 New Pop Festival in Germany, broadcast live on EinsPlus. An early concert moment from a young Ed winning over a German crowd with just his guitar and loop pedal. A second clip has his closing cover of Foy Vance's Guiding Light, the song that ended the night.

@@ -9,10 +9,12 @@ aliases = [
 ]
 tags = ['Interview', 'Live Performance', 'The Jonathan Ross Show', 'Jamal Edwards']
 songs = ['Eyes Closed']
-videos = ['https://youtu.be/5-jmfmxXeik', 'https://youtu.be/XuQCN9ZLbv0']
+videos = ['https://youtu.be/5-jmfmxXeik', 'https://youtu.be/XuQCN9ZLbv0', 'https://youtu.be/vyqP8mPOb1A']
 [[youtube_videos]]
 video = '5-jmfmxXeik'
 [[youtube_videos]]
 video = 'XuQCN9ZLbv0'
+[[youtube_videos]]
+video = 'vyqP8mPOb1A'
 +++
 Ed sits down on The Jonathan Ross Show and shares heartfelt memories of his close friend and mentor Jamal Edwards, the SBTV founder who helped shape his early career. He then performs Eyes Closed, the lead single from Subtract.

@@ -5,6 +5,7 @@ added_date = 2026-10-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Early Years', 'Sekou Andrews']
+songs = ["You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/GlieKPIjcQw']
 [[youtube_videos]]
 video = 'GlieKPIjcQw'

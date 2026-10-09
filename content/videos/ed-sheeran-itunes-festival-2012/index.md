@@ -6,8 +6,10 @@ draft = false
 toc = false
 tags = ['Live Performance', 'iTunes Festival']
 songs = ['Give Me Love', 'Drunk', 'Homeless', 'UNI', 'Grade 8', 'Small Bump', 'The City', 'This', 'Be My Husband', 'Kiss Me', 'Lego House', 'The A Team', 'Chasing Cars', "You Need Me, I Don't Need You"]
-videos = ['https://youtu.be/VsUf743_m7I']
+videos = ['https://youtu.be/VsUf743_m7I', 'https://youtu.be/wi0T9HOMwXM']
 [[youtube_videos]]
 video = 'VsUf743_m7I'
+[[youtube_videos]]
+video = 'wi0T9HOMwXM'
 +++
 Ed Sheeran takes the stage at London's Roundhouse for his full iTunes Festival 2012 set, just him and a guitar working through the songs that made his name. A brilliant document of early Ed at his loop-pedal best in front of a packed crowd.

@@ -5,6 +5,7 @@ added_date = 2026-10-09T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Early Years']
+songs = ["You Need Me, I Don't Need You"]
 videos = ['https://youtu.be/g2pI4htUkAc']
 [[youtube_videos]]
 video = 'g2pI4htUkAc'

@@ -9,4 +9,4 @@ videos = ['https://youtu.be/i8qGBC70ZUY']
 [[youtube_videos]]
 video = 'i8qGBC70ZUY'
 +++
-On his first visit to Australia, Ed plays an intimate guerilla gig in Sydney for Channel V, years before he was filling stadiums there.
+Ed plays an intimate guerilla gig in Sydney for Channel V, years before he was filling stadiums there.

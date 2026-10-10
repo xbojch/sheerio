@@ -1,6 +1,6 @@
 +++
-title = 'Give Me Love at VH1 You Oughta Know Live'
-date = 2013-11-11T08:00:00Z
+title = 'Give Me Love for VH1'
+date = 2013-11-23T08:00:00Z
 added_date = 2026-10-10T08:00:00Z
 draft = false
 toc = false
@@ -10,4 +10,4 @@ videos = ['https://youtu.be/2S_w1y_HKHw']
 [[youtube_videos]]
 video = '2S_w1y_HKHw'
 +++
-Ed plays an extended, loop pedal driven Give Me Love for VH1, most likely at the You Oughta Know Live in Concert show he headlined with The Lumineers and Lorde in November 2013.
+Ed plays an extended, loop pedal driven Give Me Love for VH1.

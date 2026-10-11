@@ -9,4 +9,4 @@ videos = ['https://youtu.be/q2IxR6GEEDw']
 [[youtube_videos]]
 video = 'q2IxR6GEEDw'
 +++
-Ten years after Multiply came out, Ed goes live on Instagram and works his way back through the album's songs, relearning them on guitar and chatting with fans along the way.
+Ten years after Multiply came out, Ed goes live on Instagram and works his way back through the album's songs, relearning them live.

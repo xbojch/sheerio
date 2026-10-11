@@ -10,4 +10,4 @@ videos = ['https://youtu.be/q6D4jMQRs5k']
 [[youtube_videos]]
 video = 'q6D4jMQRs5k'
 +++
-A young Ed plays The City at a fan's friend's house, years before it became the opening track on +.
+A young Ed plays The City at a fan's friend's house, two years before it made it onto his debut album +.

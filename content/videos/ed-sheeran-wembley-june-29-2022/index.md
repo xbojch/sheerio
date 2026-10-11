@@ -6,8 +6,8 @@ draft = false
 toc = false
 tags = ['Fireboy DML', 'Live Performance', 'Concert', 'Stage Guest', 'Fan POV', 'Mathematics Tour', 'Wembley']
 songs = ['Peru']
-videos = ['https://youtu.be/FUawUMRf2H0']
+videos = ['https://youtu.be/phK876tkwY0']
 [[youtube_videos]]
-video = 'FUawUMRf2H0'
+video = 'phK876tkwY0'
 +++
 Fireboy DML joins Ed on stage at Wembley Stadium, and the two perform Peru together live for the very first time.

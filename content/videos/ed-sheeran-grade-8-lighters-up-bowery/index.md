@@ -10,4 +10,4 @@ videos = ['https://youtu.be/clb0mbCE8vg']
 [[youtube_videos]]
 video = 'clb0mbCE8vg'
 +++
-From the front row at the Bowery Ballroom in New York, a fan films Ed playing Grade 8 and slipping in a cover of Lil' Kim's Lighters Up.
+At the Bowery Ballroom in New York, a fan films Ed playing Grade 8 and slipping in a cover of Lil' Kim's Lighters Up.

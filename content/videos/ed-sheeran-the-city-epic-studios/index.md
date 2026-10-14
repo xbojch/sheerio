@@ -10,4 +10,4 @@ videos = ['https://youtu.be/IrX5CjlSOb0']
 [[youtube_videos]]
 video = 'IrX5CjlSOb0'
 +++
-Ed plays The City live at Epic Studios in Norwich, building it up on his loop pedal.
+Ed plays The City live at Epic Studios in Norwich.

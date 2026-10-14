@@ -10,4 +10,4 @@ videos = ['https://youtu.be/RjfZJr7L8-Y']
 [[youtube_videos]]
 video = 'RjfZJr7L8-Y'
 +++
-At the In The City festival in Manchester, Ed talks about the influences behind his mix of acoustic, folk and hip hop, working with grime artists on the No. 5 Collaborations Project and Tinie Tempah's album, then plays an acoustic Wake Me Up.
+At the In The City festival in Manchester, Ed talks about the influences behind his mix of acoustic, folk and hip hop, working with grime artists on the No. 5 Collaborations Project and what he thinks of Tinie Tempah's album, then plays an acoustic Wake Me Up.

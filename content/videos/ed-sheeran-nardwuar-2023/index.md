@@ -9,4 +9,4 @@ videos = ['https://youtu.be/7_wu81XMUeM']
 [[youtube_videos]]
 video = '7_wu81XMUeM'
 +++
-Nardwuar the Human Serviette interviews Ed at Beat Street Records in Vancouver, armed with his trademark deep cut gifts and questions.
+Nardwuar the Human Serviette interviews Ed at Beat Street Records in Vancouver.

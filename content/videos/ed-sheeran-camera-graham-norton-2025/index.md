@@ -10,4 +10,4 @@ videos = ['https://youtu.be/TkV4pXdJjf4']
 [[youtube_videos]]
 video = 'TkV4pXdJjf4'
 +++
-Ed performs Camera live on The Graham Norton Show, backed by the voices of gospel choir Flames Collective.
+Ed performs Camera live on The Graham Norton Show, backed by the voices of Flames Collective.

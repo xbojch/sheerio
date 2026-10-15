@@ -5,7 +5,7 @@ added_date = 2026-10-06T08:00:00Z
 draft = false
 toc = false
 tags = ['Live Performance', 'Passenger', 'Stu Larsen']
-songs = ['Hearts on Fire', 'No Diggity']
+songs = ["Heart's on Fire", 'No Diggity']
 videos = ['https://youtu.be/y1jM63X1dNE']
 [[youtube_videos]]
 video = 'y1jM63X1dNE'

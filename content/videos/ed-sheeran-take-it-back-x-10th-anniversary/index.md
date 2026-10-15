@@ -10,4 +10,4 @@ videos = ['https://youtu.be/5hqGZCaKQvg']
 [[youtube_videos]]
 video = '5hqGZCaKQvg'
 +++
-At the Multiply 10th anniversary show at the Barclays Center in Brooklyn, Ed plays Take It Back, built up live on his loop pedal.
+At the Multiply 10th anniversary show at the Barclays Center in Brooklyn, Ed plays Take It Back.

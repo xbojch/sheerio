@@ -10,4 +10,4 @@ videos = ['https://youtu.be/oTi6f7b_wJ8']
 [[youtube_videos]]
 video = 'oTi6f7b_wJ8'
 +++
-Ed and the crew have some fun with 2step backstage in a dressing room in Cork, during the opening run of the Mathematics Tour.
+Ed 2steps backstage in a dressing room in Cork, during the opening run of the Mathematics Tour.

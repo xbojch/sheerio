@@ -78,4 +78,4 @@ DESCRIPTION
    tell the user to run `make auth` and then rerun the script.
 
 8. Report the created file path and the front matter to the user.
-9. Prepare a one or two sentence post for X (Twitter) in this shape: "That time Ed Sheeran ..." with a link to the video page (https://sheerio.online/videos/{slug}/). Output it in one line, no other embelishments, like quote or line breaks.
+9. Prepare a one or two sentence post for X (Twitter) in this shape: "That time Ed Sheeran ..." with a link to the video page (https://sheerio.online/videos/{slug}/), followed by one hashtag at the end: `#EdSheeran` or `#Sheerio` (prefer `#Sheerio` for rare, early years or fan footage, `#EdSheeran` otherwise). Output it in one line, no other embelishments, like quote or line breaks.

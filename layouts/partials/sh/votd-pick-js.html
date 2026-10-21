@@ -1,0 +1,18 @@
+<script>
+/* Today's Video of the Day position in the list from sh/video-list.html.
+   Shared by the Video of the Day and Loop pages so both open on the same video.
+
+   The list is ordered oldest-added first, so a newly added video sits at the back.
+   We walk one per day from a fixed epoch: every rolling window of N days shows each
+   video exactly once — no repeats until all are cycled. Because the cursor counts days
+   from EPOCH (not the raw calendar day), it stays within its first pass for the first
+   N days after EPOCH, and during that window appending a video at the back leaves
+   today's pick — and every upcoming pick of an existing video — untouched. */
+window.shVotdIndex = function (N) {
+    // Day number at the visitor's LOCAL midnight.
+    var now = new Date();
+    var dayNum = Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000);
+    var EPOCH = Math.floor(Date.UTC(2026, 5, 1) / 86400000); // 2026-06-01
+    return (((dayNum - EPOCH) % N) + N) % N;
+};
+</script>

@@ -103,6 +103,10 @@ disable = false # Disable all analytics
         pageRef = '/video-of-the-day'
         weight = 20
     [[menus.main]]
+        name = 'Loop'
+        pageRef = '/loop'
+        weight = 25
+    [[menus.main]]
         name = 'Videos'
         pageRef = '/videos'
         weight = 30

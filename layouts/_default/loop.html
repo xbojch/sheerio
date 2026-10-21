@@ -1,0 +1,285 @@
+{{ define "main" }}
+{{ $page := . }}
+
+{{/* Same list and order as the Video of the Day, so the loop opens on today's pick.
+     Trimmed to what the player needs: no description HTML, no prev/next. */}}
+{{ $list := slice }}
+{{ range partialCached "sh/video-list.html" . }}
+    {{ $list = $list | append (dict
+        "id" .id
+        "title" .title
+        "url" .url
+        "date" .date
+        "datetime" .datetime
+        "songs" .songs
+        "tags" .tags
+    ) }}
+{{ end }}
+
+<article class="align-items-center d-flex flex-column paige-kind-page paige-status-published" id="paige-page">
+    <header class="mw-100 text-center" id="paige-page-header">
+        <h1 class="fw-bold" id="paige-page-title">{{ $page.Title }}</h1>
+        {{ with $page.Content }}
+            <div class="paige-row-tall text-center" id="paige-page-description">{{ . }}</div>
+        {{ end }}
+    </header>
+
+    <main class="mw-100" id="paige-page-content">
+        <div id="sh-loop" class="sh-votd sh-loop">
+            <noscript>
+                <p class="text-center">Enable JavaScript to use the player, or
+                <a href="{{ (site.GetPage "/videos").RelPermalink }}">browse all videos</a>.</p>
+            </noscript>
+        </div>
+    </main>
+</article>
+
+{{ partial "sh/votd-pick-js.html" . }}
+<script id="sh-loop-data" type="application/json">{{ $list | jsonify | safeJS }}</script>
+<script>
+(function () {
+    var dataEl = document.getElementById('sh-loop-data');
+    var mount = document.getElementById('sh-loop');
+    if (!dataEl || !mount || !window.shVotdIndex) return;
+
+    var videos;
+    try { videos = JSON.parse(dataEl.textContent); } catch (e) { return; }
+    if (!Array.isArray(videos) || videos.length === 0) return;
+
+    var N = videos.length;
+    var UP_NEXT = 5;
+    var MODES = [['shuffle', 'Shuffle'], ['chrono', 'Chronological'], ['related', 'Related']];
+    // The most common tags say little about how two videos relate, so Related ignores them.
+    var GENERIC_TAGS = ['Live Performance', 'Interview', 'Music Video', 'Fan POV', 'Concert', 'Acoustic'];
+
+    var mode = 'shuffle';
+    try {
+        var saved = localStorage.getItem('sh-loop-mode');
+        if (MODES.some(function (m) { return m[0] === saved; })) mode = saved;
+    } catch (e) {}
+
+    // Playback state: indices into `videos`. `history` is everything shown so far and
+    // `hpos` the current spot in it, so Previous and then Skip replays the same path.
+    // After the first video the order never follows the Video of the Day rotation,
+    // so the loop does not give away upcoming picks.
+    var current = window.shVotdIndex(N);
+    var history = [current];
+    var hpos = 0;
+    var played = {};
+    played[current] = true;
+    var queue = [];
+    var player = null;
+    var notice = '';
+
+    function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+    }
+
+    function shuffle(a) {
+        for (var i = a.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var t = a[i]; a[i] = a[j]; a[j] = t;
+        }
+        return a;
+    }
+
+    // Once every video has played, start a fresh pass.
+    function unplayed() {
+        var out = [];
+        for (var i = 0; i < N; i++) if (!played[i] && i !== current) out.push(i);
+        if (out.length === 0) {
+            played = {};
+            played[current] = true;
+            for (var k = 0; k < N; k++) if (k !== current) out.push(k);
+        }
+        return out;
+    }
+
+    var chronoOrder = null;
+    function chronological() {
+        if (!chronoOrder) {
+            chronoOrder = videos.map(function (_, i) { return i; }).sort(function (a, b) {
+                var da = videos[a].datetime, db = videos[b].datetime;
+                return da < db ? -1 : da > db ? 1 : (videos[a].title < videos[b].title ? -1 : 1);
+            });
+        }
+        var at = chronoOrder.indexOf(current);
+        return chronoOrder.slice(at + 1).concat(chronoOrder.slice(0, at));
+    }
+
+    function related() {
+        var me = videos[current];
+        var songs = me.songs || [];
+        var tags = (me.tags || []).filter(function (t) { return GENERIC_TAGS.indexOf(t) === -1; });
+        var scored = shuffle(unplayed()).map(function (i) {
+            var v = videos[i], s = 0;
+            (v.songs || []).forEach(function (x) { if (songs.indexOf(x) !== -1) s += 3; });
+            (v.tags || []).forEach(function (x) { if (tags.indexOf(x) !== -1) s += 1; });
+            return { i: i, s: s };
+        });
+        // Stable sort keeps the shuffled order among equal scores, so ties break randomly
+        // and the zero-score tail is a random fallback.
+        scored.sort(function (a, b) { return b.s - a.s; });
+        return scored.map(function (x) { return x.i; });
+    }
+
+    function buildQueue() {
+        if (mode === 'chrono') queue = chronological();
+        else if (mode === 'related') queue = related();
+        else queue = shuffle(unplayed());
+    }
+
+    function go(i) {
+        current = i;
+        played[i] = true;
+        if (player && player.loadVideoById) player.loadVideoById(videos[i].id);
+        render();
+    }
+
+    function next() {
+        notice = '';
+        if (hpos < history.length - 1) {
+            hpos++;
+            go(history[hpos]);
+            return;
+        }
+        if (queue.length === 0) buildQueue();
+        var i = queue.shift();
+        history.push(i);
+        hpos = history.length - 1;
+        go(i);
+        // Related follows whatever is playing now, so it is re-ranked on every step.
+        if (mode === 'related') buildQueue();
+    }
+
+    function prev() {
+        if (hpos === 0) return;
+        notice = '';
+        hpos--;
+        go(history[hpos]);
+    }
+
+    function jump(qpos) {
+        var i = queue.splice(qpos, 1)[0];
+        if (i == null) return;
+        notice = '';
+        history = history.slice(0, hpos + 1);
+        history.push(i);
+        hpos = history.length - 1;
+        go(i);
+        if (mode === 'related') buildQueue();
+    }
+
+    function setMode(m) {
+        if (m === mode) return;
+        mode = m;
+        try { localStorage.setItem('sh-loop-mode', m); } catch (e) {}
+        // A new mode means a new path forward from here.
+        history = history.slice(0, hpos + 1);
+        buildQueue();
+        render();
+    }
+
+    var ARROW_PREV = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4-4M1 5l4 4"/></svg>';
+    var ARROW_NEXT = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>';
+    var ICON_DATE = '<svg class="sh-meta-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 9h16M8 3v3m8-3v3M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>';
+
+    // Static shell: the player div is created once so the YouTube iframe survives re-renders.
+    mount.innerHTML =
+        '<div id="sh-loop-now"></div>' +
+        '<div class="paige-youtube"><div class="paige-video ratio ratio-16x9"><div id="sh-loop-player"></div></div></div>' +
+        '<p class="sh-loop-notice text-secondary" id="sh-loop-notice" aria-live="polite"></p>' +
+        '<div class="sh-loop-controls">' +
+            '<button type="button" class="sh-nav-btn sh-loop-btn" id="sh-loop-prev">' + ARROW_PREV +
+                '<span class="sh-nav-text"><span class="sh-nav-label">Previous</span></span></button>' +
+            '<div class="sh-loop-modes" role="group" aria-label="Play order">' +
+                MODES.map(function (m) {
+                    return '<button type="button" class="sh-loop-mode" data-mode="' + m[0] + '">' + m[1] + '</button>';
+                }).join('') +
+            '</div>' +
+            '<button type="button" class="sh-nav-btn sh-nav-next sh-loop-btn" id="sh-loop-skip">' +
+                '<span class="sh-nav-text"><span class="sh-nav-label">Skip</span></span>' + ARROW_NEXT + '</button>' +
+        '</div>' +
+        '<h2 class="sh-loop-upnext-title">Up next</h2>' +
+        '<ol class="sh-loop-upnext" id="sh-loop-upnext"></ol>';
+
+    var nowEl = document.getElementById('sh-loop-now');
+    var noticeEl = document.getElementById('sh-loop-notice');
+    var upEl = document.getElementById('sh-loop-upnext');
+    var prevBtn = document.getElementById('sh-loop-prev');
+
+    function render() {
+        var v = videos[current];
+        nowEl.innerHTML =
+            '<h2 class="fw-bold text-center sh-votd-title"><a href="' + esc(v.url) + '">' + esc(v.title) + '</a></h2>' +
+            '<div class="paige-row-short sh-page-meta"><p class="text-secondary">' + ICON_DATE +
+                '<time datetime="' + esc(v.datetime) + '">' + esc(v.date) + '</time></p></div>';
+        noticeEl.textContent = notice;
+        prevBtn.disabled = hpos === 0;
+
+        Array.prototype.forEach.call(mount.querySelectorAll('.sh-loop-mode'), function (b) {
+            b.setAttribute('aria-pressed', b.getAttribute('data-mode') === mode ? 'true' : 'false');
+        });
+
+        // Upcoming list: replayed history first (after Previous), then the queue.
+        var ahead = history.slice(hpos + 1).map(function (i) { return { i: i, q: -1 }; });
+        for (var q = 0; ahead.length < UP_NEXT && q < queue.length; q++) ahead.push({ i: queue[q], q: q });
+        upEl.innerHTML = ahead.slice(0, UP_NEXT).map(function (a) {
+            var u = videos[a.i];
+            return '<li><button type="button" class="sh-loop-item" data-q="' + a.q + '" data-h="' + a.i + '">' +
+                '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(u.id) + '/mqdefault.jpg" alt="" loading="lazy" width="96" height="54">' +
+                '<span class="sh-loop-item-text"><span class="sh-loop-item-title">' + esc(u.title) + '</span>' +
+                '<span class="sh-loop-item-date text-secondary">' + esc(u.date) + '</span></span></button></li>';
+        }).join('');
+    }
+
+    mount.addEventListener('click', function (e) {
+        var t = e.target.closest('button');
+        if (!t) return;
+        if (t.id === 'sh-loop-prev') prev();
+        else if (t.id === 'sh-loop-skip') next();
+        else if (t.hasAttribute('data-mode')) setMode(t.getAttribute('data-mode'));
+        else if (t.hasAttribute('data-q')) {
+            var q = parseInt(t.getAttribute('data-q'), 10);
+            if (q >= 0) { jump(q); return; }
+            // An item from replayed history: step forward to it.
+            var target = history.indexOf(parseInt(t.getAttribute('data-h'), 10), hpos + 1);
+            if (target !== -1) { notice = ''; hpos = target; go(history[hpos]); }
+        }
+    });
+
+    buildQueue();
+    render();
+
+    // The IFrame Player API tells us when a video ends (state 0), which is the cue to
+    // load the next one. Errors (private, removed or embed-disabled videos) skip ahead.
+    var prevReady = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = function () {
+        if (typeof prevReady === 'function') prevReady();
+        player = new YT.Player('sh-loop-player', {
+            videoId: videos[current].id,
+            host: 'https://www.youtube.com',
+            playerVars: { hl: 'en-us', modestbranding: 1, playsinline: 1, rel: 0 },
+            events: {
+                onStateChange: function (e) {
+                    if (e.data === YT.PlayerState.ENDED) next();
+                },
+                onError: function () {
+                    var skipped = videos[current].title;
+                    setTimeout(function () {
+                        next();
+                        notice = 'Skipped "' + skipped + '" because it can no longer be played here.';
+                        noticeEl.textContent = notice;
+                    }, 1500);
+                }
+            }
+        });
+    };
+    var api = document.createElement('script');
+    api.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(api);
+})();
+</script>
+{{ end }}

@@ -523,6 +523,156 @@ body .link-secondary:hover {
   margin-top: 1.25rem;
 }
 
+/* ── Loop player ── */
+.sh-loop .sh-votd-title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.sh-loop .sh-votd-title a:hover {
+  color: var(--sh-orange) !important;
+}
+
+.sh-loop .sh-page-meta {
+  margin: 0.5rem 0 0;
+}
+
+.sh-loop-notice {
+  min-height: 1.25rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.sh-loop-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+/* Outranks the .sh-nav-btn half-width rule further down */
+.sh-loop-controls .sh-loop-btn {
+  flex: 0 0 auto;
+  width: auto;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.sh-loop-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  background: none;
+  color: var(--sh-orange) !important;
+}
+
+.sh-loop-modes {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.sh-loop-mode {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--sh-orange);
+  background: none;
+  border: 1.5px solid rgba(232, 98, 26, 0.35);
+  border-radius: 999px;
+  padding: 0.25em 0.8em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sh-loop-mode:hover,
+.sh-loop-mode[aria-pressed="true"] {
+  background: var(--sh-orange);
+  color: #fff;
+  border-color: var(--sh-orange);
+}
+
+.sh-loop-upnext-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.sh-loop-upnext {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sh-loop-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.4rem;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sh-loop-item:hover {
+  background: rgba(232, 98, 26, 0.08);
+}
+
+.sh-loop-item img {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.sh-loop-item-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sh-loop-item-title {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sh-loop-item-date {
+  font-size: 0.8rem;
+}
+
+/* Phone: modes get their own row above Previous / Skip */
+@media (max-width: 36rem) {
+  .sh-loop-controls {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sh-loop-modes {
+    order: -1;
+    flex-basis: 100%;
+  }
+
+  .sh-loop-controls .sh-loop-btn {
+    flex: 1 1 0;
+  }
+}
+
 /* ── Timeline year chip ── */
 #sh-year-chip {
   position: fixed;

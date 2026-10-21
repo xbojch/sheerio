@@ -1,0 +1,38 @@
+{{/* All eligible videos, ordered oldest-added first so a newly added video lands at
+     the back of the Video of the Day rotation. Shared by the Video of the Day and
+     Loop pages so both agree on today's pick; call it with partialCached.
+     Each entry carries what a video page shows: title, metadata, embed, and prev/next,
+     plus songs and tags for the Loop page's Related mode.
+     `sortkey` is the added date (added_date, falling back to the publish date for
+     entries that predate the field) plus the YouTube ID as a deterministic tiebreaker. */}}
+{{ $list := slice }}
+{{ $seen := slice }}
+{{ range $v := (where site.RegularPages "Section" "videos").ByDate }}
+    {{ with $v.Params.youtube_videos }}
+        {{ $id := (index . 0).video }}
+        {{ if and $id (not (in $seen $id)) }}
+            {{ $seen = $seen | append $id }}
+            {{ $added := ($v.Params.added_date | default $v.Date) }}
+            {{ $prev := "" }}
+            {{ with $v.NextInSection }}{{ $prev = dict "url" .RelPermalink "title" .LinkTitle }}{{ end }}
+            {{ $next := "" }}
+            {{ with $v.PrevInSection }}{{ $next = dict "url" .RelPermalink "title" .LinkTitle }}{{ end }}
+            {{ $list = $list | append (dict
+                "id" $id
+                "title" $v.LinkTitle
+                "url" $v.RelPermalink
+                "date" ($v.PublishDate.Format "January 2, 2006")
+                "datetime" ($v.PublishDate.Format "2006-01-02")
+                "words" $v.WordCount
+                "minutes" $v.ReadingTime
+                "content" ($v.Content | string)
+                "prev" $prev
+                "next" $next
+                "songs" ($v.Params.songs | default slice)
+                "tags" ($v.Params.tags | default slice)
+                "sortkey" (printf "%s|%s" ($added.Format "2006-01-02T15:04:05Z07:00") $id)
+            ) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ return sort $list "sortkey" "asc" }}

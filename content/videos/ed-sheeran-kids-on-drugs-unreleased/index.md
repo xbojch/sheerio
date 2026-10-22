@@ -2,7 +2,7 @@
 title = 'Ed Sheeran Kids On Drugs Unreleased'
 date = 2018-01-01T08:00:00Z
 added_date = 2026-07-14T08:00:00Z
-draft = false
+draft = true
 toc = false
 tags = ['Unreleased']
 songs = ['Kids on Drugs']

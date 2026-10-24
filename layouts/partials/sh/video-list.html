@@ -9,7 +9,8 @@
 {{ $seen := slice }}
 {{ range $v := (where site.RegularPages "Section" "videos").ByDate }}
     {{ with $v.Params.youtube_videos }}
-        {{ $id := (index . 0).video }}
+        {{ $first := index . 0 }}
+        {{ $id := $first.video }}
         {{ if and $id (not (in $seen $id)) }}
             {{ $seen = $seen | append $id }}
             {{ $added := ($v.Params.added_date | default $v.Date) }}
@@ -30,6 +31,8 @@
                 "next" $next
                 "songs" ($v.Params.songs | default slice)
                 "tags" ($v.Params.tags | default slice)
+                "start" ($first.start | default 0)
+                "end" ($first.end | default 0)
                 "sortkey" (printf "%s|%s" ($added.Format "2006-01-02T15:04:05Z07:00") $id)
             ) }}
         {{ end }}

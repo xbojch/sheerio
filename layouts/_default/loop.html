@@ -13,6 +13,8 @@
         "datetime" .datetime
         "songs" .songs
         "tags" .tags
+        "start" .start
+        "end" .end
     ) }}
 {{ end }}
 
@@ -131,10 +133,19 @@
         else queue = shuffle(unplayed());
     }
 
+    // Some entries embed only part of a long video (a start/end in the front matter).
+    // Play the same clip here; the player reports ENDED when it reaches endSeconds.
+    function clip(v) {
+        var c = { videoId: v.id };
+        if (v.start > 0) c.startSeconds = v.start;
+        if (v.end > 0) c.endSeconds = v.end;
+        return c;
+    }
+
     function go(i) {
         current = i;
         played[i] = true;
-        if (player && player.loadVideoById) player.loadVideoById(videos[i].id);
+        if (player && player.loadVideoById) player.loadVideoById(clip(videos[i]));
         render();
     }
 
@@ -258,10 +269,14 @@
     var prevReady = window.onYouTubeIframeAPIReady;
     window.onYouTubeIframeAPIReady = function () {
         if (typeof prevReady === 'function') prevReady();
+        var first = clip(videos[current]);
+        var vars = { hl: 'en-us', modestbranding: 1, playsinline: 1, rel: 0 };
+        if (first.startSeconds) vars.start = first.startSeconds;
+        if (first.endSeconds) vars.end = first.endSeconds;
         player = new YT.Player('sh-loop-player', {
-            videoId: videos[current].id,
+            videoId: first.videoId,
             host: 'https://www.youtube.com',
-            playerVars: { hl: 'en-us', modestbranding: 1, playsinline: 1, rel: 0 },
+            playerVars: vars,
             events: {
                 onStateChange: function (e) {
                     if (e.data === YT.PlayerState.ENDED) next();

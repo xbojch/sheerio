@@ -9,8 +9,8 @@ aliases = [
   '/videos/ed-sheeran-be-my-husband-live-room/',
 ]
 tags = ['Live Performance', 'Acoustic', 'Nina Simone', 'Songkick']
-songs = ["You Need Me, I Don't Need You", 'Be My Husband', 'Give Me Love', 'The A Team']
-videos = ['https://youtu.be/DV0TJZ7Kp40', 'https://youtu.be/5Lv1fsEE9ag', 'https://youtu.be/j8cADX87-2I', 'https://youtu.be/cOwsttzkUgs']
+songs = ["You Need Me, I Don't Need You", 'Be My Husband', 'Give Me Love', 'The A Team', 'Lego House']
+videos = ['https://youtu.be/DV0TJZ7Kp40', 'https://youtu.be/5Lv1fsEE9ag', 'https://youtu.be/j8cADX87-2I', 'https://youtu.be/cOwsttzkUgs', 'https://youtu.be/MYTQ2ZSkGfg']
 [[youtube_videos]]
 video = 'DV0TJZ7Kp40'
 [[youtube_videos]]
@@ -19,5 +19,7 @@ video = '5Lv1fsEE9ag'
 video = 'j8cADX87-2I'
 [[youtube_videos]]
 video = 'cOwsttzkUgs'
+[[youtube_videos]]
+video = 'MYTQ2ZSkGfg'
 +++
-Ed records a session for The Live Room at Hinge Studios in Chicago, just him, his guitar and his loop pedal building everything up in real time. He plays You Need Me, I Don't Need You, Give Me Love and The A Team, and takes on Nina Simone's Be My Husband, stomping out the rhythm for a raw, bluesy cover.
+Ed records a session for The Live Room at Hinge Studios in Chicago, just him, his guitar and his loop pedal building everything up in real time. He plays You Need Me, I Don't Need You, Give Me Love, The A Team and Lego House, and takes on Nina Simone's Be My Husband, stomping out the rhythm for a raw, bluesy cover.

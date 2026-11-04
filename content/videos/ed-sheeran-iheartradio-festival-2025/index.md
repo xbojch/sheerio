@@ -4,11 +4,9 @@ date = 2025-09-20T08:00:00Z
 added_date = 2026-05-31T08:00:00Z
 draft = false
 toc = false
-tags = ['Live Performance', 'iHeartRadio', 'Interview']
-songs = ['Shivers', 'Sapphire', 'Perfect', 'Azizam', 'Shape of You', 'Bad Habits']
-videos = ['https://youtu.be/HXUnJG2EI7w', 'https://youtu.be/v67j4Yev4D8']
-[[youtube_videos]]
-video = 'HXUnJG2EI7w'
+tags = ['iHeartRadio', 'Interview']
+songs = []
+videos = ['https://youtu.be/v67j4Yev4D8']
 [[youtube_videos]]
 video = 'v67j4Yev4D8'
 +++

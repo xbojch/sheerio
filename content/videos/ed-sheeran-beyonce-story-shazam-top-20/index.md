@@ -5,8 +5,10 @@ added_date = 2026-10-24T08:00:00Z
 draft = false
 toc = false
 tags = ['Interview', 'Beyoncé', 'Radio', 'Australia']
-videos = ['https://youtu.be/f8byTGn3o2I']
+videos = ['https://youtu.be/f8byTGn3o2I', 'https://youtu.be/cY0h6HXxhVc']
 [[youtube_videos]]
 video = 'f8byTGn3o2I'
+[[youtube_videos]]
+video = 'cY0h6HXxhVc'
 +++
-Ed tells Angus and Ash on Hit Network's Shazam Top 20 about the time Beyoncé accidentally got one over on him.
+Ed tells Angus and Ash on Hit Network's Shazam Top 20 about the time Beyoncé accidentally got one over on him. The second video has the full interview.

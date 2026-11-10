@@ -5,7 +5,8 @@ added_date = 2026-04-26T08:00:00Z
 draft = false
 toc = false
 tags = ['Early Years', 'Ustream', 'Live Performance']
-videos = ['https://youtu.be/dTIQC1-Ym-4','https://youtu.be/cOsLjoRBdeI','https://youtu.be/Oh9rtf30EYU','https://youtu.be/hY6tTjgfUMU']
+songs = ['Sofa']
+videos = ['https://youtu.be/dTIQC1-Ym-4','https://youtu.be/cOsLjoRBdeI','https://youtu.be/Oh9rtf30EYU','https://youtu.be/hY6tTjgfUMU','https://youtu.be/wJ4QK6-g_NQ']
 [[youtube_videos]]
 video = 'dTIQC1-Ym-4'
 [[youtube_videos]]
@@ -14,5 +15,7 @@ video = 'cOsLjoRBdeI'
 video = 'Oh9rtf30EYU'
 [[youtube_videos]]
 video = 'hY6tTjgfUMU'
+[[youtube_videos]]
+video = 'wJ4QK6-g_NQ'
 +++
-A rare archive of a young Ed Sheeran performing a live Ustream gig — part of his legendary "Gig At Your Gaff" series where he took his music directly to fans via livestream in 2011. This is grassroots Ed at his most raw and unfiltered, building a fanbase one screen at a time.
+A rare archive of a young Ed Sheeran performing a live Ustream gig — part of his legendary "Gig At Your Gaff" series where he took his music directly to fans via livestream in 2011. This is grassroots Ed at his most raw and unfiltered, building a fanbase one screen at a time. A separate clip of Sofa from the same night closes the set.

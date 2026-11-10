@@ -5,8 +5,10 @@ added_date = 2026-04-16T08:00:00Z
 draft = false
 toc = false
 tags = ['Call Her Daddy', 'Interview']
-videos = ['https://youtu.be/hb7Oqrj3F3k']
+videos = ['https://youtu.be/hb7Oqrj3F3k','https://youtu.be/cvhuXH7ui-8']
 [[youtube_videos]]
 video = 'hb7Oqrj3F3k'
+[[youtube_videos]]
+video = 'cvhuXH7ui-8'
 +++
-Ed Sheeran sits down with Alex Cooper for a full, no-holds-barred Call Her Daddy episode — and true to the title, you'll either love every second or wonder how he got so refreshingly honest. One of the most revealing conversations Ed has ever put on record!
+Ed Sheeran sits down with Alex Cooper for a full, no-holds-barred Call Her Daddy episode — and true to the title, you'll either love every second or wonder how he got so refreshingly honest. One of the most revealing conversations Ed has ever put on record! After the interview he stayed in the studio to react to some of his old photos.
